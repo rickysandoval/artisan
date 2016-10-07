@@ -8,14 +8,6 @@
     <credit>Designed by Ricky Sandoval</credit>
     <subthemes>
         <subtheme>
-            <name>Light</name>
-            <css>light</css>
-        </subtheme>
-        <subtheme>
-            <name>Dark</name>
-            <css>dark</css>
-        </subtheme>
-        <subtheme>
             <name>Custom</name>
             <css>custom</css>
         </subtheme>

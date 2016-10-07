@@ -23,9 +23,10 @@ $(document).ready(function(){
 });
 
 </script>
-
-<div id="custom_content" class="span12">
-	<?php echo $model->page; ?>
+<div class="row-fluid">
+	<div id="custom_content" class="span12">
+		<?php echo $model->page; ?>
+	</div>
 </div>
 
 <div class="span12 clearfix custom_carousel">

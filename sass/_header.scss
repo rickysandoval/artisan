@@ -1,0 +1,14 @@
+.header {
+	margin-bottom: 15px;
+}
+
+.header__logo {
+	text-align: center;
+	img {
+		max-width: 250px;
+		margin-top: 10px;
+	}
+	@media (min-width: $screen-md-min) {
+		text-align: left;
+	}
+}

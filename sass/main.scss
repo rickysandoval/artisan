@@ -1,5 +1,6 @@
-@import '_variables';
-@import '_base';
-@import '_vendor';
+@import 'variables';
+@import 'vendor';
+@import 'base';
 
-@import '_header';
+@import 'header';
+@import 'components/components';

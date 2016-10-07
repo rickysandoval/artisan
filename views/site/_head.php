@@ -8,6 +8,7 @@
 
 	<link rel="canonical" href="<?= $this->CanonicalUrl; ?>"/>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Montserrat:400,700" rel="stylesheet">
 
 	<meta name="description" content="<?= $this->pageDescription; ?>">
 	<meta property="og:title" content="<?= $this->pageTitle; ?>"/>

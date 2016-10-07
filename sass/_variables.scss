@@ -1,7 +1,24 @@
 // Breakpoints
 
+$screen-md-min: 768px;
+$screen-lg-min: 960px;
+
+$screen-xs-max: 480px;
+
 // Widths
 $container-width: 960px;
 
 // Colors
 $black: #000;
+
+$primary-color: #ef4036;
+$secondary-color: #8c7e78;
+
+$background-color-light: #f2f0ef;
+
+$border-color-light: #cac3c0;
+
+
+// Typography 
+$font-family-special: 'Montserrat', sans-serif;
+$font-family-serif: 'Merriweather', serif;

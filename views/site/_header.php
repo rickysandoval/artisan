@@ -1,11 +1,11 @@
 <div id="topbar" class="row-fluid header">
 	<div class="span9">
-		<div id="headerimage" class="header__logo">
+		<div class="header__logo">
 			<?php echo CHtml::link(CHtml::image(Yii::app()->baseUrl._xls_get_conf('HEADER_IMAGE')), Yii::app()->baseUrl."/"); ?>
 		</div>
 	</div>
 	<div class="span3">
-		<div id="login">
+		<div id="login" class="login">
 			<?php if(Yii::app()->user->isGuest): ?>
 				<?php echo CHtml::ajaxLink(Yii::t('global','Login'),array('site/login'),
 					array('onClick'=>'js:jQuery($("#LoginForm")).dialog("open")'),
@@ -16,14 +16,6 @@
 				<?php echo CHtml::link(CHtml::image(Yii::app()->user->profilephoto).Yii::app()->user->firstname, array('/myaccount')); ?>
 				&nbsp;&nbsp;/&nbsp;&nbsp;<?php echo CHtml::link(Yii::t('global', 'Logout'), array("site/logout")); ?>
 				<?php endif; ?>
-		</div>
-		<?php if(_xls_get_conf('LANG_MENU',0)): ?>
-			<div id="langmenu">
-				<?php $this->widget('application.extensions.'._xls_get_conf('PROCESSOR_LANGMENU').'.'._xls_get_conf('PROCESSOR_LANGMENU')); ?>
-				</div>
-		<?php endif; ?>
-		<div id="fblink">
-			<?php echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/css/images/fb_link_t.png'), "https://www.facebook.com/artisanrugscb?ref=br_tf"); ?>
 		</div>
 	</div>
 </div>

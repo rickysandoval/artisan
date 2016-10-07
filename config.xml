@@ -1,11 +1,11 @@
 <config>
     <viewset>cities</viewset>
-    <name>brooklyn edit</name>
-    <thumbnail>brooklyn.png</thumbnail>
+    <name>Artisan Rug Gallery</name>
+    <thumbnail>brooklyn2014.png</thumbnail>
     <version>2</version>
-    <description>Our default template, suitable for any type of business.</description>
+    <description>Artisan Rug Gallery store template.</description>
     <noupdate>true</noupdate>
-    <credit>Designed by LightSpeed</credit>
+    <credit>Designed by Ricky Sandoval</credit>
     <subthemes>
         <subtheme>
             <name>Light</name>

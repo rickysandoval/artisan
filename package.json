@@ -1,0 +1,24 @@
+{
+  "name": "artisan-theme",
+  "version": "1.0.0",
+  "description": "Theme for artisan rug gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rickysandoval/Artist-website"
+  },
+  "author": "Ricky Sandoval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rickysandoval/Artist-website/issues"
+  },
+  "homepage": "https://github.com/rickysandoval/Artist-website",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

@@ -23,7 +23,7 @@
 				</div>
 		<?php endif; ?>
 		<div id="fblink">
-			<a href="https://www.facebook.com/artisanrugscb?ref=br_tf" target="blank"><img src="/themes/brooklyn-copy/css/images/fb_link_t.png" alt="facebook"></a>
+			<?php echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/css/images/fb_link_t.png'), "https://www.facebook.com/artisanrugscb?ref=br_tf"); ?>
 		</div>
 	</div>
 </div>

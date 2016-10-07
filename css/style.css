@@ -256,36 +256,6 @@ button:focus{
 .popupsmall { width: 300px }
 
 
-
-/**
- * ==========================================================================
- * Header
- * ==========================================================================
- */
-
-#headerimage {
-	margin-top: 5px;
-	padding-bottom: 30px;
-	overflow: hidden;
-}
-
-#viewport { clear: both }
-
-#langdrop select {
-	font-size: 0.7em;
-	height: 33px;
-}
-
-
-
-/***** Language options *****/
-
-.langlinks a {
-	text-decoration: underline;
-	padding-right: 2px;
-	font-size: 0.8em;
-}
-
 /***** Navigation (Products dropdown) and tabs *****/
 #menutabs {
 	margin-top: 3px;

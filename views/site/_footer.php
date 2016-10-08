@@ -38,7 +38,11 @@
 				<div class="copyright span4">
 					&copy; <?= Yii::t('global', 'Copyright') ?> <?= date("Y"); ?> <?= _xls_get_conf('STORE_NAME') ?>. <?= Yii::t('global', 'All Rights Reserved'); ?>.
 				</div>
-				<div class="social span4"></div>
+				<div class="social span4">
+					<span><a href="https://www.facebook.com/artisanrugscb" target="_blank"><span class="fa fa-facebook"></span></a></span>
+					<span><a href="https://twitter.com/artisanrug" target="_blank"><span class="fa fa-twitter"></span></a></span>
+					<span><a href="https://www.instagram.com/artisanruggallery/" target="_blank"><span class="fa fa-instagram"></span></a></span>
+				</div>
 			</div>
 		</div>
 	</div>

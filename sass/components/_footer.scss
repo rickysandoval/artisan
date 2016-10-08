@@ -21,6 +21,10 @@
     		color: $secondary-color-dark;
     	}
     }
+
+    .bottomtabs {
+        text-align: left;
+    }
 }
 .footer-middle {
 	text-align: center;
@@ -56,4 +60,31 @@
 }
 .footer__bottom {
 	margin: auto;
+}
+
+#footer .social {
+    font-size: 18px;
+    text-align: right;
+
+    a {
+        width: 20px;
+    }
+
+    a:focus {
+        outline: none;
+    }
+
+    .fa-facebook:hover {
+        color: #3B5998;
+    }
+    .fa-twitter:hover {
+        color: #00aced;
+    }
+    .fa-instagram:hover {
+        color: #517fa4;
+    }
+
+    > span {
+        margin-left: 10px;
+    }
 }

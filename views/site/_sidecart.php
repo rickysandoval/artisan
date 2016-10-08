@@ -24,7 +24,7 @@
 				<?php
 				} else {
 				?>
-			<div class="minicart__preview"><span class="cart-empty-message">Your cart is empty</span></div>
+			<div class="minicart__preview"><span class="title"><?php echo CHtml::link(Yii::t('checkout','Shopping Cart'),array('cart/')) ?></span></div>
 			<?php }?>
 		</div>
 

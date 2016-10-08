@@ -43,6 +43,11 @@
 	#shoppingcartbottom {
 		display: none;
 	}
+
+	.minicart__preview .title {
+		display: inline-block;
+		text-transform: uppercase;
+	}
 }
 
 .sidecart-icon {
@@ -148,9 +153,13 @@
 }
 
 .cart-buttons {
-	text-align: right;
+	text-align: center;
 	& > span {
 		margin-left: 10px;
+	}
+
+	a:focus {
+		outline: none;
 	}
 }
 

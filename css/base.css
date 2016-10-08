@@ -404,5 +404,12 @@ legend span {
 
 }
 
+#container {
+	max-width: 1024px !important;
+	margin: auto;
+}
 
-
+.full-width {
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+}

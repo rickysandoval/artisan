@@ -1,0 +1,59 @@
+.footer-top {
+    font-family: $font-family-special;
+    font-size: 11px;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+
+    #container {
+    	background: $background-color-light;
+    	padding-top: 15px;
+    	padding-bottom: 15px;
+    }
+}
+
+#footer {
+	color: $secondary-color;
+	 a {
+    	color: $secondary-color;;
+    	&:hover {
+    		color: $secondary-color-dark;
+    	}
+    }
+}
+.footer-middle {
+	text-align: center;
+}
+
+#footer .footer-top .span12 {
+	margin: 0;
+	padding: 0;
+}
+
+.footer__owner {
+	font-size: 16px;
+}
+
+#footer .addresshours {
+	margin: auto;
+	line-height: 1.4;
+}
+
+#denverinfo {
+	@media (min-width: $screen-md-min) {
+		text-align: right;
+	}
+}
+.footer-bottom {
+	padding: 20px 0 10px;
+    font-family: $font-family-special;
+    font-size: 11px;
+    line-height: 1.6em;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.footer__bottom {
+	margin: auto;
+}

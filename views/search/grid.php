@@ -109,7 +109,7 @@
 				);
 			}
 
-			if ($rowCounter === 4){
+			if ($rowCounter === 3){
 				$rowCounter = 0;
 				echo '</div>';
 			}

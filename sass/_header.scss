@@ -19,8 +19,15 @@
 }
 
 .breadcrumbs {
-	padding: 4px 0 2px 0;
+	padding: 3px 0 2px 0;
 	font-family: $font-family-special;
 	font-size: 10px;
 	border-bottom: 1px solid $border-color-light;
+
+	a {
+		color: $text-color-light;
+		&:hover {
+			color: $primary-color;
+		}
+	}
 }

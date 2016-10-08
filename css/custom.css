@@ -2385,7 +2385,7 @@ h1 {
   display: inline-block;
   background: #8c7e78;
   border: 2px solid #8c7e78;
-  padding: 15px 40px;
+  padding: 12px 50px;
   color: white; }
   .fake-button a:hover, a.fake-botton:hover, input[type=button]:hover, input[type=submit]:hover, button:hover {
     background: #ef4036;
@@ -2398,6 +2398,12 @@ h1 {
     .ghost-button .fake-button a:hover, .fake-button a.ghost-button:hover, .ghost-button a.fake-botton:hover, a.fake-botton.ghost-button:hover, .ghost-button input[type=button]:hover, input[type=button].ghost-button:hover, .ghost-button input[type=submit]:hover, input[type=submit].ghost-button:hover, .ghost-button button:hover, button.ghost-button:hover {
       color: #ef4036;
       border: 2px solid #ef4036; }
+  .primary-button .fake-button a, .fake-button a.primary-button, .primary-button a.fake-botton, a.fake-botton.primary-button, .primary-button input[type=button], input[type=button].primary-button, .primary-button input[type=submit], input[type=submit].primary-button, .primary-button button, button.primary-button {
+    border: 2px solid #ef4036;
+    background: #ef4036; }
+    .primary-button .fake-button a:hover, .fake-button a.primary-button:hover, .primary-button a.fake-botton:hover, a.fake-botton.primary-button:hover, .primary-button input[type=button]:hover, input[type=button].primary-button:hover, .primary-button input[type=submit]:hover, input[type=submit].primary-button:hover, .primary-button button:hover, button.primary-button:hover {
+      background: #8c7e78;
+      border: 2px solid #8c7e78; }
 
 .fake-button.ghost-button a {
   border: 2px solid #8c7e78;
@@ -2406,6 +2412,13 @@ h1 {
   .fake-button.ghost-button a:hover {
     color: #ef4036;
     border: 2px solid #ef4036; }
+
+.primary-button.fake-button a {
+  border: 2px solid #ef4036;
+  background: #ef4036; }
+  .primary-button.fake-button a:hover {
+    background: #8c7e78;
+    border: 2px solid #8c7e78; }
 
 input[type=button].block-button, button.block-button, .block-button a {
   display: block;
@@ -2440,10 +2453,14 @@ input[type=button].block-button, button.block-button, .block-button a {
   font-family: "Montserrat", sans-serif; }
 
 .breadcrumbs {
-  padding: 4px 0 2px 0;
+  padding: 3px 0 2px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   border-bottom: 1px solid #cac3c0; }
+  .breadcrumbs a {
+    color: #a4948d; }
+    .breadcrumbs a:hover {
+      color: #ef4036; }
 
 .minicart__preview {
   display: none;
@@ -2556,11 +2573,11 @@ input[type=button].block-button, button.block-button, .block-button a {
   #genericcart .cart_header.cart_total {
     text-align: right; }
 
-.cart-buttons {
+.sidecart .cart-buttons {
   text-align: center; }
-  .cart-buttons > span {
+  .sidecart .cart-buttons > span {
     margin-left: 10px; }
-  .cart-buttons a:focus {
+  .sidecart .cart-buttons a:focus {
     outline: none; }
 
 #shoppingcartbottom {
@@ -2828,3 +2845,24 @@ some_nowhitespace {
 .subcategories {
   margin-left: 0;
   font-size: 14px; }
+
+#___plusone_0 {
+  display: none !important; }
+
+#twitter-widget-0 {
+  display: none !important; }
+
+.thumbs {
+  text-align: center; }
+
+#product_details .addcart, #product_details .wishlist {
+  float: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  height: auto; }
+  #product_details .addcart a, #product_details .wishlist a {
+    width: 100%;
+    max-width: 225px;
+    text-align: center;
+    float: none;
+    margin: 0; }

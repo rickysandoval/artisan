@@ -30,8 +30,9 @@
 	<?php
 	foreach(Yii::app()->theme->info->cssfiles as $cssfile)
 		Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl($cssfile));
-	Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl(Yii::app()->theme->config->CHILD_THEME));
-	Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl('custom'));
+		Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl(Yii::app()->theme->config->CHILD_THEME));
+		Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl('custom'));
+		Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl('../fancybox/jquery.fancybox.css'));
 	?>
 
 	<?php $this->widget('ext.wsiosorientationbugfix.iosorientationbugfix'); ?>

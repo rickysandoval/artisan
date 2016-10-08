@@ -52,13 +52,46 @@
 
 #shoppingcart {
 	padding: 0 0;
+
+	.title {
+		float: right;
+	}
 }
 
-.sidecart .fa-shopping-cart {
+#shoppingcart .fa-shopping-cart {
 	color: $secondary-color;
 	font-size: 22px;
 	margin-top: -2px;
 	&:hover {
 		color: $primary-color;
 	}
+
+}
+
+.minicart_item {
+	text-transform: none;
+	margin-left: 0;
+	font-size: 12px;
+	padding: 5px 0;
+
+	border-bottom: 1px solid $border-color-light;
+	a {
+		color: #333333;
+	}
+}
+
+#cartline1 {
+	border-top: 1px solid $border-color-light;
+}
+
+.minicart_desc {
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+.minicart_qty {
+	font-size: 10px;
+}
+.minicart_price {
+	text-align: right;
 }

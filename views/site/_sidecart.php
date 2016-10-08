@@ -1,25 +1,20 @@
 <div id="shoppingcart">
 	<div class="sidecart-top">
-        <span class="fa fa-shopping-cart fa-2x"><a href="/cart/index">&nbsp;</a></span><span class="title"><?php echo CHtml::link(Yii::t('checkout','Shopping Cart'),array('cart/index')) ?></span>
+        <a class="cart-icon" href="/cart/index"><span class="fa fa-shopping-cart fa-2x"></span></a></span><span class="title"><?php echo CHtml::link(Yii::t('checkout','Shopping Cart'),array('cart/index')) ?></span>
 
 		<?php if(!empty(Yii::app()->shoppingcart)):
 			foreach (Yii::app()->shoppingcart->cartItems as $item): ?>
 
-				<div id="cartline<?=$item->id?>" class="minicart_item">
-						<span class="minicart_image">
-							<a href="<?=$item['link']?>">
-								<img src="<?=$item->product->MiniImage?>"  />
-							</a>
-						</span>
-						<span class="span6 minicart_desc">
+				<div id="cartline<?=$item->id?>" class="minicart_item row">
+						<span class="span8 minicart_desc">
 							<a href="<?=$item['link']?>"><?=$item['description']?>
 								<br>
 								<span class="minicart_qty">
-									<?php echo Yii::t('cart','Qty'); ?>: <span id="qty<?=$item['id']?>"><?=$item['qty']?></span> &nbsp;&nbsp;
+									<?php echo Yii::t('cart','Qty'); ?>: <span id="qty<?=$item['id']?>"><?=$item['qty']?></span>
                                 </span>
 							</a>
 						</span>
-						<span class="span3 minicart_price">
+						<span class="span4 minicart_price">
 							<span id="sell_total<?=$item['id']?>"><?=_xls_currency($item['sell_total'])?></span>
 						</span>
 				</div>
@@ -59,7 +54,7 @@
 		<div class="cart_label span7"><span class="subtotallabel"><?php echo Yii::t('cart','SubTotal'); ?></span></div>
 		<?php
 			$numItems = sizeOf(Yii::app()->shoppingcart->cartItems);
-			if ($numItems > 1) {
+			if ($numItems > 0) {
 
 		?>
 		<div class="cart_quantity"><?php 

@@ -2398,9 +2398,10 @@ input[type=button], input[type=submit], button {
   font-family: "Montserrat", sans-serif; }
 
 .breadcrumbs {
-  padding: 2px 0;
+  padding: 0 0 2px 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 10px; }
+  font-size: 10px;
+  border-bottom: 1px solid #cac3c0; }
 
 .cart_quantity {
   display: none; }
@@ -2439,13 +2440,38 @@ input[type=button], input[type=submit], button {
 
 #shoppingcart {
   padding: 0 0; }
+  #shoppingcart .title {
+    float: right; }
 
-.sidecart .fa-shopping-cart {
+#shoppingcart .fa-shopping-cart {
   color: #8c7e78;
   font-size: 22px;
   margin-top: -2px; }
-  .sidecart .fa-shopping-cart:hover {
+  #shoppingcart .fa-shopping-cart:hover {
     color: #ef4036; }
+
+.minicart_item {
+  text-transform: none;
+  margin-left: 0;
+  font-size: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid #cac3c0; }
+  .minicart_item a {
+    color: #333333; }
+
+#cartline1 {
+  border-top: 1px solid #cac3c0; }
+
+.minicart_desc {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4; }
+
+.minicart_qty {
+  font-size: 10px; }
+
+.minicart_price {
+  text-align: right; }
 
 .search-box {
   position: relative; }

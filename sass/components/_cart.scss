@@ -75,6 +75,10 @@
 	padding: 5px 0;
 
 	border-bottom: 1px solid $border-color-light;
+
+	&:first-child {
+		border-top: 1px solid $border-color-light;
+	}
 	a {
 		color: #333333;
 	}
@@ -94,4 +98,52 @@
 }
 .minicart_price {
 	text-align: right;
+}
+
+.cart-item td {
+	padding: 10px 4px;
+	border-bottom: 1px solid $border-color-light;
+}
+
+#genericcart .cart-item {
+	&:first-child td {
+		border-top: 1px solid $border-color-light;
+	}
+	&:nth-child(odd) td {
+		background: $background-color-light;
+
+	}
+}
+
+#genericcart input[type="text"], #genericcart input[type="text"]:focus {
+    font-size: 1.1em;
+    margin-bottom: 0;
+    border: 3px;
+    border: 1px solid $border-color-light;
+    text-align: center;
+    padding: 2px;
+    width: 80px;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+#genericcart .cart_header.cart_qty {
+    padding-left: 25px;
+}
+
+#genericcart .cart_header {
+
+	font-family: $font-family-special;
+	padding-bottom: 10px;
+
+	&.cart_total {
+		text-align: right;
+	}
+}
+
+.cart-buttons {
+	text-align: right;
+	& > span {
+		margin-left: 10px;
+	}
 }

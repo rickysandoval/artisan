@@ -2366,7 +2366,8 @@ ul.bxslider {
   box-sizing: border-box; }
 
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-  height: auto; }
+  height: auto;
+  box-shadow: none; }
 
 .row-fluid [class*="span"] {
   box-sizing: content-box; }
@@ -2375,11 +2376,33 @@ a {
   color: #ef4036;
   cursor: pointer; }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-size: 26px; }
+
 input[type=button], input[type=submit], button {
+  display: inline-block;
   background: #8c7e78;
+  border: 2px solid #8c7e78;
   padding: 15px 40px; }
   input[type=button]:hover, input[type=submit]:hover, button:hover {
-    background: #ef4036; }
+    background: #ef4036;
+    border: 2px solid #ef4036; }
+  .ghost-button input[type=button], input[type=button].ghost-button, .ghost-button input[type=submit], input[type=submit].ghost-button, .ghost-button button, button.ghost-button {
+    border: 2px solid #8c7e78;
+    background: transparent;
+    color: #8c7e78; }
+    .ghost-button input[type=button]:hover, input[type=button].ghost-button:hover, .ghost-button input[type=submit]:hover, input[type=submit].ghost-button:hover, .ghost-button button:hover, button.ghost-button:hover {
+      color: #ef4036;
+      border: 2px solid #ef4036; }
+
+.table th, .table td {
+  padding: 4px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 0; }
 
 .header {
   margin-bottom: 15px; }
@@ -2456,6 +2479,8 @@ input[type=button], input[type=submit], button {
   font-size: 12px;
   padding: 5px 0;
   border-bottom: 1px solid #cac3c0; }
+  .minicart_item:first-child {
+    border-top: 1px solid #cac3c0; }
   .minicart_item a {
     color: #333333; }
 
@@ -2472,6 +2497,41 @@ input[type=button], input[type=submit], button {
 
 .minicart_price {
   text-align: right; }
+
+.cart-item td {
+  padding: 10px 4px;
+  border-bottom: 1px solid #cac3c0; }
+
+#genericcart .cart-item:first-child td {
+  border-top: 1px solid #cac3c0; }
+
+#genericcart .cart-item:nth-child(odd) td {
+  background: #f2f0ef; }
+
+#genericcart input[type="text"], #genericcart input[type="text"]:focus {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  border: 3px;
+  border: 1px solid #cac3c0;
+  text-align: center;
+  padding: 2px;
+  width: 80px;
+  border-radius: 4px;
+  box-shadow: none; }
+
+#genericcart .cart_header.cart_qty {
+  padding-left: 25px; }
+
+#genericcart .cart_header {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px; }
+  #genericcart .cart_header.cart_total {
+    text-align: right; }
+
+.cart-buttons {
+  text-align: right; }
+  .cart-buttons > span {
+    margin-left: 10px; }
 
 .search-box {
   position: relative; }
@@ -2538,7 +2598,8 @@ input[type=button], input[type=submit], button {
 
 .nav_menuheader {
   height: 30px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  cursor: default; }
 
 #nav_products {
   height: 30px;

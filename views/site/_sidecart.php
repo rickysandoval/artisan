@@ -1,12 +1,18 @@
 <div id="shoppingcart">
 	<div class="sidecart-top">
-        <a class="cart-icon" href="/cart/index"><span class="fa fa-shopping-cart fa-2x"></span></a></span><span class="title"><?php echo CHtml::link(Yii::t('checkout','Shopping Cart'),array('cart/index')) ?></span>
+		<?php echo CHtml::link(Yii::t('checkout','<span class="fa fa-shopping-cart fa-2x"></span>'),array('cart/index')) ?></span><span class="title"><?php echo CHtml::link(Yii::t('checkout','Shopping Cart'),array('cart/')) ?></span>
 
-		<?php if(!empty(Yii::app()->shoppingcart)):
+		<?php if(!empty(Yii::app()->shoppingcart)): ?>
+		<div><?php
 			foreach (Yii::app()->shoppingcart->cartItems as $item): ?>
 
 				<div id="cartline<?=$item->id?>" class="minicart_item row">
-						<span class="span8 minicart_desc">
+						<span class="minicart_image span2">
+							<a href="<?=$item['link']?>">
+								<img src="<?=$item->product->MiniImage?>"  />
+							</a>
+						</span>
+						<span class="span7 minicart_desc">
 							<a href="<?=$item['link']?>"><?=$item['description']?>
 								<br>
 								<span class="minicart_qty">
@@ -14,12 +20,13 @@
                                 </span>
 							</a>
 						</span>
-						<span class="span4 minicart_price">
+						<span class="span3 minicart_price">
 							<span id="sell_total<?=$item['id']?>"><?=_xls_currency($item['sell_total'])?></span>
 						</span>
 				</div>
 
 			<?php endforeach; ?>
+		</div>
 		<?php endif; ?>
 
 		<div id="cartline0" class="minicart_item hidden">

@@ -29,15 +29,15 @@
         <div id="shoppingcart">
 			<?= $this->renderPartial('/site/_sidecart',null, true); ?>
 		</div>
+		<div class="sidecart__buttons">
+			<div id="shoppingcartcheckout" onclick="window.location.href='<?php echo Yii::app()->createUrl('cart/checkout') ?>'">
+	            <div class="checkoutlink fake-button block-button"><?php echo CHtml::link(Yii::t('cart','Checkout'),array('cart/checkout')) ?></div>
+	        </div>
 
-        <div id="shoppingcartcheckout" onclick="window.location.href='<?php echo Yii::app()->createUrl('cart/checkout') ?>'">
-            <div class="checkoutlink"><?php echo CHtml::link(Yii::t('cart','Checkout'),array('cart/checkout')) ?></div>
-            <div class="checkoutarrow"><?php echo CHtml::image(Yii::app()->theme->baseUrl."/css/images/checkoutarrow.png"); ?></div>
-        </div>
-
-        <div id="shoppingcarteditcart" onclick="window.location.href='<?php echo Yii::app()->createUrl('/cart') ?>'">
-            <div class="editlink"><?php echo CHtml::link(Yii::t('cart','Edit Cart'),array('/cart')) ?></div>
-        </div>
+	        <div id="shoppingcarteditcart" onclick="window.location.href='<?php echo Yii::app()->createUrl('/cart') ?>'">
+	            <div class="editlink fake-button ghost-button block-button"><?php echo CHtml::link(Yii::t('cart','Edit Cart'),array('/cart')) ?></div>
+	        </div>
+		</div>
 
         <div id="sidebar" class="span12">
 			<?php $this->widget("application.extensions.wsborderlookup.wsborderlookup",array()); ?>

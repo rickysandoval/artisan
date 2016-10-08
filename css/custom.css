@@ -2381,21 +2381,35 @@ h1 {
   line-height: 1;
   font-size: 26px; }
 
-input[type=button], input[type=submit], button {
+.fake-button a, a.fake-botton, input[type=button], input[type=submit], button {
   display: inline-block;
   background: #8c7e78;
   border: 2px solid #8c7e78;
-  padding: 15px 40px; }
-  input[type=button]:hover, input[type=submit]:hover, button:hover {
+  padding: 15px 40px;
+  color: white; }
+  .fake-button a:hover, a.fake-botton:hover, input[type=button]:hover, input[type=submit]:hover, button:hover {
     background: #ef4036;
-    border: 2px solid #ef4036; }
-  .ghost-button input[type=button], input[type=button].ghost-button, .ghost-button input[type=submit], input[type=submit].ghost-button, .ghost-button button, button.ghost-button {
+    border: 2px solid #ef4036;
+    color: white; }
+  .ghost-button .fake-button a, .fake-button a.ghost-button, .ghost-button a.fake-botton, a.fake-botton.ghost-button, .ghost-button input[type=button], input[type=button].ghost-button, .ghost-button input[type=submit], input[type=submit].ghost-button, .ghost-button button, button.ghost-button {
     border: 2px solid #8c7e78;
     background: transparent;
     color: #8c7e78; }
-    .ghost-button input[type=button]:hover, input[type=button].ghost-button:hover, .ghost-button input[type=submit]:hover, input[type=submit].ghost-button:hover, .ghost-button button:hover, button.ghost-button:hover {
+    .ghost-button .fake-button a:hover, .fake-button a.ghost-button:hover, .ghost-button a.fake-botton:hover, a.fake-botton.ghost-button:hover, .ghost-button input[type=button]:hover, input[type=button].ghost-button:hover, .ghost-button input[type=submit]:hover, input[type=submit].ghost-button:hover, .ghost-button button:hover, button.ghost-button:hover {
       color: #ef4036;
       border: 2px solid #ef4036; }
+
+.fake-button.ghost-button a {
+  border: 2px solid #8c7e78;
+  background: transparent;
+  color: #8c7e78; }
+  .fake-button.ghost-button a:hover {
+    color: #ef4036;
+    border: 2px solid #ef4036; }
+
+input[type=button].block-button, button.block-button, .block-button a {
+  display: block;
+  text-align: center; }
 
 .table th, .table td {
   padding: 4px;
@@ -2403,6 +2417,11 @@ input[type=button], input[type=submit], button {
   text-align: left;
   vertical-align: top;
   border-top: 0; }
+
+.cf:after {
+  display: table;
+  clear: both;
+  content: ''; }
 
 .header {
   margin-bottom: 15px; }
@@ -2421,16 +2440,26 @@ input[type=button], input[type=submit], button {
   font-family: "Montserrat", sans-serif; }
 
 .breadcrumbs {
-  padding: 0 0 2px 0;
+  padding: 4px 0 2px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   border-bottom: 1px solid #cac3c0; }
 
-.cart_quantity {
-  display: none; }
+.minicart__preview {
+  display: none;
+  text-transform: lowercase; }
+  .minicart__preview > div {
+    display: inline-block; }
+  .minicart__preview .cart_quantity {
+    color: #8c7e78; }
+  .minicart__preview .cart_price {
+    margin-left: 5px; }
 
 .cart_price {
   font-size: 16px; }
+
+.layout-col1 .minicart__preview, .layout-custompage .minicart__preview {
+  display: inline-block; }
 
 .layout-col1 .sidecart, .layout-custompage .sidecart {
   text-align: right; }
@@ -2444,27 +2473,21 @@ input[type=button], input[type=submit], button {
 .layout-col1 .subtotallabel, .layout-custompage .subtotallabel {
   display: none; }
 
-.layout-col1 .sidecart-top, .layout-custompage .sidecart-top {
-  display: inline-block;
+.layout-col1 #shoppingcartbottom, .layout-custompage #shoppingcartbottom {
+  display: none; }
+
+.sidecart-icon {
   float: left; }
 
-.layout-col1 #shoppingcartbottom, .layout-custompage #shoppingcartbottom {
-  display: inline-block;
-  white-space: nowrap; }
-  .layout-col1 #shoppingcartbottom .cart_label, .layout-custompage #shoppingcartbottom .cart_label {
-    display: none; }
-  .layout-col1 #shoppingcartbottom .cart_price, .layout-col1 #shoppingcartbottom .cart_quantity, .layout-custompage #shoppingcartbottom .cart_price, .layout-custompage #shoppingcartbottom .cart_quantity {
-    display: inline-block;
-    width: auto;
-    text-transform: lowercase;
-    float: none; }
-  .layout-col1 #shoppingcartbottom .cart_quantity, .layout-custompage #shoppingcartbottom .cart_quantity {
-    color: #8c7e78; }
+.shopping-cart__header {
+  text-align: right;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cac3c0; }
 
 #shoppingcart {
   padding: 0 0; }
   #shoppingcart .title {
-    float: right; }
+    font-family: "Montserrat", sans-serif; }
 
 #shoppingcart .fa-shopping-cart {
   color: #8c7e78;
@@ -2477,10 +2500,11 @@ input[type=button], input[type=submit], button {
   text-transform: none;
   margin-left: 0;
   font-size: 12px;
-  padding: 5px 0;
-  border-bottom: 1px solid #cac3c0; }
+  padding: 10px 0;
+  border-top: 1px solid #cac3c0; }
   .minicart_item:first-child {
-    border-top: 1px solid #cac3c0; }
+    margin-top: 15px;
+    border-top: 0; }
   .minicart_item a {
     color: #333333; }
 
@@ -2532,6 +2556,18 @@ input[type=button], input[type=submit], button {
   text-align: right; }
   .cart-buttons > span {
     margin-left: 10px; }
+
+#shoppingcartbottom {
+  margin-top: 10px;
+  margin-bottom: 25px; }
+  #shoppingcartbottom .cart_label {
+    font-family: "Montserrat", sans-serif; }
+  #shoppingcartbottom .cart_price span {
+    float: right; }
+
+.sidecart__buttons a {
+  padding: 10px !important;
+  margin-bottom: 10px; }
 
 .search-box {
   position: relative; }
@@ -2764,3 +2800,7 @@ some_nowhitespace {
 
 .footer__bottom {
   margin: auto; }
+
+.subcategories {
+  margin-left: 0;
+  font-size: 14px; }

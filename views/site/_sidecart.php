@@ -1,6 +1,32 @@
 <div id="shoppingcart">
 	<div class="sidecart-top">
-		<?php echo CHtml::link(Yii::t('checkout','<span class="fa fa-shopping-cart fa-2x"></span>'),array('cart/index')) ?></span><span class="title"><?php echo CHtml::link(Yii::t('checkout','Shopping Cart'),array('cart/')) ?></span>
+		<div class="shopping-cart__header">
+			<span class="sidecart-icon"><?php echo CHtml::link(Yii::t('checkout','<span class="fa fa-shopping-cart fa-2x"></span>'),array('cart/index')) ?>
+			</span>
+			<span class="title"><?php echo CHtml::link(Yii::t('checkout','Shopping Cart'),array('cart/')) ?></span>
+			<?php
+				$numItems = sizeOf(Yii::app()->shoppingcart->cartItems);
+				if ($numItems > 0) {
+
+			?>
+			<div class="minicart__preview">
+				<div class="cart_quantity"><?php 
+					echo $numItems;
+					if ($numItems == 1) {
+						echo ' Item';
+					} else {
+						echo ' Items';
+					}
+				?>
+				for</div>
+				<div class="cart_price"><span id="subtotal"><?= _xls_currency(Yii::app()->shoppingcart->subtotal) ?></span></div>
+			</div>
+				<?php
+				} else {
+				?>
+			<div class="minicart__preview"><span class="cart-empty-message">Your cart is empty</span></div>
+			<?php }?>
+		</div>
 
 		<?php if(!empty(Yii::app()->shoppingcart)): ?>
 		<div><?php
@@ -54,34 +80,13 @@
 			</div>
 		<?php endif; ?>
 
-
 	</div>
 
-	<div id="shoppingcartbottom">
+	<div id="shoppingcartbottom" class="cf">
 		<div class="cart_label span7"><span class="subtotallabel"><?php echo Yii::t('cart','SubTotal'); ?></span></div>
-		<?php
-			$numItems = sizeOf(Yii::app()->shoppingcart->cartItems);
-			if ($numItems > 0) {
-
-		?>
-		<div class="cart_quantity"><?php 
-			echo $numItems;
-			if ($numItems == 1) {
-				echo ' Item';
-			} else {
-				echo ' Items';
-			}
-		?>
-		for</div>
+		
 		<div class="cart_price span5"><span id="subtotal"><?= _xls_currency(Yii::app()->shoppingcart->subtotal) ?></span>&nbsp;&nbsp;</div>
-		<?php
-			} else {
-			?>
-			<span class="cart-empty-message">Your cart is empty</span>
-		<?php }?>
 	</div>
-
-
 
 
 </div>

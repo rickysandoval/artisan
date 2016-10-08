@@ -1,14 +1,24 @@
 .search-box {
 	position: relative;
+
 	input {
-		padding-left: 25px;
+		padding-left: 20px;
 		width: 100%;
 		box-sizing: border-box;
 		margin: 0;
 		border-color: $border-color-light;
 		border-radius: 2px;
+
+		&::placeholder {
+			color: $border-color-light;
+		}
+	}
+
+	form {
+		margin-bottom: 10px;
 	}
 	.search-icon {
+		color: $border-color-light;
 		position: absolute;
 		left: 5px;
 		top: 50%;

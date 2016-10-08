@@ -5,10 +5,21 @@
 .header__logo {
 	text-align: center;
 	img {
-		max-width: 250px;
+		max-width: 225px;
 		margin-top: 10px;
 	}
 	@media (min-width: $screen-md-min) {
 		text-align: left;
 	}
+}
+
+.login {
+	font-size: 12px;
+	font-family: $font-family-special;
+}
+
+.breadcrumbs {
+	padding: 2px 0;
+	font-family: $font-family-special;
+	font-size: 10px;
 }

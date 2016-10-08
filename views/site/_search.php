@@ -1,6 +1,6 @@
 <div class="search-box">
 	<?php echo CHtml::beginForm(Yii::app()->createUrl('search/results'),'get'); ?>
-	<img class="spyglass search-icon" src="<?= Yii::app()->theme->baseUrl; ?>/css/images/spyglass.png">
+	<span class="fa fa-search search-icon" ></span>
 	<div class="search_box"><?php
 		$this->widget('bootstrap.widgets.TbTypeahead',array(
 			'name'=>'q',

@@ -14,6 +14,8 @@
 /** RESET AND LAYOUT
 ===================================*/
 
+@import 'font-awesome/font-awesome';
+
 ul.bxslider {
 	margin: 0;
 	list-style: none;
@@ -87,7 +89,7 @@ ul.bxslider {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
+	background: $secondary-color;
 	text-indent: -9999px;
 	display: block;
 	width: 10px;
@@ -101,7 +103,7 @@ ul.bxslider {
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #000;
+	background: $secondary-color-dark;;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */

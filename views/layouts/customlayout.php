@@ -1,5 +1,5 @@
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="row-fluid">
+<div class="row-fluid layout-custompage">
 	<div class="span9">
 
 	<?php $this->widget('zii.widgets.CBreadcrumbs', array(

@@ -9,3 +9,16 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .row-fluid [class*="span"] {
 	box-sizing: content-box;
 }
+
+a {
+	color: $link-color;
+	cursor: pointer;
+}
+
+input[type=button], input[type=submit], button {
+	background: $secondary-color;
+	padding: 15px 40px;
+	&:hover {
+		background: $primary-color;
+	}
+}

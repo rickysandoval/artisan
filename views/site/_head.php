@@ -42,14 +42,15 @@
 
 
 	<script>
-	var baseUrl = "/lightspeed/themes/artisan/css/images/sliders/";
-	var sliderUrls = ['home_slider1.jpg', 'home_slider2.jpg', 'home_slider3.jpg', 'home_slider6.jpg'];
+	var baseUrl = "/lightspeed/themes/artisan/images/home-slider/";
+	var numSlides = 7;
 
 	jQuery(document).ready(function($) {
 		if ($('.bxslider')) {
-			sliderUrls.forEach(function(pic) {
-				$('.bxslider').append('<li><img src="' + baseUrl + pic + '">');
-			});
+
+			for (var i = 2; i <= numSlides; i++) {
+				$('.bxslider').append('<li><img src="' + baseUrl + 'slide' + i + '.jpg">');
+			}
 
 			$('.bxslider').bxSlider({
 				'mode': 'fade',

@@ -5,11 +5,28 @@
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
+    position: relative;
 
     #container {
     	background: $background-color-light;
     	padding-top: 15px;
     	padding-bottom: 15px;
+    }
+
+    [class*="span"]:not(.span12) {
+        margin-left: 0;
+        @media screen and (min-width: $screen-sm-min) {
+            float: left;
+            width: 33.33333%;
+            box-sizing: border-box;
+
+            &:first-child {
+                padding-left: 5px;
+            }
+            &:last-child {
+                padding-right: 5px;
+            }
+        }
     }
 }
 
@@ -24,10 +41,27 @@
 
     .bottomtabs {
         text-align: left;
+        @media (max-width: $screen-sm-max) {
+            text-align: middle;
+            .social {
+                text-align: center;
+            }
+        }
     }
 }
 .footer-middle {
 	text-align: center;
+    min-height: 10px;
+    img {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(50%);
+        @media (max-width: $screen-xs-max) {
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
 }
 
 #footer .footer-top .span12 {
@@ -42,15 +76,16 @@
 #footer .addresshours {
 	margin: auto;
 	line-height: 1.4;
+    height: auto;
 }
 
 #denverinfo {
-	@media (min-width: $screen-md-min) {
+	@media (min-width: $screen-sm-min) {
 		text-align: right;
 	}
 }
 .footer-bottom {
-	padding: 20px 0 10px;
+	padding: 20px 5px 10px;
     font-family: $font-family-special;
     font-size: 11px;
     line-height: 1.6em;

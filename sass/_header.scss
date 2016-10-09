@@ -1,5 +1,7 @@
 .header {
-	margin-bottom: 15px;
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 15px;
+	}
 }
 
 .header__logo {
@@ -7,6 +9,9 @@
 	img {
 		max-width: 225px;
 		margin-top: 10px;
+		@media (max-width: $screen-sm-max) {
+			width: 175px;
+		}
 	}
 	@media (min-width: $screen-md-min) {
 		text-align: left;
@@ -15,7 +20,17 @@
 
 .login {
 	font-size: 12px;
-	font-family: $font-family-special;
+
+	.fa {
+		margin-right: 5px;
+		transform: translateY(-1px);
+	}
+
+	@media (max-width: $screen-sm-max) {
+		a {
+			width: auto;
+		}
+	}
 }
 
 .breadcrumbs {
@@ -29,5 +44,16 @@
 		&:hover {
 			color: $primary-color;
 		}
+	}
+}
+
+
+// Mobile
+#menubar-xs {
+	.btn-navbar {
+		background: $background-color-light;
+	}
+	.nav {
+		font-family: $font-family-special;
 	}
 }

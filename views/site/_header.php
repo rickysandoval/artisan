@@ -13,7 +13,7 @@
 				&nbsp;/&nbsp;
 				<a href="<?= _xls_site_url('myaccount/edit'); ?>"><?php echo Yii::t('global', 'Register'); ?></a>
 			<?php else: ?>
-				<?php echo CHtml::link(CHtml::image(Yii::app()->user->profilephoto).Yii::app()->user->firstname, array('/myaccount')); ?>
+				<?php echo CHtml::link('<span class="fa fa-user"></span>'.Yii::app()->user->firstname, array('/myaccount')); ?>
 				&nbsp;&nbsp;/&nbsp;&nbsp;<?php echo CHtml::link(Yii::t('global', 'Logout'), array("site/logout")); ?>
 				<?php endif; ?>
 		</div>

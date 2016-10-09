@@ -2422,7 +2422,9 @@ h1 {
 
 input[type=button].block-button, button.block-button, .block-button a {
   display: block;
-  text-align: center; }
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0; }
 
 .table th, .table td {
   padding: 4px;
@@ -2436,21 +2438,42 @@ input[type=button].block-button, button.block-button, .block-button a {
   clear: both;
   content: ''; }
 
-.header {
-  margin-bottom: 15px; }
+.alert {
+  clear: both; }
+
+@media (max-width: 767px) {
+  .bx-wrapper {
+    margin-top: -4px; } }
+
+@media only screen and (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+    visibility: hidden; } }
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 15px; } }
 
 .header__logo {
   text-align: center; }
   .header__logo img {
     max-width: 225px;
     margin-top: 10px; }
+    @media (max-width: 767px) {
+      .header__logo img {
+        width: 175px; } }
   @media (min-width: 768px) {
     .header__logo {
       text-align: left; } }
 
 .login {
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif; }
+  font-size: 12px; }
+  .login .fa {
+    margin-right: 5px;
+    transform: translateY(-1px); }
+  @media (max-width: 767px) {
+    .login a {
+      width: auto; } }
 
 .breadcrumbs {
   padding: 3px 0 2px 0;
@@ -2461,6 +2484,12 @@ input[type=button].block-button, button.block-button, .block-button a {
     color: #a4948d; }
     .breadcrumbs a:hover {
       color: #ef4036; }
+
+#menubar-xs .btn-navbar {
+  background: #f2f0ef; }
+
+#menubar-xs .nav {
+  font-family: "Montserrat", sans-serif; }
 
 .minicart__preview {
   display: none;
@@ -2474,6 +2503,12 @@ input[type=button].block-button, button.block-button, .block-button a {
 
 .cart_price {
   font-size: 16px; }
+
+@media (max-width: 767px) {
+  .sidecart {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px; } }
 
 .layout-col1 .minicart__preview, .layout-custompage .minicart__preview {
   display: inline-block; }
@@ -2556,12 +2591,11 @@ input[type=button].block-button, button.block-button, .block-button a {
 #genericcart input[type="text"], #genericcart input[type="text"]:focus {
   font-size: 1.1em;
   margin-bottom: 0;
-  border: 3px;
   border: 1px solid #cac3c0;
   text-align: center;
   padding: 2px;
   width: 80px;
-  border-radius: 4px;
+  border-radius: 2px;
   box-shadow: none; }
 
 #genericcart .cart_header.cart_qty {
@@ -2592,11 +2626,37 @@ input[type=button].block-button, button.block-button, .block-button a {
   padding: 10px !important;
   margin-bottom: 10px; }
 
+@media (max-width: 480px) {
+  #genericcart .table .desc {
+    width: 100px; } }
+
+.cart-list-item {
+  position: relative;
+  padding: 10px 0 4px; }
+  .cart-list-item .cart-item-remove {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+
+#genericcart .cart_price {
+  margin-right: 0;
+  padding-right: 20px;
+  box-sizing: border-box; }
+
+#genericcart .cart-summary {
+  margin-top: 50px; }
+  #genericcart .cart-summary .border-top {
+    height: 5px;
+    min-height: 0 !important;
+    border-top: 1px solid #cac3c0; }
+
 .search-box {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .search-box input {
     padding-left: 20px;
-    width: 100%;
+    width: 100% !important;
     box-sizing: border-box;
     margin: 0;
     border-color: #cac3c0;
@@ -2604,7 +2664,12 @@ input[type=button].block-button, button.block-button, .block-button a {
     .search-box input::placeholder {
       color: #cac3c0; }
   .search-box form {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    position: relative; }
+    @media (max-width: 767px) {
+      .search-box form {
+        display: inline-block;
+        margin-bottom: 0; } }
   .search-box .search-icon {
     color: #cac3c0;
     position: absolute;
@@ -2781,11 +2846,23 @@ some_nowhitespace {
   line-height: 1.6em;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  position: relative; }
   .footer-top #container {
     background: #f2f0ef;
     padding-top: 15px;
     padding-bottom: 15px; }
+  .footer-top [class*="span"]:not(.span12) {
+    margin-left: 0; }
+    @media screen and (min-width: 560px) {
+      .footer-top [class*="span"]:not(.span12) {
+        float: left;
+        width: 33.33333%;
+        box-sizing: border-box; }
+        .footer-top [class*="span"]:not(.span12):first-child {
+          padding-left: 5px; }
+        .footer-top [class*="span"]:not(.span12):last-child {
+          padding-right: 5px; } }
 
 #footer {
   color: #8c7e78; }
@@ -2795,9 +2872,24 @@ some_nowhitespace {
       color: #4e4745; }
   #footer .bottomtabs {
     text-align: left; }
+    @media (max-width: 767px) {
+      #footer .bottomtabs {
+        text-align: middle; }
+        #footer .bottomtabs .social {
+          text-align: center; } }
 
 .footer-middle {
-  text-align: center; }
+  text-align: center;
+  min-height: 10px; }
+  .footer-middle img {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(50%); }
+    @media (max-width: 549px) {
+      .footer-middle img {
+        right: 0;
+        transform: translateY(-50%); } }
 
 #footer .footer-top .span12 {
   margin: 0;
@@ -2808,14 +2900,15 @@ some_nowhitespace {
 
 #footer .addresshours {
   margin: auto;
-  line-height: 1.4; }
+  line-height: 1.4;
+  height: auto; }
 
-@media (min-width: 768px) {
+@media (min-width: 560px) {
   #denverinfo {
     text-align: right; } }
 
 .footer-bottom {
-  padding: 20px 0 10px;
+  padding: 20px 5px 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
   line-height: 1.6em;
@@ -2865,4 +2958,17 @@ some_nowhitespace {
     max-width: 225px;
     text-align: center;
     float: none;
-    margin: 0; }
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0; }
+
+.product-page__carousel .jcarousel-skin-slider .jcarousel-container {
+  border: none;
+  padding: 0; }
+
+.product-page__carousel .jcarousel-prev, .product-page__carousel .jcarousel-next {
+  display: none !important; }
+
+#product_details h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; }

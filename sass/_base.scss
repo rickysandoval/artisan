@@ -81,6 +81,8 @@ h1 {
 input[type=button].block-button, button.block-button, .block-button a {
 	display: block;
 	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .table th, .table td {
@@ -95,4 +97,21 @@ input[type=button].block-button, button.block-button, .block-button a {
 	display: table;
 	clear: both;
 	content: '';
+}
+
+.alert {
+	clear: both;
+}
+
+.bx-wrapper {
+	@media (max-width: $screen-sm-max) {
+		margin-top: -4px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.hidden-xs {
+	    display: none !important;
+	    visibility: hidden;
+	}
 }

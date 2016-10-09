@@ -21,5 +21,22 @@
 		text-align: center;
 		float: none;
 		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
+}
+
+.product-page__carousel {
+	.jcarousel-skin-slider .jcarousel-container {
+		border: none;
+		padding: 0;
+	}
+	.jcarousel-prev, .jcarousel-next {
+		display: none !important;
+	}
+}
+
+#product_details h2 {
+	font-family: $font-family-special;
+	font-size: 14px;
 }

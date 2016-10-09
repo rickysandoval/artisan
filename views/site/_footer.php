@@ -2,8 +2,8 @@
 	<div class="full-width footer-top">
 		<div class="container-fluid" id="container">
 			<div class="span12">
-				<div class="addresshours">
-					<div id="cbinfo" class="span4">
+				<div>
+					<div id="cbinfo" class="span5">
 						<div class="footer__owner">Jeff Deutsch</div>
 						<div>311 Elk Ave </div>
 						<div>Crested Butte, CO 81224</div>
@@ -11,10 +11,10 @@
 						<div>jeff@artisanruggallery.com</div>
 					
 					</div>
-					<div class="footer-middle span4">
+					<div class="footer-middle span2">
 						<?php echo CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/css/images/logo-footer.jpg'), Yii::app()->baseUrl."/"); ?>
 					</div>
-					<div id="denverinfo" class="span4">
+					<div id="denverinfo" class="span5">
 						<div class="footer__owner">Kathy Discoe</div>
 						<div>Shops at 9th 899 N Broaday </div>
 						<div>Denver, CO 80203 </div>

@@ -163,7 +163,7 @@
 	    </div>
 
 	</div>
-	<div>
+	<div class="product-page__carousel">
 	            <?php
 		$this->widget('ext.JCarousel.JCarousel', array(
 			'dataProvider' => $model->related(),

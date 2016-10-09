@@ -3,9 +3,9 @@
 <div id="container" class="container-fluid text-center">
 
 
-<div id="menubar" class="row-fluid menu hidden-xs">
+<div id="menubar" class="row-fluid menu">
 
-	<div class="span2">
+	<div class="span2 hidden-xs">
 		<?php $this->widget('application.extensions.wsmenu.wsmenu', array(
 			'categories'=> $this->MenuTree,
 			'menuheader'=> Yii::t('global','All Rugs'),
@@ -13,7 +13,7 @@
 		)); //products dropdown menu ?>
 	</div>
 
-	<div class="span7">
+	<div class="span7 hidden-xs">
 		<?php if (count(CustomPage::model()->toptabs()->findAll()))
 			$this->widget('zii.widgets.CMenu', array(
 			'id'=>'menutabs',

@@ -26,31 +26,26 @@
 
 <?php if (count($model) > 0): ?>
 
-
 		<?php
 		$ct=-1;
-		if(strcasecmp($this->pageHeader, "tufenkian") === 0){
-			usort($model, function($a, $b)
-			{
-				return strcmp($a->attributes["title"], $b->attributes["title"]);
-			});
-		}
-
 	
 		$rowCounter = 0;
 		foreach($model as $objProduct):
-
 
 
 			if ($rowCounter===0)
 				echo '<div class="row-fluid">';
 
 			$rowCounter += 1;
+			if (isset($objProduct->family)){
+				$isTufenkian = (strcmp('Tufenkian', $objProduct->family->family) === 0);
+			} else {
+				$isTufenkian = false;
+			}
 
 			//Our product cell is a nested div, containing the graphic and text label with clickable javascript
 
-
-			if(strcasecmp($this->pageHeader, "tufenkian") === 0){
+			if($isTufenkian){
 				echo CHtml::tag('div',array(
 		        'class'=>'product_cell span'.(12/$this->gridProductsPerRow)),
 
@@ -63,30 +58,13 @@
 					    'class'=>'product_cell_label only_name_label',
 					    'onClick'=>'js:window.location.href="'.$objProduct->Link.'"'
 				        ),
-				        CHtml::link(_xls_truncate($objProduct->Title , 50), $objProduct->Link)
-		            )
-				);
-
-			}elseif($objProduct->attributes["code"] >= 6451 && $objProduct->attributes["code"] <=6543 && ($objProduct->attributes["code"] > 6508 || $objProduct->attributes["code"] < 6478)){
-				echo CHtml::tag('div',array(
-		        'class'=>'product_cell span'.(12/$this->gridProductsPerRow)),
-
-					CHtml::tag('div',array(
-				    'class'=>'product_cell_graphic',
-				    'onClick'=>'js:window.location.href="'.$objProduct->Link.'"'),
-			        CHtml::link(CHtml::image($objProduct->ListingImage), $objProduct->Link)).
-
-					CHtml::tag('div',array(
-					    'class'=>'product_cell_label product_cell_tufenkian',
-					    'onClick'=>'js:window.location.href="'.$objProduct->Link.'"'
-				        ),
 				        CHtml::link(_xls_truncate($objProduct->Title , 50), $objProduct->Link).
-				        	CHtml::tag('span',array('class'=>'lower'), "Priced by Size")
+				        	CHtml::tag('span',array('class'=>'product_cell_price'),'Call for pricing').
+				        	CHtml::tag('div',array('class'=>'product_cell_size'),$objProduct->attributes["product_size"])
 		            )
 				);
 
-
-			}
+			} 
 			else {
 
 			echo CHtml::tag('div',array(
@@ -104,7 +82,7 @@
 				        CHtml::link(_xls_truncate($objProduct->Title , 50), $objProduct->Link).
 					        CHtml::tag('span',array('class'=>'product_cell_price_slash'),$objProduct->SlashedPrice).
 					        CHtml::tag('span',array('class'=>'product_cell_price'),$objProduct->Price).
-					        CHtml::tag('span',array('class'=>'product_cell_size'), "Size: <span class='lower'>".$objProduct->attributes["product_size"]."</span")
+					        CHtml::tag('div',array('class'=>'product_cell_size'), $objProduct->attributes["product_size"])
 		            )
 				);
 			}

@@ -2939,6 +2939,9 @@ some_nowhitespace {
   margin-left: 0;
   font-size: 14px; }
 
+.product_cell_label {
+  text-transform: none; }
+
 #___plusone_0 {
   display: none !important; }
 
@@ -2972,3 +2975,10 @@ some_nowhitespace {
 #product_details h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px; }
+
+.subcategories {
+  margin-left: 0;
+  font-size: 14px; }
+
+.product_cell_label {
+  text-transform: none; }

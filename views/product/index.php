@@ -5,11 +5,11 @@
 //Note we used form-named DIVs with the Yii CHtml::tag() command so our javascript can update fields when choosing matrix items
 
 	$thisId = $model->attributes["code"];
-	$tufenkian_order = false;
-	if($thisId >= 6451 && $thisId <=6543 && ($thisId > 6508 || $thisId < 6478)){
-		$tufenkian_order = true;
+	if (isset($model->family)){
+		$isTufenkian = (strcmp('Tufenkian', $model->family->family) === 0);
+	} else {
+		$isTufenkian = false;
 	}
-
 ?>
 	<div id="product_details">
 		<h1 class="title"><?= CHtml::tag('div',array('id'=>CHtml::activeId($model,'title')),$model->Title); ?></h1>
@@ -29,8 +29,11 @@
 		            <?php if (_xls_get_conf('SHOW_TEMPLATE_CODE', true)): ?>
 	                    <h3 class="code"><?= CHtml::tag('div',array('id'=>CHtml::activeId($model,'code')),$model->code); ?></h3>
 	                <?php endif; ?>
+	                <!-- <?php if(isset($model->family)): ?>
+						<h2 class="brand">Family: <?= CHtml::link($model->family->family,$model->family->Link) ?></h2>
+					<?php endif; ?> -->
 
-	                <?php if (!$tufenkian_order): ?>
+	                <?php if (!$isTufenkian): ?>
 
 		            <?= CHtml::tag('div',array('id'=>CHtml::activeId($model,'FormattedPrice'),'class'=>'price'),$model->Price); ?>
 
@@ -62,7 +65,7 @@
 	                </div>
 	            <?php endif; ?>
 
-	            <?php if (!_xls_get_conf('DISABLE_CART', false) && !$tufenkian_order){ ?>
+	            <?php if (!_xls_get_conf('DISABLE_CART', false) && !$isTufenkian){ ?>
 		            <div class="row">
 
 			            <div class="span1" <?php echo (_xls_get_conf('SHOW_QTY_ENTRY') ? '' : 'style="display:none"'); ?>>
@@ -98,7 +101,7 @@
 				            ?>
 			            </div>
 			            <div class="fake-button ghost-button">
-				            <?php if (_xls_get_conf('ENABLE_WISH_LIST') && !$tufenkian_order)
+				            <?php if (_xls_get_conf('ENABLE_WISH_LIST') && !$isTufenkian)
 					            echo CHtml::tag('div',array(
 						            'id'=>'addToWishList',
 						            'class'=>'wishlist',
@@ -120,13 +123,13 @@
 					</div>
 
 	            <?php }
-	            elseif ($tufenkian_order){ 
+	            elseif ($isTufenkian){ 
 	            	$emailUrl = "https://shop.artisanruggallery.com/contact-us?rugID=";
 	            	$emailUrl .= $model->attributes["code"] . "&rugName=" . urlencode($model->attributes["title"]);
 	            ?>
 
 	            <div class="row">
-	            	<div class="email_to_order span7 addcart"><?php echo('<a href="' . $emailUrl . '">EMAIL TO ORDER</a>')?></div>
+	            	<div class="email_to_order"><?php echo CHtml::link('Contact for pricing and availability', array('/myaccount'.'?rugID='.$model->attributes["code"] . "&rugName=" . urlencode($model->attributes["title"])));?></div>
 
 	            </div>
 	           <?php } ?>

@@ -36,9 +36,6 @@
 		Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->cssUrl('../fancybox/jquery.fancybox.css'));
 	?>
 
-	<?php $this->widget('ext.wsiosorientationbugfix.iosorientationbugfix'); ?>
-
-	<?php $this->widget('ext.wsgoogle.wspageviews'); ?>
 	<?php echo $this->renderPartial("/site/_google",null,true); ?>
 
 

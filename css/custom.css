@@ -3161,3 +3161,19 @@ nav.info_nav ul li {
 
 #policy_links {
   margin-bottom: 40px; }
+
+#custom_content .figure_wrapper {
+  text-align: center;
+  max-width: 100%; }
+
+#custom_content figure {
+  max-width: 100%;
+  font-style: italic;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  font-size: .9em; }
+
+#custom_content figure img {
+  border: 1px solid #131313;
+  padding: 5px; }

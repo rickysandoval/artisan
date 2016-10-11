@@ -45,6 +45,21 @@
 			color: $primary-color;
 		}
 	}
+
+	@media (max-width: $screen-sm-max) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
+.nobreadcrumb-spacer {
+	border-bottom: 1px solid $border-color-light;
+	margin-bottom: 10px;
+	height: 27px;
+	@media (max-width: $screen-sm-max) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
 }
 
 

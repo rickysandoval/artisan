@@ -25,7 +25,7 @@
 	        </div>
 
 	        <div class="span4">
-	            <div class="row productheader">
+	            <div class="row-fluid productheader">
 		            <?php if (_xls_get_conf('SHOW_TEMPLATE_CODE', true)): ?>
 	                    <h3 class="code"><?= CHtml::tag('div',array('id'=>CHtml::activeId($model,'code')),$model->code); ?></h3>
 	                <?php endif; ?>
@@ -60,13 +60,13 @@
 
 
 	            <?php if ($model->IsMaster): ?>
-	                <div class="row">
+	                <div class="row-fluid">
 	                    <?= $this->renderPartial('/product/_matrixdropdown', array('form'=>$form,'model'=>$model), true); ?>
 	                </div>
 	            <?php endif; ?>
 
 	            <?php if (!_xls_get_conf('DISABLE_CART', false) && !$isTufenkian){ ?>
-		            <div class="row">
+		            <div class="row-fluid">
 
 			            <div class="span1" <?php echo (_xls_get_conf('SHOW_QTY_ENTRY') ? '' : 'style="display:none"'); ?>>
 					            <?php echo $form->labelEx($model,'intQty'); ?>
@@ -128,7 +128,7 @@
 	            	$emailUrl .= $model->attributes["code"] . "&rugName=" . urlencode($model->attributes["title"]);
 	            ?>
 
-	            <div class="row">
+	            <div class="row-fluid">
 	            	<div class="email_to_order"><?php echo CHtml::link('Contact for pricing and availability', array('/myaccount'.'?rugID='.$model->attributes["code"] . "&rugName=" . urlencode($model->attributes["title"])));?></div>
 
 	            </div>
@@ -139,12 +139,14 @@
 	        </div>
 		</div><!-- end of top row -->
 		<div class="row-fluid">
+			<?php if (strcmp($model->WebLongDescription, '') !== 0): ?>
 	        <div class="description">
 	                <h2><?= Yii::t('product', 'Product Description')?></h2>
 		            <?= CHtml::tag('div',
 			                array('id'=>CHtml::activeId($model,'description_long'),'class'=>'description'),
 			                $model->WebLongDescription); ?>
 	        </div>
+	       	<?php endif; ?>
 
 	        <div class="facebook_comments">
 		        <?php if(_xls_facebook_login() && _xls_get_conf('FACEBOOK_COMMENTS')): ?>

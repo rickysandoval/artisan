@@ -1,5 +1,4 @@
-<div class="row">
-	<legend></legend>
+<div class="row-fluid">
 	<div class="targetArea span11">
 	<?php 
 	$photos = $model->ProductPhotos;

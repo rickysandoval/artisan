@@ -66,6 +66,13 @@
 	text-align: right;
 	padding-bottom: 5px;
 	border-bottom: 1px solid $border-color-light;
+
+	@media (max-width: $screen-sm-max) {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
 }
 
 #shoppingcart {
@@ -203,8 +210,7 @@
 	.cart-item-remove {
 		position: absolute;
 		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 12px;
 	}
 }
 
@@ -223,6 +229,15 @@
 	}
 }
 
-#cartTotal {
-	
+.Edit-Cart #shoppingcarteditcart {
+	display: none;
+}
+
+.Edit-Cart #shoppingcartcheckout a {
+	background: $primary-color;
+	border-color: $primary-color;
+	&:hover {
+		background: $secondary-color;
+		border-color: $secondary-color;
+	}
 }

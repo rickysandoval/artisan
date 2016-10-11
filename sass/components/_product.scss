@@ -2,10 +2,6 @@
 	display: none !important;
 }
 
-#twitter-widget-0 {
-	display: none !important;
-}
-
 .thumbs {
 	text-align: center;
 }
@@ -39,4 +35,18 @@
 #product_details h2 {
 	font-family: $font-family-special;
 	font-size: 14px;
+}
+
+#photos .target-area {
+	margin-left: 0;
+}
+
+#Product_title {
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+	#product_details .productheader {
+	    margin-left: 0;
+	}
 }

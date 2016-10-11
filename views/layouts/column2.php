@@ -1,7 +1,16 @@
 <?php $this->beginContent('//layouts/main'); ?>
-<div class="row-fluid layout-col2">
+<?php
+$extraClass = '';
+if (count($this->breadcrumbs) !== 0) {
+	reset($this->breadcrumbs);
+	$extraClass = str_replace(' ', '-', key($this->breadcrumbs));
+}
+?>
+<div class="row-fluid layout-col2 <?php echo $extraClass; ?>">
 	<div class="span9">
-
+		<?php if (count($this->breadcrumbs) === 0): ?>
+		<div class="nobreadcrumb-spacer"></div>
+		<?php endif; ?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 	        'links'=>$this->breadcrumbs,
 			'homeLink'=>CHtml::link(CHtml::image(Yii::app()->theme->baseUrl.'/css/images/breadcrumbs_home.png'), array('/site/index')),

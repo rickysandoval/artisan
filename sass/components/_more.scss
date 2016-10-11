@@ -1,0 +1,60 @@
+/** Info pages nav **/
+nav.info_nav {
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+nav.info_nav ul {
+	margin: 0;
+	display: block;
+	width: 100%;
+	list-style-type: none;
+}
+nav.info_nav ul li {
+	margin-bottom: 0px;
+	display: inline-block;
+}
+#custom_content nav.info_nav ul li a {
+	text-decoration: none;
+	padding: 2px 6px;
+	font-weight: bold;
+}
+
+
+/** Quesiton and Answer Page **/
+#FAQ_page { margin-top: 10px; padding-left: 20px;}
+#FAQ_list {
+	margin: 10px 0 50px 10px;
+}
+#FAQ_list, #FAQ_list ul {
+	font-size: 1em;
+	list-style-type: none;
+}
+#FAQ_list ul li {
+	display: block;
+	position: relative;	
+}
+
+#FAQ_list ul li.question {
+	font-weight: bold;
+	color: #0089A3;
+}
+#FAQ_list ul li.question.active {
+	color: grey;
+}
+
+#FAQ_list ul li.answer {
+	padding: 5px 0 10px 20px;
+}
+
+/** CLeaning and Care Page **/
+#cleaning_page { padding-left: 20px; margin-top: 10px; }
+#cleaning_page h2 { margin: 0; padding: 0 10px}
+#cleaning_page p { padding-left: 0 10px; }
+
+/***** Policies Page ******/
+#policy_page { margin-top: 10px; }
+.policy_content { padding: 25px; margin:25px; border: 1px solid $border-color-light;}
+.small{ font-size: 75%; padding-bottom: 25px; }
+#policy_links a { text-decoration:none;  padding: 2px 10px; }
+#policy_links {margin-bottom: 40px; }

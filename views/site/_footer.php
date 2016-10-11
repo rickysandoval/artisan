@@ -1,7 +1,7 @@
-<div id="footer" class="row-fluid">
-	<div class="full-width footer-top">
+<div id="footer">
+	<div class="full-width">
 		<div class="container-fluid" id="container">
-			<div class="span12">
+			<div class="footer-top row-fluid">
 				<div>
 					<div id="cbinfo" class="span5">
 						<div class="footer__owner">Jeff Deutsch</div>
@@ -25,9 +25,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="full-width footer-bottom">
+	<div class="full-width">
 		<div class="container-fluid" id="container">
-			<div class="row-fluid footer__bottom">
+			<div class="row-fluid footer-bottom">
 				<div class="bottomtabs span4">
 					<?php
 						foreach (CustomPage::model()->bottomtabs()->findAll() as $arrTab)

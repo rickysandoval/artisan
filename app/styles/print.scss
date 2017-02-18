@@ -1,0 +1,116 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+a:after { content:''; }
+a[href]:after { content: none !important; }
+.button,.slick-prev,.slick-next,a,.footer,.mod-footer,.form,.menu-location,.tab-content,.mod-fall-sale{
+	display:none !important;
+}
+.mod-logo-img .item img{
+	min-height: 0px !important;
+}
+.row > *,.pull-right,.pull-left,.mod-work-hard .row .col-sm-4{
+	float: none !important;
+	width: auto !important;
+}
+.slick-track{
+	width: auto !important;
+	transform: translate3d(0, 0, 0) !important;
+	-webkit-transform: translate3d(0, 0, 0) !important;
+}
+.slick-slider .slick-track, .slick-slider .slick-list{
+	width: auto !important;
+	transform: translate3d(0, 0, 0) !important;
+	-webkit-transform: translate3d(0, 0, 0) !important;
+}
+.mod-story {
+	margin-top:50px !important;
+	h2{
+		max-width:100% 	!important;
+	}
+	p{
+		max-width:100% 	!important;
+	}
+} 
+.slick-slider .slick-track, .slick-slider .slick-list{
+	padding:0px !important;
+}
+.mod-story .item{
+	display: block !important;
+	height:auto !important;
+	width:auto !important;
+	margin-bottom:30px !important;
+}
+.mod-faq .question .info{
+	display:block !important;
+}
+.mod-faq .item{
+	width:100% !important;
+}
+.table-cell{
+	display:block !important;
+}
+.banner-internal h1{
+	margin:0px !important;
+}
+.mod-info-post .desc-post quote{
+	padding:0px !important;
+}
+.mod-post-seen{
+	padding:0px !important;
+}
+.mod-slide .slide-container .slide-image{float: none !important;width: auto !important;height:auto !important;}
+.mod-img-learnmore .item .contain-img .bottom-text{bottom:50px !important;}
+.table-div,.table-cell{
+	display: block !important;
+}
+.mod-info-post{
+	margin:0px!important;
+	padding:70px 0 0 0 !important;
+}
+.banner-internal{
+	height:  auto !important;
+}
+.mod-banner .item{
+	height: auto !important;
+	width: 100% !important;
+}
+.mod-contact .item-location{
+	width: 100% !important;
+}
+.mod-contact .item{
+	width:100% !important;
+	img{
+		display: none !important;
+	}
+}
+.mod-contact .location-detail .address{
+	max-width:100% !important;
+
+}
+.table{
+	display:block !important;
+}
+.table-cell{
+	display:block !important;
+}
+.mod-info-home{
+	padding:40px  0 0 !important;
+}
+.mod-slide-home .item .info{
+	display:block !important;
+}
+.mod-slide-home  .info-rug{
+	display: none !important;
+}
+.mod-story{
+	height: auto !important;
+}
+.mod-seen .item{
+	width:100% !important;
+	float:none !important;
+	position: relative!important;
+	left: 0px !important;
+	top:auto !important;
+
+}

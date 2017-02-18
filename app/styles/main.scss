@@ -1,0 +1,110 @@
+/****************************************************************************************
+Description: Biên dịch các file được import thành 1 file CSS
+*****************************************************************************************/
+@import "tools/settings";
+@import "tools/functions";
+@import "tools/mixins";
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+
+// Base
+@import "ultils/font";
+@import "base/base";
+@import "base/form";
+@import "ultils/helpers";
+@import "ultils/responsive";
+
+
+// Component
+@import "component/customform";
+
+// Modules
+
+@import "../modules/header/menu/style";
+
+//Banner
+@import "../modules/banner/style";
+
+
+//Button
+@import "../modules/button/style";
+
+//Info
+@import "../modules/info-desc/style";
+
+@import "../layout/all-page/header/style";
+//Story
+@import "../modules/story-home/style";
+
+
+//Fall Sale
+@import "../modules/fall-sale/style";
+//Set us
+
+@import "../modules/set-us/style";
+//Features
+@import "../modules/features/style";
+//Team
+@import "../modules/mod-team/style";
+
+//Location
+
+@import "../modules/location/style";
+
+//Contact
+@import "../modules/contact/style";
+
+
+//Feature Home
+@import "../modules/feature-home/style";
+
+
+//Collection Special
+@import "../modules/collection-special/style";
+
+
+//Subcribe
+@import "../modules/subcribe/style";
+
+
+
+//Vendor Image
+@import "../modules/mod-vendor/style";
+
+//Designers
+@import "../modules/designers/style";
+
+//Seen In
+
+@import "../modules/mod-seen/style";
+// Slide Home
+@import "../modules/slide-home/style";
+
+
+//Menu Mobile
+@import "../modules/menu-mobile/style";
+//Faq
+@import "../modules/mod-faq/style";
+//Footer
+
+@import "../modules/footer/style";
+//Post
+@import "../modules/post/style";
+
+
+//Clean
+@import "../modules/mod-clean/style";
+
+
+// Layout
+@import "layout/layout";
+@import "../layout/what-rug/style";
+@import "../layout/about/style";
+@import "../layout/service/style";
+@import "../layout/clean/style";
+
+
+
+// Hack
+@import "ultils/hack";

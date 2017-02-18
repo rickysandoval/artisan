@@ -1,0 +1,128 @@
+.mod-location{
+	.item{
+		width: 50%;
+		float:left;
+		height: 800px;
+		background-size:cover;
+		text-align: center;
+		position: relative;
+		&:hover,&:focus,&.active{
+			.bg-hover{
+				-webkit-transition:all 500ms;
+				transition:all 500ms;
+				opacity: 0.85;
+			}
+			p{
+				-webkit-transition:all 500ms;
+				transition:all 500ms;
+				opacity: 1;
+			}
+		}
+	}
+	h2{
+		@include font($fontMt,24px,#fff,700);
+		text-transform: uppercase;
+		position: relative;
+		line-height: 35px;
+		margin-bottom:20px;
+		margin-top:0px;
+		text-align:center;
+		letter-spacing: 2px;
+		&:after{
+			position: absolute;
+			@include sizeEx(80px,2px);
+			background: #f6decc;
+			bottom:-5px;
+			left: 50%;
+			margin-left:-40px;
+			content:"";
+		}
+	}
+	.info-location{
+		max-width: 480px;
+		text-align:left;
+		margin:0 auto;
+		@include font($fontMt,15px,#fff,400);
+		line-height: 24.97px;
+		position: relative;
+		z-index: 2;
+		p{
+			-webkit-transition:all 500ms;
+			transition:all 500ms;
+			opacity: 0;
+		}
+	}
+	.bg-hover{
+		background: #ad2a3c;
+		@include position(absolute,0px,0px,0px,0px);
+		@include sizeEx(100%);
+		-webkit-transition:all 500ms;
+		transition:all 500ms;
+		border:23px solid #892d3b;
+		opacity: 0;
+	}
+}
+.location-full{
+	.info-location{
+		text-align:center;
+		@include font($fontMr,15px,#fff,400);
+		line-height:40px;
+	}
+	h2{
+		font-size:30px;
+		line-height:auto;
+		opacity:0;
+		-webkit-transition:all 500ms;
+		transition:all 500ms;
+	}
+	.item{
+		&:hover,&:focus,&.active{
+			h2{
+				opacity:1;
+				-webkit-transition:all 500ms;
+				transition:all 500ms;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1410px) {
+	.mod-location .info-location{
+		max-width: 100%;
+		padding:0 25px;
+	}
+}
+@media only screen and (max-width: $screen-sm) {
+	.mod-location {
+		.item{
+			width: 100%;
+			float:none;
+			p{
+				opacity: 1;
+				display: none;
+			}
+			&:hover{
+				p{
+					display:block;
+				}
+			}
+		}
+		h2{
+			font-size:50px;
+		}
+		.info-location{
+			font-size:25px;
+			line-height: 50px;
+			max-width: 520px;
+		}
+	} 
+}
+@media only screen and (max-width: 520px) {
+	.mod-location{
+		.info-location{
+			font-size: 16px;
+			line-height: 40px;
+			max-width: 100%;
+			padding:0 30px;
+		}
+	}
+}

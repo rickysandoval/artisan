@@ -1,0 +1,140 @@
+.mod-fall-sale{
+	border-top:3px solid #ec3b32;
+	.col-sm-5,.col-sm-7{
+		padding:0px;
+
+	}
+	.item{
+		position: relative;
+		overflow: hidden;
+		img{
+			max-width:none;
+			width:100%;
+		}
+	}
+	.wrap-fall-sale{
+		background: url(../images/rug-banner.jpg) repeat;
+		text-align: center;
+		.fall-sale-info{
+			max-width: 375px;
+			margin:0 auto;
+			text-align: center;
+		}
+		a{
+			@include font($fontMt,15px,#fff,400);
+			text-decoration: none;
+			letter-spacing: 3px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		h3{
+			@include font($fontCb,108.55px,#fff);
+			text-transform: uppercase;
+			border:7px solid #fff;
+			padding:112px 0px;
+			position: relative;
+			z-index: 2;
+			letter-spacing: 1px;
+			line-height: 109px;
+			&:after{
+				background:#1a1a1a;
+				opacity: 0.09;
+				position: absolute;
+				@include sizeEx(100%);
+				content:"";
+				left:0px;
+				top:0px;
+			}
+			span{
+				font-family: $fontCr;
+				z-index: 2;
+				position: relative;
+			}
+			p{
+				z-index: 2;
+				margin:0px;
+				position: relative;
+			}
+		}
+	}
+}
+.table{
+	display: table;
+	height: 100%;
+	margin-bottom: 0px;
+}
+.table-cell{
+	vertical-align: middle;
+	display: table-cell;
+}
+@media only screen and (max-width: 1200px) {
+	.mod-fall-sale{
+		.wrap-fall-sale{
+			.fall-sale-info{
+				max-width: 100%;
+				padding:0 20px;
+			}
+			h3{
+				padding:50px 0;
+			}
+			
+		}
+	}
+}
+@media only screen and (max-width:990px) {
+	.mod-fall-sale .item{
+		img{
+			position: absolute;
+			width: 1300px;
+			left: 50%;
+			margin-left: -765px;
+			top:-200px;
+		}
+	}
+}
+@media only screen and(max-width: $screen-sm) {
+	.mod-fall-sale {
+		.item{
+			height: auto !important;
+			padding:60px 0 45px;
+		}
+		.wrap-fall-sale{
+			h3{
+				font-size: 128.37px;
+			}
+			.fall-sale-info{
+				max-width: 460px;
+			}
+			a{
+				display: block;
+				margin-top:30px;
+				font-size: 21px;
+			}
+		}
+	} 
+}
+@media only screen and (max-width:680px) {
+	.mod-fall-sale{
+		.wrap-fall-sale {
+			a{
+				font-size: 16px;
+			}
+		} 
+	}
+}
+@media only screen and(max-width: 520px){
+	.mod-fall-sale{
+		.wrap-fall-sale {
+			h3{
+				font-size: 90px;
+				line-height:95px;
+			}
+			.fall-sale-info{
+				max-width: 100%;
+				padding:0 15px;
+			}
+			
+		} 
+	}
+}

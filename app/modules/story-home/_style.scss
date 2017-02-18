@@ -1,0 +1,120 @@
+.mod-story{
+	.item{
+		background-size:cover;
+		text-align: center;
+		height:515px;
+		display: table;
+		width: 100%;
+		background-position: center center; 
+		@include font($fontMt,15px,#fff,400);
+		line-height:30px;
+	}
+	h2{
+		@include font($fontMt,36px,#fff,700);
+		text-transform: uppercase;
+		position: relative;
+		line-height: 60px;
+		max-width:1300px;
+		padding:0 20px;
+		letter-spacing: 1px;
+		margin:0 auto 40px;
+		&:after{
+			position: absolute;
+			@include sizeEx(160px,4px);
+			background: #ef4036;
+			bottom:-10px;
+			left: 50%;
+			margin-left:-80px;
+			content:"";
+		}
+		
+	}
+	p{
+		max-width:800px;
+		margin:0 auto;
+		padding:0 20px;
+	}
+	.slick-next,.slick-prev{
+		background: #fff url(../images/right.png) repeat center center;
+		@include sizeEx(75px);
+		margin-top:-65px;
+		display: inline-block;
+		box-shadow: 1px 1px 1px #e3e1e0;
+	}
+	.slick-next{
+		right:0px;
+		box-shadow: -1px 1px 1px #e3e1e0;
+		&:before{
+			display:none;
+		}
+		&:hover{
+			background: #ef4036 url(../images/right.png) repeat center center;
+		}
+	}
+	.slick-prev{
+		background: #fff url(../images/left.png) repeat center center;
+		left:0px;
+		&:before{
+			display:none;
+		}
+		&:hover{
+			background: #ef4036 url(../images/left.png) repeat center center;
+		}
+	}
+	.table-cell{
+		@include sizeEx(100%);
+	}
+}
+.story-different{
+	h2{
+		&:after{
+			background:#fff9e2;
+		}
+	}
+}
+.different-info{
+	.button.border{
+		color:#a6968f;
+		border:4px solid #a6968f;
+		width: 236px;
+		&:hover{
+			color:#ef4036;
+			border: 4px solid #ef4036;
+			text-decoration: none;
+		}
+	}
+}
+.story-line-white{
+	h2:after{
+		background:#fff9e2;
+	}
+}
+@media only screen and (max-width: $screen-sm) {
+	.mod-story{
+		h2{
+			font-size:30px;
+			line-height: 59.82px;
+			padding:0 20px;
+		}
+		.slick-next,.slick-prev{
+			@include sizeEx(61px,94px);
+			&:before{
+				font-size:50px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 520px) {
+	.mod-story{
+		h2{
+			font-size:24px;
+			line-height: 40px;
+		}
+		.slick-next,.slick-prev{
+			@include sizeEx(30px,60px);
+			&:before{
+				font-size:30px;
+			}
+		}
+	}
+}

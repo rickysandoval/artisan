@@ -1,0 +1,163 @@
+.header-menu{
+	float:right;
+	ul{
+		padding:0px;
+		margin:0px;
+		list-style: none;
+
+	}
+	li{
+		float:left;
+		zoom:1;
+		padding:0px 30px;
+		position: relative;
+		>ul{
+			position: absolute;
+			width: 190px;
+			margin-top:0;
+			margin-left:-95px;
+			left:50%;
+			display: none;
+			&:before{
+				background:url(../images/icon-muiten.png) no-repeat;
+				@include sizeEx(59px,32px);
+				content:"";
+				position: absolute;
+				top:-9px;
+				left:50%;
+				margin-left:-30px;
+			}
+			&:after{
+				background:#ef4036;
+				@include sizeEx(100%,4px);
+				content:"";
+				position: absolute;
+				top:0px;
+				left:0%;
+			}
+			>li{
+				display: block;
+				letter-spacing:2px;
+				background: #f2f0ef;
+				width: 100%;
+				border-bottom:1px solid #cac3c0;
+				padding:15px;
+				>a{
+					line-height: 23px;
+					font-weight: 400;
+					display: block;
+					text-decoration: none;
+					padding:0px;
+					outline:0px !important;
+				}
+				&:hover,&.active{
+					background: #ef4036;
+					a{
+						color:#fff;
+						font-weight:700;
+						border-bottom: 0px;
+					}
+				}
+				&:last-child{
+					border-bottom: 0px;
+				}
+				&:first-child{
+					padding:15px;
+				}
+			}
+		}
+		&:first-child{
+			padding:0 30px 0 0;
+		}
+	}
+	a{
+		@include font($fontMt,12px,#8c7e78,400);
+		text-transform: uppercase;
+		line-height: 80px;
+		text-decoration: none !important;
+		padding-bottom:3px;
+		letter-spacing:2px;
+		&:hover{
+			color:#a98783;
+			font-weight:700;
+		}
+		img{
+			margin-top:-10px;
+			margin-left:3px;
+		}
+	}
+	li.current-menu-item,li:hover{
+		>a{
+			color:#ef4036;
+			border-bottom: 1px solid #ef4036;
+			font-weight:700;
+		}
+	}
+	li.active,li:hover{
+		>ul{
+			display: block;
+		}
+	}
+	.sign-in{
+		background:#f2f0ef;
+		border-left:1px solid #a6968f;
+		&:hover{
+			background:#a6968f;
+			border-left:1px solid #a6968f;
+			a{
+				color:#fff;
+				border-bottom:0px;
+			}
+		}
+	}
+}
+@media only screen and (max-width:1750px) {
+	.header-menu li{
+		padding:0 20px;
+		&:first-child{
+			padding-right:20px;
+		}
+	}
+}
+@media only screen and (max-width:1480px) {
+	.header-menu li{
+		padding:0 10px;
+		&:first-child{
+			padding-right:10px;
+		}
+	}
+}
+@media only screen and (max-width:1300px) {
+	.header-menu a{
+		font-size:10px;
+	}
+}
+@media only screen and (max-width:1120px) {
+	.header-menu a{
+		font-size:8px;
+	}
+}
+@media only screen and (max-width:995px) {
+	.header-menu li{
+		padding:0 5px;
+		&:first-child{
+			padding-right:5px;
+		}
+	}
+	.header-menu a{
+		line-height:50px;
+	}
+}
+@media only screen and (max-width:861px) {
+	.header-menu a{
+		font-size:7px;
+	}
+	.header-menu li{
+		padding:0 3px;
+		&:first-child{
+			padding-right:3px;
+		}
+	}
+}
+
+

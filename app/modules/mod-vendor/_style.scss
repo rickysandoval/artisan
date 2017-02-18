@@ -1,0 +1,43 @@
+.mod-vendor{
+	padding:70px 25px 75px;
+	background:#fafafa;
+	.wrap-vendor{
+		max-width:1500px;
+		margin:0 auto;
+
+	}
+	.wrap-product {
+		text-align:center;
+		a{
+			display:inline-block;
+			padding:20px 30px;
+			vertical-align:middle;
+			&:first-child{
+				padding-left:0px;
+			}
+			&:last-child{
+				padding-right:0px;
+			}
+			img{
+				max-width:90%;
+			}
+		}
+	}
+	h2{
+		@include font($fontMt,30px,#a6968f,700);
+		text-transform: uppercase;
+		position: relative;
+		line-height: 30px;
+		margin:0 auto 40px;
+		text-align:center;
+		&:after{
+			position: absolute;
+			@include sizeEx(80px,2px);
+			background: #4e4745;
+			bottom:-20px;
+			left: 50%;
+			margin-left:-40px;
+			content:"";
+		}
+	}
+}

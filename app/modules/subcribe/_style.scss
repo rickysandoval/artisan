@@ -1,0 +1,53 @@
+.mod-subcribe{
+	padding:80px 20px 70px;
+	@include font($fontMr,16px,#868686,400);
+	background:#f8f8f8;
+	.wrap-content{
+		max-width:780px;
+		margin:0 auto;
+		display: block;
+		text-align:center;
+	}
+	h2{
+		@include font($fontMt,24px,#a6968f,700);
+		text-transform: uppercase;
+		position: relative;
+		line-height: 35px;
+		max-width:800px;
+		margin:0 auto 40px;
+		&:after{
+			position: absolute;
+			@include sizeEx(120px,5px);
+			background: #685f5c;
+			bottom:-20px;
+			left: 50%;
+			margin-left:-60px;
+			content:"";
+		}
+		
+	}
+	.form-control{
+		height:60px;
+		@include font($fontMt,15px,#868686,400);
+		box-shadow:none;
+		border-radius:0px;
+		border:1px solid #efefef;
+		padding:6px 170px 6px 20px;
+		letter-spacing:2px;
+	}
+	.form-group{
+		position:relative;
+		margin-top:30px;
+	}
+	.button.no-border{
+		@include sizeEx(150px,60px);
+		font-size:15px;
+		position:absolute;
+		top:0px;
+		right:0px;
+		line-height:50px;
+		letter-spacing:2.5px;
+		border:0px;
+		border-radius:0px;
+	}
+}

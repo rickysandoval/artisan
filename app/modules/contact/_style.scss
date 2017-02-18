@@ -1,0 +1,245 @@
+.mod-contact{
+	.menu-location{
+		ul{
+			padding:0px;
+			margin:0px;
+		}
+		li{
+			list-style: none;
+			width: 50%;
+			float:left;
+			background: #eae8e7;
+			line-height: 20px;
+			padding:37px 0px;
+			text-align:center;
+			position: relative;
+			cursor: pointer;
+			&:hover,&.active{
+				background:#fff;
+				&:after{
+					display:block;
+				}
+				a{
+					color:#685f5c;
+				}
+			}
+			&:after{
+				background: url(../images/drop-down.png) no-repeat;
+				@include sizeEx(68px,24px);
+				position: absolute;
+				left:50%;
+				margin-left: -34px;
+				content: "";
+				bottom: -24px;
+				display: none;
+			}
+			&:first-child{
+				padding:37px;
+			border-right:2px solid #afa8a6;
+				
+			}
+		}
+		a{
+			@include font($fontMt,15px,#a8a29f,700);
+			text-align: center;
+			text-decoration: none;
+			letter-spacing: 2px;
+			background: none;
+			background-image:none; 
+			background-color:transparent !important;
+			border:0px !important; 
+		}
+	}
+	.item{
+		width: 50%;
+		float:left;
+		overflow:hidden;
+		position: relative;
+		img{
+			position: absolute;
+			@include sizeEx(100%);
+		}
+	}
+	.location-detail{
+		background: #fff;
+		padding:0px 0 0px;
+		.address{
+			padding-top:70px;
+			max-width: 730px;
+			display: block;
+			margin:0 auto;
+		}
+	}
+	.item-location{
+		width: 50%;
+		float:left;
+		@include font($fontMr,15px,#868686,400);
+		line-height: 25px;
+		p{
+			margin:0px;
+			a{
+				@include font($fontMr,15px,#868686,400);
+				text-decoration: none;
+				&:hover{
+					color:#ef4036;
+				}
+			}
+		}
+		.line{
+			width: 75%;
+			height:1px;
+			margin:20px 0;
+			background: #685f5c;
+		}
+	}
+	h3{
+		@include font($fontMt,20px,#373737,700);
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		letter-spacing: 2px;
+	}
+	.form-control{
+		resize:none;
+		border:1px solid #d7d7d7;
+		border-radius:0px;
+		height:50px;
+		box-shadow:inset 1px 1px 0px rgba(0, 0, 0, 0.075);
+		@include font($fontMr,15px,#868686);
+		&:focus{
+			box-shadow:inset 1px 1px 0px rgba(0, 0, 0, 0.075);
+		}
+	}
+	.name{
+		.form-control{
+			width: 46%;
+			float:left;
+		}
+	}
+	textarea.form-control{
+		height:115px;
+	}
+	.form{
+		margin-top:70px;
+	}
+	button.no-border{
+		margin-top:10px;
+		float:right;
+		border:0px;
+		box-shadow: none;
+		margin-bottom:50px;
+		display:block;
+		font-size:14px;
+		@include sizeEx(260px,60px);
+		line-height:60px;
+	}
+	.form-group{
+		margin-bottom:25px;
+	}
+	.line{
+		background:#BDBCBA;
+		width:120%;
+		height:2px;
+		margin-top:40px;
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.mod-contact .location-detail .address{
+		max-width:100%;
+		padding:0 50px;
+	}
+}
+@media only screen and (max-width: 1210px) {
+	.mod-contact .location-detail .address{
+		max-width: 100%;
+		padding:70px 15px 0;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.mod-contact {
+		.item-location{
+			font-size: 10px;
+			p{
+				a{
+					font-size: 10px;
+				}
+			}
+		}
+		h3{
+			font-size: 15px;
+			margin-bottom: 25px;
+		}
+		.menu-location{
+			li{
+				padding:20px 0;
+				line-height:14px;
+				a{
+					font-size:12px;
+				}
+				&:first-child{
+					padding:20px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width:$screen-sm) {
+	.mod-contact {
+		.item{
+			width: 100%;
+			height:auto !important;
+		}
+		.item-location{
+			display:none;
+			font-size: 25px;
+			line-height: 50px;
+			width:100%;
+			float:none;
+			.line{
+				width:160px;
+			}
+			p{
+				a{
+					font-size: 25px;
+					line-height: 50px;
+				}
+			}
+		}
+		.tab-content{
+			.item-location{
+				display:none;
+				&.active{
+					display:block;
+				}
+			}
+		}
+		.location-detail {
+			.address{
+				padding:0 15px;
+			}
+		}
+		.tab-content{
+			padding:90px 15px 0;
+		}
+		.form-control{
+			font-size: 20px;
+			height:60px;
+		} 
+		textarea.form-control{
+			height:150px;
+		}
+		h3{
+			font-size: 35px;
+			margin-bottom:30px;
+		}
+		button.no-border{
+			font-size: 21px;
+			@include sizeEx(307px,91px);
+		}
+		.form{
+			margin-top:40px;
+		}
+	}
+}
+

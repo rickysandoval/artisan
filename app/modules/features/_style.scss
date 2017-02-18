@@ -1,0 +1,140 @@
+.mod-features{
+	padding:20px 0 40px;
+	background: #f4f1ef;
+	.slideItem{
+		display: block;
+		margin:0 auto;
+		padding:0 250px;
+		img{
+			width: 100%;
+		}
+	}
+	.item{
+		padding:0 30px;
+		a{
+			cursor:pointer;
+			display:block;
+		}
+	}
+	h2{
+		@include font($fontMt,24px,#a6968f,700);
+		text-transform: uppercase;
+		position: relative;
+		line-height: 35px;
+		margin-bottom:50px;
+		&:after{
+			position: absolute;
+			@include sizeEx(118px,2px);
+			background: #685f5c;
+			bottom:-10px;
+			left: 50%;
+			margin-left:-59px;
+			content:"";
+		}
+	}
+	p{
+		@include font($fontMt,15.05px,#a6968f,700);
+		margin:30px 0px 0px 0;
+		line-height: 22.57px;
+	}
+	span{
+		@include font($fontMt,15.05px,#373737,700);
+		line-height: 22.57px;
+	}
+	.slick-next,.slick-prev{
+		background: #fff url(../images/right.png) repeat center center;
+		@include sizeEx(75px);
+		margin-top:-65px;
+		display: inline-block;
+		box-shadow: 1px 1px 1px #e3e1e0;
+	}
+	.slick-next{
+		right:0px;
+		box-shadow: -1px 1px 1px #e3e1e0;
+		&:before{
+			display:none;
+		}
+		&:hover{
+			background:  #a6968f url(../images/right-hover.png) repeat center center;
+		}
+	}
+	.slick-prev{
+		background: #fff url(../images/left.png) repeat center center;
+		left:0px;
+		&:before{
+			display:none;
+		}
+		&:hover{
+			background: #a6968f url(../images/left-hover.png) repeat center center;
+		}
+	}
+}
+@media only screen and (max-width:1440px) {
+	.mod-features {
+		.slick-prev{
+		margin-left: 0px;
+		}
+		.slideItem{
+			padding:0 30px;
+			.item{
+				padding:0 15px;
+			}
+		}
+	}
+}
+@media only screen and (max-width:1100px) {
+	.mod-features {
+		.slick-prev,.slick-next{
+			@include sizeEx(60px);
+			&:before{
+				font-size:40px;
+			}
+		}
+	}
+}
+@media only screen and (max-width:$screen-sm) {
+	.mod-features{
+		padding:180px 0;
+		.slick-next,.slick-prev{
+			@include sizeEx(61px,94px);
+			&:before{
+				font-size:50px;
+			}
+		}
+		p{
+			font-size:30px;
+			line-height: 100%;
+		}
+		span{
+			font-size: 25px;
+			line-height: 150%;
+		}
+		.slideItem {
+			.item{
+				padding:0 87px;
+			}
+		}
+		h2{
+			font-size:40px;
+		}
+	}
+}
+@media only screen and (max-width:520px) {
+	.mod-features {
+		.slick-next,.slick-prev{
+			@include sizeEx(30px,60px);
+			&:before{
+				font-size:30px;
+			}
+		}
+		.slideItem {
+			.item{
+				padding:0 25px;
+			}
+		}
+		h2{
+			font-size:24px;
+		}
+	}
+}
+

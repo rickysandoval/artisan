@@ -1,0 +1,79 @@
+.info-what-rug.mod-part{
+	h2{
+		text-align:left;
+		&:after{
+			left:0px;
+			margin:0px;
+		}
+	}
+	.item:first-child{
+		width:50%;
+	}
+	.item{
+		width:50%;
+	}
+	img{
+		width:100%;
+		height:100%;
+	}
+	.wrap-info-home{
+		padding:40px 20px;
+		max-width:645px;
+	}
+}
+.finish-rug.mod-part{
+	.wrap-info-home{
+		padding:0px 25px 0px;
+	}
+	.item:first-child{
+		width:100%;
+		text-align:center;
+		height:auto !important;
+		padding:40px 20px;
+	}
+	a{
+		margin:20px auto 50px;
+	}
+}
+.finish-rug.info-rug-clean{
+	.button.border-brown{
+		@include sizeEx(480px,69px);
+	}
+}
+@media only screen and (max-width:1280px) {
+	.finish-rug.info-rug-clean{
+		.button.border-brown{
+			@include sizeEx(360px,50px);
+			line-height:45px;
+		}
+	}
+}
+@media only screen and (max-width:$screen-sm) {
+	.info-what-rug.mod-part .item:first-child{
+		width:100%;
+		padding:40px 20px 60px;
+	}
+	.finish-rug.mod-part .item:first-child{
+		padding:40px 20px 60px;
+	}
+	.info-what-rug.mod-part h2{
+		text-align:center;
+		&:after{
+			left:50%;
+			margin-left:-59px;
+		}
+	}
+	.info-what-rug.mod-part .wrap-info-home{
+		padding:40px 30px 60px;
+		max-width:100%;
+	}
+	.what-set-part .button.border{
+		line-height:65px;
+	}
+}
+@media only screen and (max-width:600px) {
+	.finish-rug.info-rug-clean .button.border-brown{
+		font-size:11px;
+		width:305px;
+	}
+}

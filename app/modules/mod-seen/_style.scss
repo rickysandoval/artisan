@@ -1,0 +1,254 @@
+.mod-seen{
+	background: #fff;
+	padding:70px 70px 30px;
+	.item{
+		float: left;
+		width: 33.33%;
+		margin-bottom:40px;
+		@include font($fontMr,15px,#868686,400);
+		line-height: 30px;
+		padding:0 17px;
+	}
+	.wrap-seen{
+		max-width:1440px;
+		display: block;
+		margin:0 auto;
+	}
+	h3{
+		@include font($fontMt,17.52px,#373737,700);
+		margin:0px;
+		line-height: 25.03px;
+		margin:5px 0 15px;
+		letter-spacing: 2px;
+	}
+	span{
+		@include font($fontMr,12.52px,#a6968f,700);
+		line-height: 14.28px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	a{
+		@include font($fontMt,14px,#a6968f,700);
+		text-decoration: none;
+		text-transform: uppercase;
+		position: relative;
+		letter-spacing: 1.5px;
+		&:before{
+			background:#d2cac7;
+			@include sizeEx(107%,1px);
+			bottom:1px;
+			content:"";
+			position: absolute;
+		}
+		&:hover{
+			color:#ef4036;
+			text-decoration: none;
+			&:before{
+				background:#ef4036;
+			}
+		}
+	}
+	.box{
+		padding:20px 35px;
+		box-shadow: inset -2px -2px 0px rgba(0, 0, 0, 0.075);
+	}
+	.quote{
+		color:#fff;
+		p{
+			position: relative;
+			&:before{
+				background:url(../images/quote.png) no-repeat;
+				position: absolute;
+				content: "";
+				@include sizeEx(17px,13px);
+				top:-35px;
+				
+			}
+		}
+		.box{
+			padding:80px 90px 50px;
+			box-shadow: none;
+			background: #a6968f;
+		}
+		h3{
+			font-size:15px;
+			color:#fff;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			text-align:right;
+			margin:10px 0 5px;
+			padding-left: 55px;
+			position: relative;
+			&:before{
+				content:"";
+				position: absolute;
+				background: #e4e4e4;
+				@include sizeEx(50px,3px);
+				left:0px;
+				top:12px;
+			}
+		}
+	}
+	h2{
+		@include font($fontMt,24px,#a6968f,700);
+		text-transform: uppercase;
+		position: relative;
+		line-height: 60px;
+		margin-bottom:50px;
+		&:after{
+			position: absolute;
+			@include sizeEx(118px,4px);
+			background: #ef4036;
+			bottom:-10px;
+			left: 50%;
+			margin-left:-59px;
+			content:"";
+		}
+	}
+}
+.mod-post-seen{
+	padding:70px;
+	a{
+		margin:25px 0 20px;
+		display:inline-block;
+		overflow:hidden;
+	}
+}
+@media only screen and (max-width: 1440px) {
+	.mod-seen{
+		padding:70px 30px;
+		.quote{
+			.box{
+				padding:80px 50px 50px;
+			}
+		}
+		.box{
+			padding:20px;
+		}
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.mod-seen{
+		.quote{
+			.box{
+				padding:70px 30px 50px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 950px) {
+	.mod-seen{
+		padding:70px 15px;
+		.box{
+			padding:20px 10px;
+		}
+
+		.item{
+			font-size:12px;
+			line-height: 22px;
+		}
+		h3{
+			font-size:15px;
+		}
+		a{
+			font-size: 12px;
+		}
+	}
+}
+@media only screen and (max-width: 900px) {
+	.mod-seen{
+		.quote{
+			.box{
+				padding:70px 30px 30px;
+			}
+			h3{
+				font-size: 13px;
+				line-height: 22px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: $screen-sm) {
+	.mod-seen{
+		padding:10px 0;
+		.item{
+			width: 100%;
+			float:none;
+			line-height: 50px;
+			font-size: 25px;
+			margin-bottom:25px;
+			img{
+				width: 100%;
+			}
+		}
+		span{
+			font-size: 22px;
+			font-weight:400;
+		}
+		h3{
+			font-size:35px;
+			line-height: 150%;
+			margin:20px 0 30px;
+		}
+		a{
+			margin-top:30px;
+			font-size: 25px;
+			display: inline-block;
+		}
+		.quote{
+			.box{
+				padding:70px 0px 50px;
+				p{
+					max-width: 450px;
+					margin:0 auto;
+				}
+			}
+			h3{
+				font-size: 25px;
+				max-width: 450px;
+				margin-left: auto;
+				margin-right:auto;
+				padding-left: 85px;
+				margin-top:40px;
+				line-height: 25px;
+				&:before{
+					top:7px;
+					@include sizeEx(80px,5px);
+				}
+			}
+		}
+		.box{
+			padding:20px 10px 60px;
+		}
+	}
+}
+@media only screen and (max-width: 520px) {
+	.mod-seen{
+		.quote{
+			.box{
+				padding:70px 20px 50px;
+				p{
+					max-width: 100%;
+				}
+			}
+			h3{
+				font-size: 20px;
+			}
+		}
+		h3{
+			max-width: 100%;
+			font-size:20px;
+			margin:10px 0 20px;
+		}
+		span{
+			font-size: 16px;
+		}
+		a{
+			font-size: 16px;
+		}
+		.item{
+			font-size:16px;
+			line-height: 40px;
+		}
+	}
+}

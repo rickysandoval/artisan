@@ -1,0 +1,239 @@
+.mod-team{
+	background: #fff;
+	padding:50px 0;
+		h2{
+			@include font($fontMt,24px,#a6968f,700);
+			text-transform: uppercase;
+			position: relative;
+			line-height: 35px;
+			margin-bottom:30px;
+			margin-top:0px;
+			letter-spacing: 2px;
+			padding-bottom:15px;
+			&:after{
+				position: absolute;
+				@include sizeEx(80px,2px);
+				background: #ef4036;
+				bottom:5px;
+				left: 50%;
+				margin-left:-40px;
+				content:"";
+			}
+		}
+	.list-item{
+		max-width: 1440px;
+		display: block;
+		text-align:center;
+		letter-spacing: 2px;
+		margin:0 auto;
+		p{
+			margin:0px;
+			@include font ($fontMt,15px,#444343,700);
+			line-height: 22.57px;
+			letter-spacing: 2px;
+		}
+		span{
+			@include font ($fontMt,14px,#a6968f,400);
+			line-height: 22.57px;
+			font-style:italic;
+			letter-spacing: 2px;
+		}
+		.col-sm-4{
+			cursor:pointer;
+			margin-bottom:40px;
+			&:hover{
+				.wrap-img{
+					.bg-hover{
+						opacity:0.8;
+					}
+					.info-team{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	.info-team{
+		opacity: 0;
+		-webkit-transition:all 500ms;
+		transition:all 500ms;
+		position: absolute;
+		top:0px;
+		left: 0px;
+		right: 0px;
+		bottom:0px;
+		z-index: 2;
+		text-align:left;
+		padding:0 30px;
+		overflow-y:scroll;
+		p{
+			@include font($fontMt,14px,#fff,400);
+			line-height: 20px;
+			color:#fff;
+			padding:20px 0;
+		}
+	}
+	.wrap-img{
+		position:relative;
+		margin-bottom: 35px;
+		.bg-hover{
+			background: #ad2a3c;
+			@include position(absolute,0px,0px,0px,0px);
+			@include sizeEx(100%);
+			-webkit-transition:all 500ms;
+			transition:all 500ms;
+			border:23px solid #892d3b;
+			opacity: 0;
+		}
+	}
+	.row{
+		margin:0px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.mod-team .info-team{
+		top:10%;
+	}
+}
+@media only screen and (max-width: 990px) {
+	.mod-team .info-team {
+		padding:0 10px;
+		p{
+			top:5%;
+			font-size: 13px;
+			line-height: 16px;
+		}
+	} 
+}
+@media only screen and (max-width: $screen-sm) {
+	.mod-team{
+		padding:35px 0 130px;
+		.list-item{
+			margin:0px;
+			.col-sm-4{
+				margin-bottom:20px;
+			}
+			.wrap-img{
+				margin:0 115px;
+			}
+			p{
+				font-size:30px;
+				margin-top: 25px;
+			}
+			span{
+				font-size:25px;
+				line-height: 36px;
+			}
+			.row{
+				margin:0px;
+			}
+		}
+		h2{
+			font-size:30px;
+		}
+		.slick-next,.slick-prev{
+			background: #f4f1ef;
+			@include sizeEx(60px,94px);
+			margin-top:-65px;
+			display: inline-block;
+			box-shadow: 1px 1px 1px #e3e1e0;
+		}
+		.slick-next{
+			right:0px;
+			margin-left: -205px;
+			box-shadow: -1px 1px 1px #e3e1e0;
+			&:before{
+				content:"\f105";
+				color:#a6968f;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				font-size:40px;
+				opacity: 1;
+			}
+			&:hover{
+				background: #ef4036;
+				&:before{
+					color:#fff;
+				}
+			}
+		}
+		.slick-prev{
+			left:0px;
+			&:before{
+				content:"\f104";
+				color:#a6968f;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				font-size:40px;
+				-webkit-font-smoothing: antialiased;
+				opacity: 1;
+			}
+			&:hover{
+				background: #ef4036;
+				&:before{
+					color:#fff;
+				}
+			}
+		}
+		.slick-dots {
+			bottom:-65px;
+			li button:before{
+				display: none;
+			}
+		} 
+		.slick-dots li {
+			margin:0 5px;
+			@include sizeEx(15px);
+			button{
+				background: #a6968f;
+				@include sizeEx(10px);
+				border-radius: 50%;
+			}
+			&.slick-active{
+				button{
+					background: none;
+					border:2px solid #ef4036;
+				}
+			}
+		}
+		.info-team {
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		} 
+	}
+}
+@media only screen and (max-width: 520px) {
+	.mod-team{
+		.list-item{
+			p{
+				font-size:25px;
+				line-height: 35px;
+			}
+			span{
+				font-size: 16px;
+				line-height: 40px;
+			}
+		}
+		.info-team {
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		} 
+		.slick-next,.slick-prev{
+			@include sizeEx(30px,40px);
+			&:before{
+				font-size:20px;
+			}
+		}
+
+	}
+	.mod-team .list-item .wrap-img{
+		margin:0 30px;
+	}
+}

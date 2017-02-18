@@ -1,0 +1,23 @@
+.clean-repair{
+	.content-wrap{
+		max-width:680px;
+	}
+	.item-left{
+		h2{
+			color:#ef4036;
+			&:after{
+				background:#a6968f;
+			}
+		}
+	}
+	.item-right{
+		h2{
+			background:#a6968f;
+		}
+	}
+}
+@media only screen and (max-width:$screen-sm) {
+	.clean-repair .content-wrap{
+		max-width:100%;
+	}
+}

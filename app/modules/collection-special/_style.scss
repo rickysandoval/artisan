@@ -1,0 +1,100 @@
+.mod-collection-special{
+	@include font($fontMr,15px,#a6968f,400);
+	line-height:40px;
+	.content-wrap{
+		max-width:550px;
+		margin:0 auto;
+		text-align:center;
+		padding:0 20px;
+	}
+	.table-cell{
+		vertical-align:top;
+	}
+	.item-left{
+		background:#f8f8f8;
+		h2{
+			@include font($fontMt,24px,#a6968f,700);
+			text-transform: uppercase;
+			position: relative;
+			line-height:35px;
+			margin-bottom:35px;
+			margin-top:0px;
+			&:after{
+				position: absolute;
+				@include sizeEx(80px,2px);
+				background: #4e4745;
+				bottom:-15px;
+				left: 50%;
+				margin-left:-40px;
+				content:"";
+			}
+		}
+	}
+	.item-right{
+		background-image:url(../images/repeat-feature.jpg);
+		background-size:cover;
+	}
+	.item{
+		padding:150px 0px  120px;
+	}
+	.button{
+		margin-top:30px;
+		@include sizeEx(225px,58px);
+		line-height:58px;
+		font-size:15px;
+		letter-spacing:2.5px;
+	}
+	.item-right{
+		h2{
+			@include font($fontMt,24px,#fff,700);
+			background:#ef4036;
+			text-transform: uppercase;
+			position: relative;
+			padding:10px 0;
+			margin:0px 0 25px 0;
+		}
+		.button{
+			line-height:55px;
+			border:2px solid #a6968f;
+			color:#a6968f;
+			&:hover{
+				color:#ef4036;
+				border:2px solid #ef4036;
+			}
+		}
+		.content-wrap{
+			margin-top:-10px;
+		}
+	}
+}
+@media only screen and (max-width:1200px) {
+	.mod-collection-special {
+		.row{
+			margin:0px;
+		}
+		.item{
+			padding:60px 15px;
+		}
+	} 
+}
+@media only screen and (max-width:$screen-sm) {
+	.mod-collection-special {
+		font-size:25px;
+		line-height:50px;
+		.content-wrap{
+			max-width:100%;
+			padding:0px;
+		}
+		.item{
+			height:auto !important;
+		}
+		.table-cell{
+			vertical-align:middle;
+		}
+		.item-left,.item-right{
+			h2{
+				font-size:40px;
+			}
+		}
+	}
+}

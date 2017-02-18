@@ -1,0 +1,137 @@
+.mod-designers{
+	.item{
+		@include font($fontMr,15px,#5b524f,400);
+		line-height:40px;
+		position:relative;
+		padding:0px;
+		.content{
+			max-width:300px;
+			display: block;
+			margin:0 auto;
+		}
+		
+		img{
+			width:100%;
+		}
+	}
+	h3{
+		@include font($fontMt,24px,#a6968f,700);
+		text-transform: uppercase;
+		position: relative;
+		line-height: 35px;
+		margin-bottom:30px;
+		margin-top:0px;
+		letter-spacing: 2.5px;
+		display:inline-block;
+		&:after{
+			position: absolute;
+			@include sizeEx(80px,2px);
+			background: #ef4036;
+			bottom:-15px;
+			left: 0px;
+			content:"";
+		}
+	}
+	.item-text{
+		.content-designer{
+			max-width:300px;
+			margin:0 auto;
+		}
+		&:after{
+			position:absolute;
+			@include sizeEx(20px,57px);
+			display:block;
+			content:"";
+			background:url(../images/arrow-right-feature.png) no-repeat;
+			top:50%;
+			right:-20px;
+			z-index: 2;
+			margin-top:-29px;
+		}
+	}
+	.row:nth-child(2n-1) {
+		.item-image{
+			float:right;
+		}
+	}
+	.row:nth-child(2n) {
+		.item-text:after{
+			left:-20px;
+			transform:rotate(180deg);
+			-webkit-transform:rotate(180deg);
+		}
+	}
+	.col-sm-6{
+		padding:0px;
+	}
+	.row{
+		margin:0px;
+	}
+}
+@media only screen and (max-width:1200px) {
+	.mod-designers {
+		.item-text .content-designer{
+			padding:20px;
+			max-width:100%;
+		}
+		.item{
+			font-size:16px;
+			line-height:25px;
+		}
+		h3{
+			font-size:20px;
+			line-height:30px;
+		}
+	}
+}
+@media only screen and (max-width:992px) {
+	.mod-designers .item img{
+		height:100%;
+	}
+}
+@media only screen and (max-width:$screen-sm) {
+	.mod-designers {
+		.item{
+			font-size:25px;
+			line-height:50px;
+			height:auto !important;
+		}
+		.row:nth-child(2n-1) .item-image{
+			float:none ;
+		}
+		.item-text .content-designer{
+			padding:50px 20px;
+		}
+		h3{
+			font-size:35px;
+			line-height:45px;
+		}
+		.item-text{
+			&:after{
+				top:-38px;
+				bottom:auto;
+				right:auto;
+				left:50%;
+				-webkit-transform:rotate(-90deg);
+				transform:rotate(-90deg);
+				margin-top:0px;
+				margin-left:-10px;
+			}
+		}
+		.row:nth-child(2n) .item-text:after{
+			top:-38px;
+			bottom:auto;
+			right:auto;
+			left:50%;
+			-webkit-transform:rotate(-90deg);
+			transform:rotate(-90deg);
+			margin-top:0px;
+			margin-left:-10px;
+		}
+	}
+}
+
+
+
+
+

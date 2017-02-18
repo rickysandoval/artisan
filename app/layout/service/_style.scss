@@ -1,0 +1,27 @@
+.info-service-rug{
+	display: none;
+	.mod-info-home{
+		background-image:url(../images/bg-nopeat.jpg);
+		background-size:cover;
+		overflow:inherit !important;
+		width:100%;
+		&:after{
+			position: absolute;
+			width: 20px;
+			height: 57px;
+			display: block;
+			content: "";
+			background: url(../images/arrow-right-feature.png) no-repeat;
+			top: -38px;
+			left:50%;
+			z-index: 2;
+			margin-left:-10px;
+			transform:rotate(-90deg);
+			-webkit-transform:rotate(-90deg);
+		}
+	}
+}
+.line-service{
+	@include sizeEx(100%,4px);
+	background:#a6968f;
+}

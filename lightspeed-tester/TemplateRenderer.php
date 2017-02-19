@@ -30,7 +30,7 @@ class TemplateRenderer
       $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png");
       $cache_control = '1';
       if (isset($_GET['ckcachecontrol'])) {
-          $cache_control $_GET['ckcachecontrol'];
+          $cache_control = $_GET['ckcachecontrol'];
       }
       if (in_array($string, $non_local_assets)) {
         return 'http://assets.shoplightspeed.com/artisan-rug-gallery-608660/'.$string.'?'.$cache_control;

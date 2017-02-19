@@ -73,7 +73,6 @@ $('nav .item.sub').click(function() {
 
 $(window).load(function(){
   sizing();
-  logoSize();
 });
 $(window).resize(function(){
   sizing();
@@ -120,14 +119,5 @@ function sizing() {
       var href = element.attr("href");   
       element.attr("href", href);
     });
-  }
-}
-
-// logo
-function logoSize() {
-  if ($(window).width() < 767) {
-    var logoWith = $('.logo img').width();
-    logoWith = (logoWith * 0.8);
-    $('.logo img').width(logoWith);
   }
 }

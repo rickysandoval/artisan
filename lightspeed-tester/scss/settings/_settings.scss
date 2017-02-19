@@ -7,6 +7,7 @@ $screen-sm-min: 768px;
 $screen-xs-min: 480px;
 
 $screen-xs-max: ($screen-sm-min - 1);
+$screen-mobile-max: $screen-xs-max;
 $screen-sm-max: ($screen-md-min - 1);
 $screen-md-max: ($screen-lg-min - 1);
 $screen-lg-max: ($screen-xl-min - 1);
@@ -16,9 +17,13 @@ $screen-lg-max: ($screen-xl-min - 1);
 $color-primary: #ef4036;
 $color-text-brown: #8c7e78;
 $color-background-light: #f2f0ef;
+$color-background-dark: #a6968f;
 $color-border-light: #cac3c0;
+$color-border-lighter: #f0f0f0;
 
 /* Typography */
-
+$font-size-xl: 18px;
+$font-size-lg: 16px;
 $font-size-reg: 14px;
 $font-size-sm: 12px;
+$font-size-xs: 10px;

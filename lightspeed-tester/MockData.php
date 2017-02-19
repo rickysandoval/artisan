@@ -62,6 +62,34 @@ function getMockData($mockPage) {
 			'description' => '',
 			'count' => 285,
 			'subs' => false
+		),
+		'349695' => array(
+			'id' => 349695,
+			'parent' => 0,
+			'path' => array(
+				0 => 349695
+			),
+			'depth' => 1,
+			'type' => 'category',
+			'url' => 'traditional',
+			'title' => 'Traditional',
+			'description' => '',
+			'count' => 285,
+			'subs' => false
+		),
+		'349699' => array(
+			'id' => 349699,
+			'parent' => 0,
+			'path' => array(
+				0 => 349699
+			),
+			'depth' => 1,
+			'type' => 'category',
+			'url' => 'transitional',
+			'title' => 'Transitional',
+			'description' => '',
+			'count' => 285,
+			'subs' => false
 		)
 	);
 

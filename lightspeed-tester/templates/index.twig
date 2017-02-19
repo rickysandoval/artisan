@@ -37,34 +37,9 @@
   </head>
   <body>  
     <header class="desktop">
-      <div class="topnav">
+      {# <div class="topnav">
         <div class="container">
-          {% if shop.languages | length > 1 or shop.currencies | length > 1 %}
-          <div class="left">
-            {% if shop.languages | length > 1 %}
-            <div class="languages">
-              {% for lang in shop.languages %}
-              <a href="{{ lang.url | url }}" class="flag {{ lang.code }}" title="{{ lang.title }}" lang="{{ lang.code }}">{{ lang.title }}</a>
-              {% endfor %}
-            </div>
-            {% endif %}
-            {% if shop.currencies | length > 1 %}
-            <div class="currencies">
-              {% for curr in shop.currencies %}
-              <a href="{{ curr.url | url }}" {% if curr.active %}class="active"{% endif %} title="{{ curr.title }}">
-                {{ curr.code }}
-              </a>
-              {% if not loop.last %} / {% endif %}
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-          {% endif %}
           <div class="right">
-            <a href="{{ 'cart' | url }}" title="{{ 'Cart' | t }}" class="cart"> 
-              <span class="glyphicon glyphicon-shopping-cart"></span>
-              {{ page.cart.products | length }} {{ 'Items' | t }} - {{ page.cart.total.price | money }}
-            </a>
             <a href="{{ 'account' | url }}" title="{{ 'My account' | t }}" class="my-account">
               <span class="glyphicon glyphicon-user"></span>
               {% if page.account %}
@@ -75,11 +50,13 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> #}
       <div class="navigation clearfix">
         <div class="align">
           <ul class="burger">
-            <img src="{{ 'hamburger.png' | url_asset }}" width="32" height="32" alt="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </ul>
           <div class="vertical logo">
             <a href="{{ '' | url }}" title="{{ shop.title }}">
@@ -88,14 +65,37 @@
           </div>
           <nav class="nonbounce vertical">
             <div class="nav-contents">
+              <a class="header__sign-in" href="{{ 'account' | url }}" title="{{ 'My account' | t }}">
+               Sign in
+              </a>
+              
+              <div class="header-cart__wrapper">
+                <a href="{{ 'cart' | url }}" title="{{ 'Cart' | t }}" class="header-cart">
+                  <span class="header-cart__label">Cart</span>
+                  <span class="glyphicon glyphicon-shopping-cart"></span>
+                  <span class="header-cart__count">{{ page.cart.products | length }}</span>
+                  <span class="header-cart__count--mobile">( {{ page.cart.products | length }} - 
+                    {% if page.cart.products | length == 1 %}
+                      item
+                    {% else %}
+                      items
+                    {% endif %}
+                  )</span>
+                </a>   
+              </div> 
+
               <form action="{{ 'search' | url }}" method="get" id="formSearch">
                 <input type="text" name="q" autocomplete="off"  value="{{ page.search }}"/>
                 <span onclick="$('#formSearch').submit();" title="{{ 'Search' | t }}" class="glyphicon glyphicon-search"></span>
-              </form>           
+              </form>   
+
               <ul>
   {#               <li class="item home {% if template == 'pages/index.rain' %}active{% endif %}">
                   <a class="itemLink" href="{{ '' | url }}">{{ 'Home' | t }}</a>
                 </li> #}
+                <li class="item {% if 'featured-rugs' is active %} active{% endif %}">
+                  <a class="itemLink" href="{{'featured-rugs' | url }}" title="Featured Rugs">Featured</a>
+                </li>
                 {% for category in shop.categories %}
                 <li class="item{% if category.subs %} sub{% endif %}{% if category.url is active %} active{% endif %}">
                   <a class="itemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
@@ -120,7 +120,10 @@
                   {% endif %}
                 </li>
                 {% endfor %}
-                {% if shop.blogs %}
+                <li class="item {% if 'service' is active %} active{% endif %}">
+                  <span class="itemLink">More</span>
+                </li>
+                {# {% if shop.blogs %}
                 {% for blog in shop.blogs %}
                 <li class="item sub{% if template == 'pages/blog.rain' %} active{% endif %}"><a class="itemLink" href="{{ blog.url | url }}" title="{{ blog.title }}">{{ blog.title }}</a>
                   <ul class="subnav">
@@ -130,12 +133,12 @@
                   </ul>
                 </li>
                 {% endfor %}
-                {% endif %}
-                {% if theme.setting_brands %}
+                {% endif %} #}
+                {# {% if theme.setting_brands %}
                 {% if shop.brands %}
                 <li class="item{% if template == 'pages/brands.rain' %} active{% endif %}"><a class="itemLink" href="{{ 'brands' | url }}" title="{{ 'Brands' | t }}">{{ 'Brands' | t }}</a></li>
                 {% endif %}
-                {% endif %}
+                {% endif %} #}
               </ul>
               <span class="glyphicon glyphicon-remove"></span> 
               </div> 

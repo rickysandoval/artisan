@@ -16,36 +16,40 @@ function getMockData($mockPage) {
 			'description' => '',
 			'count' => 253,
 			'subs' => array(
-				'id' => 349683,
-				'parent' => 349682,
-				'path' => array(
-					0 => 349683,
-					1 => 349682
-				),
-				'depth' => 2,
-				'type' => 'category',
-				'url' => 'tribal/scatter-size',
-				'title' => 'Scatter Size',
-				'description' => '',
-				'count' => 128,
-				'subs' => array(
-					'id' => 349684,
-					'parent' => 349683,
+				'349683' => array(
+					'id' => 349683,
+					'parent' => 349682,
 					'path' => array(
-						0 => 349684,
-						1 => 349683,
-						2 => 349682
+						0 => 349683,
+						1 => 349682
 					),
-					'depth' => 3,
+					'depth' => 2,
 					'type' => 'category',
-					'url' => 'tribal/scatter-size/4-x-6',
-					'title' => '4 x 6',
+					'url' => 'tribal/scatter-size',
+					'title' => 'Scatter Size',
 					'description' => '',
-					'count' => 50
+					'count' => 128,
+					'subs' => array(
+						'349684' => array(
+							'id' => 349684,
+							'parent' => 349683,
+							'path' => array(
+								0 => 349684,
+								1 => 349683,
+								2 => 349682
+							),
+							'depth' => 3,
+							'type' => 'category',
+							'url' => 'tribal/scatter-size/4-x-6',
+							'title' => '4 x 6',
+							'description' => '',
+							'count' => 50
+						)
+					)
 				)
 			)
 		),
-		'349682' => array(
+		'349690' => array(
 			'id' => 349690,
 			'parent' => 0,
 			'path' => array(

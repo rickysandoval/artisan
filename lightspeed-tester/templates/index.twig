@@ -36,7 +36,7 @@
     <![endif]-->
   </head>
   <body>  
-    <header>
+    <header class="desktop">
       <div class="topnav">
         <div class="container">
           {% if shop.languages | length > 1 or shop.currencies | length > 1 %}
@@ -76,7 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="navigation container">
+      <div class="navigation clearfix">
         <div class="align">
           <ul class="burger">
             <img src="{{ 'hamburger.png' | url_asset }}" width="32" height="32" alt="Menu">
@@ -86,57 +86,59 @@
               <img src="{{ 'logo.png' | url_asset }}" alt="{{ shop.title }}" />
             </a>
           </div>
-          <nav class="nonbounce desktop vertical">
-            <form action="{{ 'search' | url }}" method="get" id="formSearch">
-              <input type="text" name="q" autocomplete="off"  value="{{ page.search }}"/>
-              <span onclick="$('#formSearch').submit();" title="{{ 'Search' | t }}" class="glyphicon glyphicon-search"></span>
-            </form>            
-            <ul>
-{#               <li class="item home {% if template == 'pages/index.rain' %}active{% endif %}">
-                <a class="itemLink" href="{{ '' | url }}">{{ 'Home' | t }}</a>
-              </li> #}
-              {% for category in shop.categories %}
-              <li class="item{% if category.subs %} sub{% endif %}{% if category.url is active %} active{% endif %}">
-                <a class="itemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
-                {% if category.subs %}
-                <span class="glyphicon glyphicon-play"></span>
-                <ul class="subnav">
-                  {% for category in category.subs %}
-                  <li class="subitem">
-                    <a class="subitemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
-                    {% if category.subs %}
-                    <ul class="subnav">
-                      {% for category in category.subs %}
-                      <li class="subitem">
-                        <a class="subitemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                    {% endif %}
-                  </li>
-                  {% endfor %}
-                </ul>
+          <nav class="nonbounce vertical">
+            <div class="nav-contents">
+              <form action="{{ 'search' | url }}" method="get" id="formSearch">
+                <input type="text" name="q" autocomplete="off"  value="{{ page.search }}"/>
+                <span onclick="$('#formSearch').submit();" title="{{ 'Search' | t }}" class="glyphicon glyphicon-search"></span>
+              </form>           
+              <ul>
+  {#               <li class="item home {% if template == 'pages/index.rain' %}active{% endif %}">
+                  <a class="itemLink" href="{{ '' | url }}">{{ 'Home' | t }}</a>
+                </li> #}
+                {% for category in shop.categories %}
+                <li class="item{% if category.subs %} sub{% endif %}{% if category.url is active %} active{% endif %}">
+                  <a class="itemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+                  {% if category.subs %}
+                  <span class="glyphicon glyphicon-play"></span>
+                  <ul class="subnav">
+                    {% for category in category.subs %}
+                    <li class="subitem">
+                      <a class="subitemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+                      {% if category.subs %}
+                      <ul class="subnav">
+                        {% for category in category.subs %}
+                        <li class="subitem">
+                          <a class="subitemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                </li>
+                {% endfor %}
+                {% if shop.blogs %}
+                {% for blog in shop.blogs %}
+                <li class="item sub{% if template == 'pages/blog.rain' %} active{% endif %}"><a class="itemLink" href="{{ blog.url | url }}" title="{{ blog.title }}">{{ blog.title }}</a>
+                  <ul class="subnav">
+                    {% for article in blog.articles %}
+                    <li class="subitem"><a class="subitemLink" href="{{ article.url | url }}" title="{{ article.title }}">{{ article.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                {% endfor %}
                 {% endif %}
-              </li>
-              {% endfor %}
-              {% if shop.blogs %}
-              {% for blog in shop.blogs %}
-              <li class="item sub{% if template == 'pages/blog.rain' %} active{% endif %}"><a class="itemLink" href="{{ blog.url | url }}" title="{{ blog.title }}">{{ blog.title }}</a>
-                <ul class="subnav">
-                  {% for article in blog.articles %}
-                  <li class="subitem"><a class="subitemLink" href="{{ article.url | url }}" title="{{ article.title }}">{{ article.title }}</a></li>
-                  {% endfor %}
-                </ul>
-              </li>
-              {% endfor %}
-              {% endif %}
-              {% if theme.setting_brands %}
-              {% if shop.brands %}
-              <li class="item{% if template == 'pages/brands.rain' %} active{% endif %}"><a class="itemLink" href="{{ 'brands' | url }}" title="{{ 'Brands' | t }}">{{ 'Brands' | t }}</a></li>
-              {% endif %}
-              {% endif %}
-            </ul>
-            <span class="glyphicon glyphicon-remove"></span>  
+                {% if theme.setting_brands %}
+                {% if shop.brands %}
+                <li class="item{% if template == 'pages/brands.rain' %} active{% endif %}"><a class="itemLink" href="{{ 'brands' | url }}" title="{{ 'Brands' | t }}">{{ 'Brands' | t }}</a></li>
+                {% endif %}
+                {% endif %}
+              </ul>
+              <span class="glyphicon glyphicon-remove"></span> 
+              </div> 
           </nav>
         </div>
       </div>

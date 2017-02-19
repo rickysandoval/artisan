@@ -1,7 +1,24 @@
-$media-xl-max-plus1: 1025px;
-$media-xl-max: 1024px;
-$media-lg-max: 992px;
-$media-md-max: 767px;
-$media-sm-max: 480px;
+/* Breakpoints */
 
-$media-xl-min: 992px;
+$screen-xl-min: 1480px;
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$screen-xs-min: 480px;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
+
+/* Colors */
+
+$color-primary: #ef4036;
+$color-text-brown: #8c7e78;
+$color-background-light: #f2f0ef;
+$color-border-light: #cac3c0;
+
+/* Typography */
+
+$font-size-reg: 14px;
+$font-size-sm: 12px;

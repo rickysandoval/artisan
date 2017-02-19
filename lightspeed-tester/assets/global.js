@@ -102,8 +102,8 @@ function sizing() {
   }
   if ($(window).width() < 767) {
     // reponsive 
-    $('nav.desktop').removeClass('desktop');
-    $('nav').addClass('mobile');
+    $('header.desktop').removeClass('desktop');
+    $('header').addClass('mobile');
 
       
     $('nav .glyphicon-remove').click(function() {
@@ -113,9 +113,9 @@ function sizing() {
     });
   }
   else {
-    $('nav.mobile').removeClass('mobile');
-    $('nav').addClass('desktop');
-    $('nav.mobile .item.sub').click(function() {
+    $('header.mobile').removeClass('mobile');
+    $('header').addClass('desktop');
+    $('header.mobile nav .item.sub').click(function() {
       var element = $(this).find('.itemLink');
       var href = element.attr("href");   
       element.attr("href", href);

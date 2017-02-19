@@ -1445,7 +1445,7 @@ a,
 a:visited,
 a:hover, 
 a:focus,
-nav.desktop .item.active .itemLink,
+.desktop nav .item.active .itemLink,
 nav .glyphicon-remove,
 .sidebar .item .itemLink.active, 
 .sidebar .item .itemLink.active:hover,
@@ -1581,9 +1581,9 @@ label span,
 /* header */
 header,
 header a,
-nav.desktop ul a, nav.desktop ul a:visited,
-nav.desktop .item .itemLink,
-nav.desktop .subnav .subitem .subitemLink:hover {
+.desktop nav ul a, .desktop nav ul a:visited,
+.desktop nav .item .itemLink,
+.desktop nav .subnav .subitem .subitemLink:hover {
   // color: {{ theme.header_color }};
 }
 .navigation .burger li {
@@ -1595,17 +1595,17 @@ header,
 }
 header,
 header input[type="text"],
-nav.desktop .subnav .subitem,
-nav.desktop .item.hover .itemLink,
-nav.desktop .subnav {
+.desktop nav .subnav .subitem,
+.desktop nav .item.hover .itemLink,
+.desktop nav .subnav {
   // border-color: {{ theme.header | color_mix('#000000', 0.08) }};
 }
-nav.desktop .item.sub.hover .itemLink,
-nav.desktop .item.hover .itemLink,
-nav.desktop .subnav .subitem {
+.desktop nav .item.sub.hover .itemLink,
+.desktop nav .item.hover .itemLink,
+.desktop nav .subnav .subitem {
   // background-color: {{ theme.header | color_mix('#FFFFFF', 0.07) }};
 }
-nav.desktop .subnav .subitem .subitemLink:hover {
+.desktop nav .subnav .subitem .subitemLink:hover {
   // background-color: {{ theme.header | color_mix('#000000', 0.03) }};
 }  
 

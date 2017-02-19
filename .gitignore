@@ -2,3 +2,5 @@
 !/.gitignore
 /node_modules
 /bower_components
+/lightspeed-tester/cache/*
+/lightspeed-tester/cache/**/*

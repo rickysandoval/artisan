@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ shop.language }}">
   <head>
-    <!-- {% include 'blocks/head.rain' %} -->
+    {# {% include 'blocks/head.rain' %} #}
     <title>{{ page.title }} | {{ shop.name }}</title>
     <meta name="description" content="{{ shop.description }}" />
     <meta name="keywords" content="{{ shop.keywords }}" />
@@ -92,9 +92,9 @@
               <span onclick="$('#formSearch').submit();" title="{{ 'Search' | t }}" class="glyphicon glyphicon-search"></span>
             </form>            
             <ul>
-              <li class="item home {% if template == 'pages/index.rain' %}active{% endif %}">
+{#               <li class="item home {% if template == 'pages/index.rain' %}active{% endif %}">
                 <a class="itemLink" href="{{ '' | url }}">{{ 'Home' | t }}</a>
-              </li>
+              </li> #}
               {% for category in shop.categories %}
               <li class="item{% if category.subs %} sub{% endif %}{% if category.url is active %} active{% endif %}">
                 <a class="itemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>

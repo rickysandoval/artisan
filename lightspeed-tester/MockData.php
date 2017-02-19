@@ -227,8 +227,8 @@ function getMockData($mockPage) {
 	}
 
 	function getContent($mockPage) {
-		if (file_exists('contents/'.$mockPage)) {
-			return file_get_contents('contents/'.mockPage.'.html');
+		if (file_exists('contents/'.$mockPage).'.html') {
+			return file_get_contents('contents/'.$mockPage.'.html');
 		} else {
 			return false;
 		}

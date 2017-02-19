@@ -1,6 +1,7 @@
 /* Base stuff, no sass */
 @import 'base/reset';
 @import 'base/basics';
+@import 'base/vendor';
 
 /* Variables */
 @import 'settings/settings';
@@ -10,5 +11,6 @@
 
 /* Components */
 @import 'components/header';
+@import 'components/banners';
 
 @import 'old';

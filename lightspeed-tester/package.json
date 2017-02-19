@@ -1,0 +1,11 @@
+{
+  "name": "artisan-lightspeed-demo",
+  "version": "1.0.0",
+  "description": "Used for testing and changing css in lightspeed quicker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

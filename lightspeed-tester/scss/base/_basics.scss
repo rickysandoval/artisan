@@ -1,0 +1,152 @@
+
+/* Basics
+================================================== */
+body {
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; 
+}
+html {
+    overflow: -moz-scrollbars-vertical;
+     overflow-y: scroll;
+}     
+.left { float: left !important; }
+
+.right { float: right !important; }
+
+.center { text-align: center; margin: auto; }
+
+.hide { display: none; }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; 
+  line-height: 1.2125em;  
+  margin-top: -0.2em;
+  margin-bottom: 0.2em;
+}
+h1 { font-size: 2.3125em; }
+h2 { font-size: 1.6875em; }
+h3 { font-size: 1.4375em; }
+h4 { font-size: 1.375em; } 
+h5 { font-size: 1.375em; } 
+h6 { font-size: 1.375em; } 
+@media (max-width: 767px) {
+  h1 { font-size: 1.6875em; }
+  h2 { font-size: 1.475em; }
+  h3 { font-size: 1.375em; }
+}
+
+p { margin: 10px 0 0 0;}
+p img { 
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+em { font-style: italic; }
+strong { font-weight: 600; }
+small { font-size: 80%; }
+
+hr { 
+  border: solid #f0f0f0; 
+  border-width: 1px 0 0; 
+  clear: both; 
+  margin: 0px; 
+  height: 0; 
+  width: 100%;
+}
+hr.full-width {
+  position: absolute;
+  left: 0px
+} 
+
+.no-underline a, a.no-underline { text-decoration: none; }
+  
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+
+/* Links */
+a {
+  -moz-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  outline: 0;
+}
+a, a:visited { color: #54afe9; outline: 0; text-decoration: none; }
+a:hover, a:focus { color: #54afe9; outline: 0; text-decoration: underline; }
+
+/* List */
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 0.1em 0 0.1em 1em; font-size: 90%;  }
+
+/* Input */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  border: 1px solid #e5e5e5;
+  padding: 6px 10px;
+  outline: none;
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+  background: #fff;
+  line-height: 18px; 
+  max-width: 160px;
+  -moz-transition: border-color 0.3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+select {
+  padding: 0; 
+}
+@media (max-width: 992px) {
+  select {
+    max-width: 100%;
+    height: 32px;
+  }
+}
+@media (max-width: 767px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+      padding: 10px;
+    max-width: 100%;
+  }
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1px solid #54afe9;
+  color: #444; 
+}
+textarea {
+  min-height: 60px; 
+}
+label,
+legend,
+label span {
+  font-size: 12px;  
+}
+input[type="checkbox"] {
+  display: inline; 
+}

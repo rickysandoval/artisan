@@ -2,6 +2,57 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19076",
 "files": {
+	"\/assets\/bootstrap.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/bootstrap.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/global.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/global.js",
+		"outputAbbreviatedPath": "\/assets\/min\/global-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/jcarousel.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/jcarousel.js",
+		"outputAbbreviatedPath": "\/assets\/min\/jcarousel-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/social-icons.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7165,
+		"inputAbbreviatedPath": "\/assets\/social-icons.png",
+		"outputAbbreviatedPath": "\/assets\/social-icons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/composer.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -42,20 +93,38 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/snippets\/messages.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/snippets\/messages.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/TemplateRenderer.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/TemplateRenderer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/index.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/index.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/pages\/index.rain": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/pages\/index.rain",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/snippets\/messages.rain": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/snippets\/messages.rain",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1923,6 +1992,60 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_empty_parent.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_empty_parent.html.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_nonexistent_parent.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_nonexistent_parent.html.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_null_parent.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_null_parent.html.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_valid_parent.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/array_inheritance_valid_parent.html.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/parent.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/parent.html.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/spare_parent.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/inheritance\/spare_parent.html.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/named\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2000,6 +2123,24 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/normal_ter\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/themes\/theme1\/blocks.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/themes\/theme1\/blocks.html.twig",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/themes\/theme2\/blocks.html.twig": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/twig\/twig\/test\/Twig\/Tests\/Loader\/Fixtures\/themes\/theme2\/blocks.html.twig",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2627,9 +2768,9 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
-	"externalServerPreviewPathAddition": "artisan\/lightspeed-tester\/",
-	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+	"externalServerAddress": "http:\/\/localhost:8888\/artisan\/lightspeed-tester\/",
+	"externalServerPreviewPathAddition": "",
+	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp, rain, twig",
 	"hamlAutoOutputPathEnabled": 1,
 	"hamlAutoOutputPathFilenamePattern": "*.html",
 	"hamlAutoOutputPathRelativePath": "",
@@ -2667,7 +2808,7 @@
 			"flagValue": -1
 			},
 		"bitwise": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"boss": {
@@ -2675,7 +2816,7 @@
 			"flagValue": -1
 			},
 		"browser": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"browserify": {
@@ -2691,7 +2832,7 @@
 			"flagValue": -1
 			},
 		"curly": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"debug": {
@@ -2707,11 +2848,11 @@
 			"flagValue": -1
 			},
 		"elision": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqeqeq": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqnull": {
@@ -2739,7 +2880,7 @@
 			"flagValue": -1
 			},
 		"freeze": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"funcscope": {
@@ -2771,7 +2912,7 @@
 			"flagValue": -1
 			},
 		"jquery": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"lastsemic": {
@@ -2779,7 +2920,7 @@
 			"flagValue": -1
 			},
 		"latedef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"laxbreak": {
@@ -2831,11 +2972,11 @@
 			"flagValue": -1
 			},
 		"newcap": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noarg": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nocomma": {
@@ -2855,7 +2996,7 @@
 			"flagValue": -1
 			},
 		"nonew": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nonstandard": {
@@ -2863,7 +3004,7 @@
 			"flagValue": -1
 			},
 		"notypeof": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noyield": {
@@ -2895,7 +3036,7 @@
 			"flagValue": -1
 			},
 		"regexp": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"rhino": {
@@ -2935,11 +3076,11 @@
 			"flagValue": -1
 			},
 		"undef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"unused": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"varstmt": {
@@ -2969,7 +3110,7 @@
 			"flagValue": -1
 			},
 		"browser": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"couch": {
@@ -3070,7 +3211,7 @@
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules",
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules, .js",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",

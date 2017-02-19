@@ -1,0 +1,119 @@
+{% if headlines %}
+<div class="headline{% if headlines | length == 1 %} single{% endif %}">
+  <div class="slider">
+    <ul>
+      {% for headline in headlines %}
+      <li>
+        {% if headline.image %}
+        {% if headline.url %}<a href="{{ headline.url | url }}" title="{{ headline.title }}">{% endif %}
+        <img src="{{ headline.image | url_image('', headline.title) }}" width="1138" height="400" alt="{{ headline.title }}" />
+        {% if headline.url %}</a>{% endif %}
+        {% else %}
+        <img src="{{ 'slider-icon.png' | url_asset }}" width="1138" height="400" alt="{{ healine.title }}" />
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% if headlines | length > 1 %}
+  <a href="#prev" class="slider-prev" title="{{ 'Previous' | t }}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a href="#next" class="slider-next" title="{{ 'Next' | t }}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+  <p class="slider-pagination"></p>
+  {% endif %}
+</div>
+<hr class="full-width" />
+{% endif %}
+
+{% if theme.banners == '1' %}
+<div class="row">
+  {% if theme.banner_left %} 
+  <div class="col-md-6 col-sm-6 col-ts-12"> 
+    {% if theme.banner_url_left %}<a href="{{ theme.banner_url_left | url }}"> {% endif %}
+    <img class="img-responsive" src="{{ 'banner_left.png' | url_asset }}">
+    {% if theme.banner_url_left %}</a> {% endif %}
+  </div> 
+  {% endif %}
+
+  {% if theme.banner_right %} 
+  <div class="col-md-6 col-sm-6 col-ts-12"> 
+    {% if theme.banner_url_right %}<a href="{{ theme.banner_url_right | url }}"> {% endif %}
+       <img class="img-responsive" src="{{ 'banner_right.png' | url_asset }}">
+    {% if theme.banner_url_right %}</a> {% endif %}
+   </div> 
+  {% endif %}
+
+</div>
+  {% endif %}
+
+
+{% if content %}
+<div class="row">
+  <div class="col-md-10 col-md-offset-1 text-center">
+    {{ content | raw }}
+  </div>
+</div>
+{% endif %}
+
+{% if categories %}
+<div class="categories row">
+  {% if theme.category_title %}
+  <div class="col-md-12 title-featured">
+    <h2>{{ 'Categories' | t }}</h2>
+  </div> 
+  {% endif %}
+  <div class="col-md-12">
+    {% for category in categories %}
+    {% include 'snippets/categories.rain' %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if featured %}
+<div class="products row">
+  {% if theme.product_title %}
+  <div class="col-md-12 title-featured">
+    <h2>{{ 'Featured products' | t }}</h2>
+  </div>
+  {% endif %}
+  {% for product in featured %}
+  {% include 'snippets/products.rain' %}
+  {% endfor %} 
+</div>
+{% endif %}
+
+{% if shop.brands and theme.setting_brands %}
+<div class="brands">
+  <div class="slider">
+    <ul>
+      {% for brand in shop.brands %}
+      <li>
+        <a href="{{ brand.url | url }}" title="{{ brand.title }}">
+          {% if brand.image %}
+            {% if theme.brand_image_fit %}
+            <img src="{{ brand.image | url_image('296x120x1', brand.title) }}" alt="{{ brand.title }}" title="{{ brand.title }}" width="296" height="120" />
+            {% else %}
+            <img src="{{ brand.image | url_image('296x120x2', brand.title) }}" alt="{{ brand.title }}" title="{{ brand.title }}" width="296" height="120" />
+            {% endif %}
+          {% else %}
+          <img src="{{ 'brand-icon.png' | url_asset }}" alt="{{ shop.name }}" width="296" height="120" />
+          {% endif %}
+        </a>
+      </li> 
+      {% endfor %} 
+    </ul>
+  </div>
+  <a href="#prev" class="slider-prev" title="{{ 'Previous' | t }}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a href="#next" class="slider-next" title="{{ 'Next' | t }}"><span class="glyphicon glyphicon-chevron-right"></span></a>      
+</div>
+{% endif %}
+
+{% if theme.setting_homepagetags and shop.tags %}
+<div class="tags-actions row">
+  <div class="tags col-md-12">
+    {% for tag in shop.tags %}
+    <a href="{{ tag.url | url }}" title="{{ tag.title }}">{{ tag.title }} <span>({{ tag.count }})</span></a> {% if not loop.last %}/ {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

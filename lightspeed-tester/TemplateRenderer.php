@@ -26,18 +26,39 @@ class TemplateRenderer
     $this->loader = new Twig_Loader_Filesystem($templateDirs);
     $this->environment = new Twig_Environment($this->loader, $envOptions);
 
-    $urlAsset = new Twig_Filter('url_asset', function ($string) { return '/assets/' . $string; });
-    $urlCore = new Twig_Filter('url_core', function ($string) { return '/core/' . $string; });
+    $urlAsset = new Twig_Filter('url_asset', function ($string) { 
+      $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png");
+      $cache_control = '1';
+      if (isset($_GET['ckcachecontrol'])) {
+          $cache_control $_GET['ckcachecontrol'];
+      }
+      if (in_array($string, $non_local_assets)) {
+        return 'http://assets.shoplightspeed.com/artisan-rug-gallery-608660/'.$string.'?'.$cache_control;
+      } else {
+        return '/assets/' . $string;
+      }
+    });
+    $urlCore = new Twig_Filter('url_core', function ($string) { return 'http://static.shoplightspeed.com/assets/' . $string; });
     $url = new Twig_Filter('url', function ($string) { return $string; });
     $t = new Twig_Filter('t', function ($string) { return $string; });
     $money = new Twig_Filter('money', function ($number) { money_format('', $number); });
+    $urlImage = new Twig_Filter('url_image', function ($id, $modifier, $string) { 
+      $builtUrl = "http://static.shoplightspeed.com/shops/608660/files/  " . $id;
+      if ($modifier) {
+        $builtUrl .= '/'.$modifier.'/';
+      }
+      $string = preg_replace('/[^\da-z ]/i', '', $string);
+      $string = preg_replace('/\s+/', '-', $string);
+      $builtUrl .= '/'.$string.'.jpg';
+    });
 
     $filters = array(
       1 => $urlAsset,
       2 => $urlCore,
       3 => $url,
       4 => $t,
-      5 => $money
+      5 => $money,
+      6 => $urlImage
     );
 
     foreach ($filters as $filter) {

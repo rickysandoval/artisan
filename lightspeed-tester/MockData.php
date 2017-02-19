@@ -2,6 +2,72 @@
 
 function getMockData($mockPage) {
 
+	$categories = array(
+		'349682' => array(
+			'id' => 349682,
+			'parent' => 0,
+			'path' => array(
+				0 => 349682
+			),
+			'depth' => 1,
+			'type' => 'category',
+			'url' => 'tribal',
+			'title' => 'Tribal',
+			'description' => '',
+			'count' => 253,
+			'subs' => array(
+				'id' => 349683,
+				'parent' => 349682,
+				'path' => array(
+					0 => 349683,
+					1 => 349682
+				),
+				'depth' => 2,
+				'type' => 'category',
+				'url' => 'tribal/scatter-size',
+				'title' => 'Scatter Size',
+				'description' => '',
+				'count' => 128,
+				'subs' => array(
+					'id' => 349684,
+					'parent' => 349683,
+					'path' => array(
+						0 => 349684,
+						1 => 349683,
+						2 => 349682
+					),
+					'depth' => 3,
+					'type' => 'category',
+					'url' => 'tribal/scatter-size/4-x-6',
+					'title' => '4 x 6',
+					'description' => '',
+					'count' => 50
+				)
+			)
+		),
+		'349682' => array(
+			'id' => 349690,
+			'parent' => 0,
+			'path' => array(
+				0 => 349690
+			),
+			'depth' => 1,
+			'type' => 'category',
+			'url' => 'contemporary',
+			'title' => 'Contemporary',
+			'description' => '',
+			'count' => 285,
+			'subs' => false
+		)
+	);
+
+	$shop_settings = array(
+		'account' => array(
+			'tickets' => true,
+			'password_strength' => 0
+		)
+	);
+
 	$shop = array(
 		'name' => 'Artisan Rug Gallery',
 		'title' => 'Artisan Rug Gallery | The finest handmade rugs for your home.',
@@ -18,7 +84,30 @@ function getMockData($mockPage) {
 
 			)
 		),
-		'currency' => 'usd'
+		'currency' => 'usd',
+		'categories' => $categories,
+		'blogs' => false,
+		'brands' => false,
+		'links' => array(
+			'service' => array(
+				0 => array (
+					'url' => 'service/about',
+					'title' => 'About us',
+					'new_window' => false
+				)
+			),
+			'powered_by' => array(
+				0 => array(
+					'new_window' => true,
+					'url' => 'http://www.lightspeedhq.com',
+					'title' => 'Lightspeed'
+				)
+			)
+		),
+		'tags' => false,
+		'settings' => $shop_settings,
+		'hallmarks' => false,
+		'payments' => false
 	);
 
 	$products = array(
@@ -79,7 +168,7 @@ function getMockData($mockPage) {
 	$theme = array(
 		'body_google_webfonts' => 'Montserrat',
 		'headings_google_webfonts' => 'Montserrat',
-		'settings_brands' => 0,
+		'setting_brands' => 0,
 		'setting_newsletter' => 0,
 		'social_facebook' => 'https://www.facebook.com/artisanrugscb/?ref=aymt_homepage_panel',
 		'social_google' => '',
@@ -93,12 +182,34 @@ function getMockData($mockPage) {
 		'contact_name' => 'Artisan Rug Gallery',
 		'contact_phone' => '3038250064',
 		'setting_kiyoh' => '',
-		'setting_feedbackcompany' => ''
+		'setting_feedbackcompany' => '',
+		'banners' => 0,
+		'setting_homepagetags' => 0
 	);
+
+	function getTemplateUrl($mockPage) {
+		$templates = array(
+			'home' => 'pages/index.rain'
+		);
+		return $templates[$mockPage];
+	}
+
+	function getContent($mockPage) {
+		if (file_exists('contents/'.$mockPage)) {
+			return file_get_contents('contents/'.mockPage.'.html');
+		} else {
+			return false;
+		}
+	}
 
 	return array(
 		'shop' => $shop,
 		'page' => $page,
-		'theme' => $theme
+		'theme' => $theme,
+		'template' => getTemplateUrl($mockPage),
+		'content' => getContent($mockPage),
+		'headlines' => false,
+		'categories' => false,
+		'featured' => false
 	);
 }

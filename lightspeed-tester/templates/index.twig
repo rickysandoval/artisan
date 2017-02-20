@@ -37,20 +37,6 @@
   </head>
   <body>  
     <header class="desktop">
-      {# <div class="topnav">
-        <div class="container">
-          <div class="right">
-            <a href="{{ 'account' | url }}" title="{{ 'My account' | t }}" class="my-account">
-              <span class="glyphicon glyphicon-user"></span>
-              {% if page.account %}
-              {{ 'Welcome, $1!' | t(page.account.firstname) | raw }}              
-              {% else %}
-              {{ 'My account' | t }} / {{ 'Register' | t }}
-              {% endif %}
-            </a>
-          </div>
-        </div>
-      </div> #}
       <div class="navigation clearfix">
         <div class="align">
           <ul class="burger">
@@ -90,9 +76,6 @@
               </form>   
 
               <ul>
-  {#               <li class="item home {% if template == 'pages/index.rain' %}active{% endif %}">
-                  <a class="itemLink" href="{{ '' | url }}">{{ 'Home' | t }}</a>
-                </li> #}
                 <li class="item {% if 'featured-rugs' is active %} active{% endif %}">
                   <a class="itemLink" href="{{'featured-rugs' | url }}" title="Featured Rugs">Featured</a>
                 </li>
@@ -123,22 +106,6 @@
                 <li class="item {% if 'service' is active %} active{% endif %}">
                   <span class="itemLink">More</span>
                 </li>
-                {# {% if shop.blogs %}
-                {% for blog in shop.blogs %}
-                <li class="item sub{% if template == 'pages/blog.rain' %} active{% endif %}"><a class="itemLink" href="{{ blog.url | url }}" title="{{ blog.title }}">{{ blog.title }}</a>
-                  <ul class="subnav">
-                    {% for article in blog.articles %}
-                    <li class="subitem"><a class="subitemLink" href="{{ article.url | url }}" title="{{ article.title }}">{{ article.title }}</a></li>
-                    {% endfor %}
-                  </ul>
-                </li>
-                {% endfor %}
-                {% endif %} #}
-                {# {% if theme.setting_brands %}
-                {% if shop.brands %}
-                <li class="item{% if template == 'pages/brands.rain' %} active{% endif %}"><a class="itemLink" href="{{ 'brands' | url }}" title="{{ 'Brands' | t }}">{{ 'Brands' | t }}</a></li>
-                {% endif %}
-                {% endif %} #}
               </ul>
               <span class="glyphicon glyphicon-remove"></span> 
               </div> 

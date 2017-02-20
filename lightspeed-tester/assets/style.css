@@ -1225,9 +1225,9 @@ header .logo {
 
   .mod-banner .wrap-content {
     padding: 0 30px;
-    font-size: 14px; }
-    .mod-banner .wrap-content p {
-      margin-bottom: 15px; } }
+    font-size: 14px;
+    min-height: p;
+      min-height-margin-bottom: 15px; } }
 /* Views */
 .sub-menu-item-content {
   background: #f2f0ef;

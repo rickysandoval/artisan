@@ -97,6 +97,16 @@ function getMockData($mockPage) {
 		'account' => array(
 			'tickets' => true,
 			'password_strength' => 0
+		),
+		'legal' => array('mode' => 'normal'),
+		'social' => array(
+			'facebook' => true,
+			'pinterest' => true,
+			'twitter' => false,
+			'google' => false,
+			'google_publisher' => '',
+			'addthis' => false,
+			'vk' => false
 		)
 	);
 
@@ -168,7 +178,34 @@ function getMockData($mockPage) {
 				'on_stock' => true,
 				'allow_outofstock_sale' => false
 			),
-			'quantity' => 1
+			'quantity' => 1,
+			'images' => array(
+				0 => 2758889,
+				1 => 2759236
+			),
+			'stock' => array(
+				'available' => true,
+				'on_stock' => true,
+				'track' => true,
+				'allow_outofstock_sale' => false,
+				'level' => 60,
+				'minimum' => 1,
+				'maximum' => 60,
+				'delivery' => array(
+					'title' => '5 - 7 days'
+				)
+			),
+			'options' => false,
+			'variants' => false,
+			'custom' => false,
+			'unit' => false,
+			'specs' => false,
+			'discounts' => false,
+			'discount_rules' => false,
+			'reviews' => false,
+			'tags' => false,
+			'bundles' => false,
+			'related' => false
 		)
 	);
 
@@ -216,18 +253,26 @@ function getMockData($mockPage) {
 		'setting_kiyoh' => '',
 		'setting_feedbackcompany' => '',
 		'banners' => 0,
-		'setting_homepagetags' => 0
+		'setting_homepagetags' => 0,
+		'product_image_fit' => 1,
+		'setting_reviews' => 0,
+		'show_amount_of_products_on_productpage' => 0
 	);
 
 	function getTemplateUrl($mockPage) {
 		$templates = array(
-			'home' => 'pages/index.rain'
+			'home' => 'pages/index.rain',
+			'product' => 'pages/product.rain'
 		);
-		return $templates[$mockPage];
+		if (array_key_exists($mockPage, $templates)) {
+			return $templates[$mockPage];
+		} else {
+			return $templates['home'];
+		}
 	}
 
 	function getContent($mockPage) {
-		if (file_exists('contents/'.$mockPage).'.html') {
+		if (file_exists('contents/'.$mockPage.'.html')) {
 			return file_get_contents('contents/'.$mockPage.'.html');
 		} else {
 			return false;
@@ -242,6 +287,7 @@ function getMockData($mockPage) {
 		'content' => getContent($mockPage),
 		'headlines' => false,
 		'categories' => false,
-		'featured' => false
+		'featured' => false,
+		'product' => $products[0]
 	);
 }

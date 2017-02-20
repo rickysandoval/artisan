@@ -27,7 +27,7 @@ class TemplateRenderer
     $this->environment = new Twig_Environment($this->loader, $envOptions);
 
     $urlAsset = new Twig_Filter('url_asset', function ($string) { 
-      $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png");
+      $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png", 'lightbox.js');
       $cache_control = '1';
       if (isset($_GET['ckcachecontrol'])) {
           $cache_control = $_GET['ckcachecontrol'];
@@ -39,17 +39,18 @@ class TemplateRenderer
       }
     });
     $urlCore = new Twig_Filter('url_core', function ($string) { return 'http://static.shoplightspeed.com/assets/' . $string; });
-    $url = new Twig_Filter('url', function ($string) { return $string; });
+    $url = new Twig_Filter('url', function ($string) { if ($string) {return $string;} else { return '/'; } });
     $t = new Twig_Filter('t', function ($string) { return $string; });
-    $money = new Twig_Filter('money', function ($number) { money_format('', $number); });
+    $money = new Twig_Filter('money', function ($number) { return money_format('$%i', $number); });
+    $percentage = new Twig_Filter('percentage', function ($number) { return $number.'%'; });
     $urlImage = new Twig_Filter('url_image', function ($id, $modifier, $string) { 
-      $builtUrl = "http://static.shoplightspeed.com/shops/608660/files/  " . $id;
+      $builtUrl = "http://static.shoplightspeed.com/shops/608660/files/00" . $id;
       if ($modifier) {
         $builtUrl .= '/'.$modifier.'/';
       }
       $string = preg_replace('/[^\da-z ]/i', '', $string);
       $string = preg_replace('/\s+/', '-', $string);
-      $builtUrl .= '/'.$string.'.jpg';
+      return $builtUrl .= '/'.strtolower($string).'.jpg';
     });
 
     $filters = array(
@@ -58,7 +59,9 @@ class TemplateRenderer
       3 => $url,
       4 => $t,
       5 => $money,
-      6 => $urlImage
+      6 => $urlImage,
+      7 => new Twig_Filter('html_product_configure', function () {}),
+      8 => $percentage
     );
 
     foreach ($filters as $filter) {

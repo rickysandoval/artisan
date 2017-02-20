@@ -47,6 +47,32 @@
     </div>
 </div>
 
+<div class="sub-menu-item-content hidden-xs full-width">
+    <ul>
+        <li>
+            <a href="{{'collection/?sort=newest' | url}}" title="SHOP">SHOP<span>browse our newest rugs</span></a>
+        </li>
+        <li>
+            <a href="{{'service/about/' | url }}" title="ABOUT">ABOUT<span>more about our difference</span></a>
+        </li>
+        <li>
+            <a href="/contact-us/" title="VISIT">VISIT<span>see our rugs in person</span></a>
+        </li>
+        <div class="clearfix"></div>
+    </ul>
+</div>
+
+<div class="info-block" style="background: url('{{'bg-repeat.jpg' | url_asset}}')">
+    <div class="info-block__content">
+        <h2>Bringing the World Into Your Home</h2>
+        <p>We’re one of Colorado’s leading rug galleries, providing thousands of clients with luxurious rugs and decades of expertise. From the timeless textures of traditional works of art to rich contemporary pieces, our years of experience and knowledge allow us to attain the finest weavings from around the planet.</p>
+        <p>While our business is rugs, our passion is responding to the unique challenges and the aesthetic requirements of each and every client, from those purchasing a single rug to furnish their new home to experienced designers cultivating large collections. </p>
+        <p><a class="button button--solid" title="SHOP NEW ARRIVALS " href="http://shop.artisanruggallery.com/" target="_blank">SHOP NEW ARRIVALS</a></p>
+    </div>
+</div>
+
+
+
 
 {% if content %}
 <div class="row">

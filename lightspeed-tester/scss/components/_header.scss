@@ -309,7 +309,7 @@ header .logo {
     .navigation .logo {
         background-color: white;
         border-bottom: 1px solid $color-border-lighter;
-        padding: 20px 0;
+        padding: 16px 0;
     }
     .navigation .logo img {
         display: inherit;
@@ -363,8 +363,8 @@ header .logo {
         span:nth-child(2) {
             transform: scale(0);
         }
-
-        span:nth-child(1), span:nth-child(3) {
+        span:nth-child(1),
+        span:nth-child(3) {
             top: 13px;
         }
         span:nth-child(1) {
@@ -573,5 +573,15 @@ header .logo {
         right: 15px;
         top: 13px;
         font-size: 16px;
+    }
+}
+
+@media (max-width: $screen-mobile-max) {
+    .navigation .logo {
+        text-align: right;
+    }
+
+    .navigation .burger {
+        transform: scale(.72);
     }
 }

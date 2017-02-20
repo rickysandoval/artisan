@@ -8,3 +8,46 @@
 	display: table-cell;
 	vertical-align: middle;
 }
+
+.full-width {
+	margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.info-block {
+	text-align: center;
+	@extend .full-width;
+	padding: 55px 0 25px;
+
+	.info-block__content {
+		max-width: 970px;
+		margin: 0 auto;
+		padding: 0 15px;
+
+		h1,h2 {
+			font-size: 24px;
+			margin-bottom: 40px;
+			color: $color-background-dark;
+			font-weight: 700;
+			text-transform: uppercase;
+			position: relative;
+			&:after {
+				position: absolute;
+			    width: 118px;
+			    height: 4px;
+			    background: #ef4036;
+			    bottom: -10px;
+			    left: 50%;
+			    margin-left: -59px;
+			    content: "";
+			}
+		}
+
+		p {
+			font-family: $font-family-serif;
+			font-size: 16px;
+			line-height: 2.4;
+			margin-bottom: 50px;
+		}
+	}
+}

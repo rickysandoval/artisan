@@ -198,7 +198,7 @@ function getMockData($mockPage) {
 	);
 
 	$theme = array(
-		'body_google_webfonts' => 'Montserrat',
+		'body_google_webfonts' => 'Merriweather',
 		'headings_google_webfonts' => 'Montserrat',
 		'setting_brands' => 0,
 		'setting_newsletter' => 0,

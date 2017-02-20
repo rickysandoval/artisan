@@ -156,6 +156,9 @@ header .logo {
             color: white;
             background-color: $color-primary;
         }
+        &:last-child {
+            border-bottom: none;
+        }
     }
     .subitemLink {
         display: block;
@@ -167,7 +170,7 @@ header .logo {
 }
 
 .desktop nav .subnav .subnav {
-    top: -3px;
+    top: -4px;
     left: 100%;
     transform: none;
 }

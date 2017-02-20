@@ -1,9 +1,107 @@
 .mod-banner {
-	margin-left: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
+    text-align: center;
 }
 
 .mod-banner .banner-item {
-	background-size: cover;
-	height: 50vh;
+    background-size: cover;
+    height: 66vh;
+    max-height: 450px;
+    min-height: 370px;
 }
+
+.mod-banner .slick-prev,
+.mod-banner .slick-next {
+    z-index: 2;
+    &:before {
+        display: block;
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-left: 4px solid white;
+        border-bottom: 4px solid white;
+        box-sizing: content-box;
+        z-index: 1;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+    	border: none;
+    }
+}
+
+.mod-banner .slick-prev {
+    left: 25px;
+    &:before {
+        transform: rotate(45deg);
+    }
+}
+
+.mod-banner .slick-next {
+    right: 25px;
+    &:before {
+        transform: rotate(225deg);
+    }
+}
+
+.mod-banner .slick-dots {
+	bottom: 20px;
+
+	li {
+		button:before {
+			font-size: 45px;
+			color: $color-background-darker;
+			opacity: 1;
+		}
+		&.slick-active button:before {
+			color: white;
+		}
+	}
+}
+
+.mod-banner h1,
+.mod-banner h2 {
+    text-transfor: uppercase;
+    position: relative;
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 50px;
+    letter-spacing: 4;
+    &:after {
+    	content: "";
+		bottom: -15px;
+		position: absolute;
+		left: 50%;
+		margin-left: -94px;
+		width: 187px;
+		height: 4px;
+		background: #fff;
+    }
+}
+
+.mod-banner .wrap-content {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 36px;
+	font-family: $font-family-serif;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	font-style: normal;
+
+	p {
+		margin: 0 auto 50px auto;
+		max-width: 750px;
+		font-weight: bold;
+		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+

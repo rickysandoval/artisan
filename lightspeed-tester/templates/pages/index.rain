@@ -87,10 +87,10 @@
         <!-- left -->
         <div class="menu-location">
             <ul>
-                <li class="active" data-toggle="tab" data-lat="39.7302451" data-lng="-104.9877931" data-zoom="16">
+                <li class="active maps-change" data-toggle="tab" data-lat="39.7302451" data-lng="-104.9877931" data-zoom="16">
                     <a data-map="map-1" href="javascript:void(0); " title="DENVER LOCATION">DENVER</a>
                 </li>
-                <li class="" data-toggle="tab" data-lat="38.8697999" data-lng="-106.9852758" data-zoom="16">
+                <li class="maps-change" data-toggle="tab" data-lat="38.8697999" data-lng="-106.9852758" data-zoom="16">
                     <a data-map="map-2" href="javascript:void(0); " title="CRESTED BUTTE LOCATION">CRESTED BUTTE</a>
                 </li>
                 <div class="clearfix"></div>
@@ -122,8 +122,8 @@
     </div>
 </div>
 <script>
-  function initMap() {
-    var uluru = {lat: 39.7302451, lng: -104.9877931};
+  function initMap(coords) {
+    var uluru = coords || {lat: 39.7302451, lng: -104.9877931};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
       zoom: 16,
       scrollwheel: false,
@@ -136,6 +136,20 @@
       icon: image
     });
   }
+
+  $(document).ready(function() {
+    $('.maps-change').on('click', function(ev) {
+      if (!$(this).hasClass('active')){
+        var uluru = {
+          lat: $(this).data('lat'),
+          lng: $(this).data('lng')
+        }
+        initMap(uluru);
+        $('.maps-change.active').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  });
 </script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkXUWLPP5cojDHN6zLaWQ9NfkZMlm-aw&callback=initMap">

@@ -1325,7 +1325,9 @@ header .logo {
     border: 0px !important; }
   .mod-contact .address {
     max-width: 600px;
-    padding: 70px 20px 0;
+    padding: 0 20px 0;
+    align-items: center;
+    height: 100%;
     color: #868686;
     font-family: "Merriweather", serif;
     font-size: 12px;
@@ -1362,8 +1364,11 @@ header .logo {
     .mod-contact .item:first-child {
       flex-grow: 1; }
   .mod-contact .address {
-    display: block;
-    padding-top: 25px; }
+    flex-direction: column;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    justify-content: space-around;
+    align-items: flex-start; }
     .mod-contact .address h3 {
       margin-bottom: 10px; }
     .mod-contact .address p {
@@ -1374,11 +1379,11 @@ header .logo {
       max-width: 190px; }
   .mod-contact .item-location:first-child {
     margin-bottom: 25px; } }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .mod-contact {
     display: block; }
     .mod-contact .address {
-      display: flex; } }
+      flex-direction: row; } }
 @media (max-width: 479px) {
   .mod-contact .address {
     display: block;

@@ -66,6 +66,7 @@
     }
 }
 
+
 .see-us h2:after {
     background: #fff9e2;
 }
@@ -118,7 +119,9 @@
     }
     .address {
         max-width: 600px;
-        padding: 70px 20px 0;
+        padding: 0 20px 0;
+        align-items: center;
+        height: 100%;
         color: $color-text-light;
         font-family: $font-family-serif;
         font-size: 12px;
@@ -165,8 +168,11 @@
             }
         }
         .address {
-            display: block;
+            flex-direction: column;
+            padding-bottom: 25px;
             padding-top: 25px;
+            justify-content: space-around;
+            align-items: flex-start;
             h3 {
                 margin-bottom: 10px;
             }
@@ -185,11 +191,11 @@
     }
 }
 
-@media (max-width: $screen-sm-max) {
+@media (max-width: $screen-xs-max) {
     .mod-contact {
       display: block;
         .address {
-            display: flex;
+            flex-direction: row;
         }
     }
 }

@@ -51,3 +51,18 @@
 		}
 	}
 }
+
+@media (max-width: $screen-mobile-max) {
+  .info-block {
+  	.info-block__content {
+  		h1,h2 {
+  			font-size: 22px;
+  		}
+  		p {
+  			font-size: 14px;
+  			line-height: 2;
+  			margin-bottom: 20px;
+  		}
+  	}
+  }
+}

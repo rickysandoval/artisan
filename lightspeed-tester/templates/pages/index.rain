@@ -6,7 +6,7 @@
                     <div class="wrap-content">
                         <h1>Any Rug. Any Style. Any Home.</h1>
                         <p>Artisan Rug Gallery offers bespoke solutions to your home designs, ranging from exceptional contemporary pieces, to traditional weavings.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="http://shop.artisanruggallery.com/" target="_blank">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                     <div class="wrap-content">
                         <h2>Hand Woven. Hand Selected.</h2>
                         <p>We scour continents for breathtaking quality.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="http://shop.artisanruggallery.com/" target="_blank">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <div class="wrap-content">
                         <h2>Impeccable Craftsmanship.</h2>
                         <p>Savor the vibrant tapestry of the world beneath your feet.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="http://shop.artisanruggallery.com/" target="_blank">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <div class="wrap-content">
                         <h2>A Rug For Generations.</h2>
                         <p>We offer a unique selection of authentic, antique styles.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="http://shop.artisanruggallery.com/" target="_blank">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -67,20 +67,88 @@
         <h2>Bringing the World Into Your Home</h2>
         <p>We’re one of Colorado’s leading rug galleries, providing thousands of clients with luxurious rugs and decades of expertise. From the timeless textures of traditional works of art to rich contemporary pieces, our years of experience and knowledge allow us to attain the finest weavings from around the planet.</p>
         <p>While our business is rugs, our passion is responding to the unique challenges and the aesthetic requirements of each and every client, from those purchasing a single rug to furnish their new home to experienced designers cultivating large collections. </p>
-        <p><a class="button button--solid" title="SHOP NEW ARRIVALS " href="http://shop.artisanruggallery.com/" target="_blank">SHOP NEW ARRIVALS</a></p>
+        <p><a class="button button--solid" title="SHOP NEW ARRIVALS " href="{{'collection/?sort=newest' | url}}">SHOP NEW ARRIVALS</a></p>
     </div>
 </div>
 
+<div class="mod-banner thin-banner see-us">
+    <div class="banner-item" style="background-image:url('{{'story-different.jpg' | url_asset}}')">
+      <div class="table">
+          <div class="table-cell">
+              <h2>Come See Us</h2>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="full-width mod-contact">
+    <!-- version desktop -->
+    <div class="item">
+        <!-- left -->
+        <div class="menu-location">
+            <ul>
+                <li class="active" data-toggle="tab" data-lat="39.7302451" data-lng="-104.9877931" data-zoom="16">
+                    <a data-map="map-1" href="javascript:void(0); " title="DENVER LOCATION">DENVER</a>
+                </li>
+                <li class="" data-toggle="tab" data-lat="38.8697999" data-lng="-106.9852758" data-zoom="16">
+                    <a data-map="map-2" href="javascript:void(0); " title="CRESTED BUTTE LOCATION">CRESTED BUTTE</a>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <div class="map-container desktop-version">
+            <div id="map-canvas" class="map-canvas"></div>
+        </div>
+    </div>
+    <div class="item location-detail">
+        <div class="address">
+            <div class="item-location">
+                <h3>Denver, CO</h3>
+                <p>Shops at 9th Ave
+                    <br /> 899 N. Broadway
+                    <br /> Denver, CO 80203</p>
+                <hr>
+                <p>Tiffany Deutsch <br/>303. 825. 0064 <br/><a href="mailto:tiffany@artisanruggallery.com">tiffany@artisanruggallery.com</a></p>
+            </div>
+            <div class="item-location right-location">
+                <h3>Crested Butte, CO</h3>
+                <p>Artisan Rug Gallery
+                    <br /> 311 Elk Ave.
+                    <br /> Crested Butte, CO 81224</p>
+                <hr>
+                <p>Jeff Deutsch <br/>970. 349. 0016 <br/><a href="mailto:jeff@artisanruggallery.com">jeff@artisanruggallery.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  function initMap() {
+    var uluru = {lat: 39.7302451, lng: -104.9877931};
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+      zoom: 16,
+      scrollwheel: false,
+      center: uluru
+    });
+    var image = "{{'map-icon.png' | url_asset}}";
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: image
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkXUWLPP5cojDHN6zLaWQ9NfkZMlm-aw&callback=initMap">
+</script>
 
 
-
-{% if content %}
+{# {% if content %}
 <div class="row">
   <div class="col-md-10 col-md-offset-1 text-center">
     {{ content | raw }}
   </div>
 </div>
-{% endif %}
+{% endif %} #}
 
 {% if featured %}
 <div class="products row">

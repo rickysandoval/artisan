@@ -286,6 +286,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/map-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3255,
+		"inputAbbreviatedPath": "\/assets\/map-icon.png",
+		"outputAbbreviatedPath": "\/assets\/map-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/slick.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -304,6 +315,17 @@
 		"initialSize": 7165,
 		"inputAbbreviatedPath": "\/assets\/social-icons.png",
 		"outputAbbreviatedPath": "\/assets\/social-icons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/story-different.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126696,
+		"inputAbbreviatedPath": "\/assets\/story-different.jpg",
+		"outputAbbreviatedPath": "\/assets\/story-different.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

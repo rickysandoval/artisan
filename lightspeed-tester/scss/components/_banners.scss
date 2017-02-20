@@ -61,7 +61,7 @@
 
 .mod-banner h1,
 .mod-banner h2 {
-    text-transfor: uppercase;
+    text-transform: uppercase;
     position: relative;
     font-size: 45px;
     color: white;
@@ -79,6 +79,10 @@
         height: 4px;
         background: #fff;
     }
+}
+
+.mod-banner h2 {
+    font-size: 36px;
 }
 
 .mod-banner .wrap-content {
@@ -102,6 +106,16 @@
     }
 }
 
+.thin-banner .banner-item {
+    height: 33vh;
+    max-height: 300px;
+    min-height: 200px;
+    background-position: 50% 50%;
+    h1,h2 {
+        margin-bottom: 20px;
+    }
+}  
+
 @media (max-width: $screen-xs-max) {
 	.mod-banner .banner-item {
 		height: 75vh;
@@ -109,9 +123,19 @@
 	    min-height: 370px;
 	}
 
-    .mod-banner h1,
-    .mod-banner h2 {
+    .thin-banner .banner-item {
+        height: 33vh;
+        max-height: 300px;
+        min-height: 200px;
+    }
+
+    .mod-banner h1 {
         font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .mod-banner h2 {
+        font-size: 32px;
         margin-bottom: 40px;
     }
     .mod-banner .wrap-content {
@@ -151,10 +175,20 @@
 	    min-height: 370px;
 	}
 
+    .thin-banner .banner-item {
+        height: 33vh;
+        max-height: 300px;
+        min-height: 200px;
+    }
+
 	.mod-banner h1,
     .mod-banner h2 {
         font-size: 28px;
         margin-bottom: 30px;
+    }
+
+    .mod-banner h2 {
+        font-size: 24px;
     }
 
     .mod-banner .wrap-content {

@@ -15,12 +15,17 @@ $screen-lg-max: ($screen-xl-min - 1);
 /* Colors */
 
 $color-primary: #ef4036;
-$color-text-brown: #8c7e78;
+$color-text-brown: #685f5c;
+$color-text-dark-brown: #8c7e78;
+$color-text-light: #868686;
 $color-background-light: #f2f0ef;
 $color-background-dark: #a6968f;
 $color-background-darker: #6e5c53;
+$color-background-gray: #eae8e7;
 $color-border-light: #cac3c0;
 $color-border-lighter: #f0f0f0;
+$color-border-dark: #afa8a6;
+$color-gray: #a8a29f;
 
 /* Typography */
 $font-size-xl: 18px;

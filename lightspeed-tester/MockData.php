@@ -224,7 +224,20 @@ function getMockData($mockPage) {
 
 	$page = array(
 		'title' => 'Artisan Rug Gallery | The finest handmade rugs for your home.',
-		'breadcrumbs' => false,
+		'breadcrumbs' => array(
+			0 => array(
+				'url' => 'category',
+				'title' => 'contemporary'
+			),
+			1 => array(
+				'url' => 'category',
+				'title' => '6 x 9'
+			),
+			2 => array(
+				'url' => 'product',
+				'title' => 'Coventry, Light Natural: 6\' x 9\''
+			)
+		),
 		'cart' => $cart,
 		'back' => false,
 		'account' => false,

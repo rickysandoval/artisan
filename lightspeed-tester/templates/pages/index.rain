@@ -6,7 +6,7 @@
                     <div class="wrap-content">
                         <h1>Any Rug. Any Style. Any Home.</h1>
                         <p>Artisan Rug Gallery offers bespoke solutions to your home designs, ranging from exceptional contemporary pieces, to traditional weavings.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                     <div class="wrap-content">
                         <h2>Hand Woven. Hand Selected.</h2>
                         <p>We scour continents for breathtaking quality.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <div class="wrap-content">
                         <h2>Impeccable Craftsmanship.</h2>
                         <p>Savor the vibrant tapestry of the world beneath your feet.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <div class="wrap-content">
                         <h2>A Rug For Generations.</h2>
                         <p>We offer a unique selection of authentic, antique styles.</p>
-                        <p><a class="button border" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
         <h2>Bringing the World Into Your Home</h2>
         <p>We’re one of Colorado’s leading rug galleries, providing thousands of clients with luxurious rugs and decades of expertise. From the timeless textures of traditional works of art to rich contemporary pieces, our years of experience and knowledge allow us to attain the finest weavings from around the planet.</p>
         <p>While our business is rugs, our passion is responding to the unique challenges and the aesthetic requirements of each and every client, from those purchasing a single rug to furnish their new home to experienced designers cultivating large collections. </p>
-        <p><a class="button button--solid" title="SHOP NEW ARRIVALS " href="{{'collection/?sort=newest' | url}}">SHOP NEW ARRIVALS</a></p>
+        <p><a class="button button--solid button--big" title="SHOP NEW ARRIVALS " href="{{'collection/?sort=newest' | url}}">SHOP NEW ARRIVALS</a></p>
     </div>
 </div>
 

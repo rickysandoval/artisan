@@ -27,7 +27,7 @@ class TemplateRenderer
     $this->environment = new Twig_Environment($this->loader, $envOptions);
 
     $urlAsset = new Twig_Filter('url_asset', function ($string) { 
-      $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png", 'lightbox.js');
+      $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png", 'lightbox.js', 'social-icons-2x.png');
       $cache_control = '1';
       if (isset($_GET['ckcachecontrol'])) {
           $cache_control = $_GET['ckcachecontrol'];
@@ -46,7 +46,7 @@ class TemplateRenderer
     $urlImage = new Twig_Filter('url_image', function ($id, $modifier, $string) { 
       $builtUrl = "http://static.shoplightspeed.com/shops/608660/files/00" . $id;
       if ($modifier) {
-        $builtUrl .= '/'.$modifier.'/';
+        $builtUrl .= '/'.preg_replace('/[p]/i', '', $modifier);
       }
       $string = preg_replace('/[^\da-z ]/i', '', $string);
       $string = preg_replace('/\s+/', '-', $string);

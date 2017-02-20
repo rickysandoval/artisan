@@ -13,7 +13,7 @@
   </div>  
 </div>
 <div class="product-wrap row">
-  <div class="product-img col-sm-4 col-md-4">
+  <div class="product-img col-sm-6 col-md-6 col-lg-5">
     <div class="zoombox">
       <div class="images"> 
         {% if product.image %}<meta itemprop="image" content="{{ product.image | url_image('300x250x2', product.fulltitle) }}" />{% endif %}
@@ -52,7 +52,7 @@
       <div class="thumbs row">
         {% if product.images.1 %}
           {% for image in product.images %}
-          <div class="col-xs-3 col-sm-4 col-md-4">
+          <div class="col-xs-3">
             <a data-image-id="{{ image }}">
               {% if product.images.0 %}
                 {% if theme.product_image_fit %}
@@ -71,7 +71,7 @@
     </div>
   </div>
  
-  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-info col-sm-8 col-md-7 col-md-offset-1"> 
+  <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="product-info col-sm-6 col-lg-offset-1"> 
     <meta itemprop="price" content="{{ product.price.price | number_format(2, '.', '') }}" />
     <meta itemprop="priceCurrency" content="{{ shop.currency | upper }}" /> 
     <meta itemprop="itemCondition" itemtype="http://schema.org/OfferItemCondition" content="http://schema.org/NewCondition"/>
@@ -108,7 +108,7 @@
             {#  <a href="javascript:;" onclick="updateQuantity('up');" class="up">+</a>#}
             {#  <a href="javascript:;" onclick="updateQuantity('down');" class="down">-</a>#}
             {#</div>#}
-            <a href="javascript:;" onclick="$('#product_configure_form').submit();" class="btn glyphicon glyphicon-shopping-cart" title="{{ 'Add to cart' | t }}" {% if shop.language == 'de' %}style="padding: 0px 10px;"{% endif %}>
+            <a href="javascript:;" onclick="$('#product_configure_form').submit();" class="btn" title="{{ 'Add to cart' | t }}" {% if shop.language == 'de' %}style="padding: 0px 10px;"{% endif %}>
               <span>{{ 'Add to cart' | t }}</span>
             </a>
             {% endif %}
@@ -122,11 +122,10 @@
         <ul>
           <li class="active{% if not product.specs %} col-2{% endif %} information"><a rel="info" href="#">{{ 'Information' | t }}</a></li>
           {% if product.specs %}<li class="specs"><a rel="specs" href="#">{{ 'Specifications' | t }}</a></li>{% endif %}
-          {% if theme.setting_reviews %}<li class="{% if not product.specs %}col-2{% endif %} reviews"><a rel="reviews" href="#">{{ 'Reviews' | t }} <small>({{ product.reviews | length }})</small></a></li>{% endif %}
         </ul>
       </div>                    
       <div class="tabsPages">
-        <div class="page info active">
+        <div class="info active page{% if not product.specs %} no-tabs{% endif %}">
           {% if product.code or product.stock.track and not product.stock.on_stock or product.stock.delivery or product.unit %}
           <table class="details">
             {% if product.code %}<meta itemprop="mpn" content="{{ product.code }}" />{% endif %}
@@ -210,36 +209,6 @@
           </table>
         </div>
         {% endif %}
-
-        <div class="page reviews">
-          {% if product.reviews %}
-          <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-            <meta itemprop="worstRating" content="1"/>
-            <meta itemprop="bestRating" content="5"/>
-            <meta itemprop="ratingValue" content="{{ product.score * 5 | number_format(1, ',', '.') }}">
-            <meta itemprop="reviewCount" content="{{ product.reviews | length }}">
-          </div>
-          {% endif %}
-          {% for review in product.reviews %}
-          <div class="review">
-            {% set reviewScore = review.score * 5 | number_format(0) %}
-            <div class="stars">
-              {% for i in 1..reviewScore %}
-              <span class="glyphicon glyphicon-star"></span>
-              {% endfor %}
-            </div>
-            <strong>{{ review.name }}</strong> <small>{{ review.date | date('d-m-Y H:i') }}</small>
-            <p>{{ review.content }}</p>
-          </div>
-          {% endfor %}
-          
-          <div class="bottom">
-            <div class="right">
-              <a href="{{ ('account/review/' ~ product.id) | url }}">{{ 'Add your review' | t }}</a>
-            </div>
-            {{ '$1 stars based on $2 reviews' | t('<span>' ~ product.score * 5 | number_format(1, ',', '.') ~ '</span>', '<span>' ~ product.reviews | length ~ '</span>') | raw }}
-          </div>          
-        </div>
       </div>
     </div>
   </div>

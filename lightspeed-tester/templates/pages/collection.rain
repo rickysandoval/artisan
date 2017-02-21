@@ -1,0 +1,180 @@
+<div class="page-title row">
+  <div class="col-sm-6 col-md-6">
+    <h1>{{ collection.title }}</h1>
+  </div>
+  <div class="col-sm-6 col-md-6 breadcrumbs text-right">
+    <a href="{{ '' | url }}" title="{{ 'Home' | t }}">{{ 'Home' | t }}</a>
+    
+    {% for breadcrumb in page.breadcrumbs %}
+      {% set splitTitle = breadcrumb.title | split(':') %}
+    / <a href="{{ breadcrumb.url | url }}">{{ splitTitle[0] }}</a>
+    {% endfor %}
+  </div>  
+  {% if collection.content %}
+  <div class="clearfix"></div>
+  <div class="col-md-12">
+    {{ collection.content | raw }}  
+  </div>
+  {% endif %}
+</div>
+<div class="products row">
+  <div class="col-md-2 sidebar">
+    <div class="sort">
+      <form action="{{ collection.internal.url | url }}" method="get" id="filter_form">
+        <input type="hidden" name="mode" value="{{ collection.filters.mode }}" id="filter_form_mode" />
+        <input type="hidden" name="limit" value="{{ collection.filters.limit }}" id="filter_form_limit" />
+        <input type="hidden" name="sort" value="{{ collection.filters.sort }}" id="filter_form_sort" />
+        <input type="hidden" name="max" value="{{ collection.filters.max }}" id="filter_form_max" />
+        <input type="hidden" name="min" value="{{ collection.filters.min }}" id="filter_form_min" />
+        
+        <div class="price-filter">
+          <div class="sidebar-filter-slider">
+            <div id="collection-filter-price"></div>
+          </div>
+          <div class="price-filter-range clear">
+            <div class="min">{{ 'Min' | t }}: {{ shop.currency2.symbol }}<span>{{ collection.filters.min }}</span></div>
+            <div class="max">{{ 'Max' | t }}: {{ shop.currency2.symbol }}<span>{{ collection.filters.max }}</span></div>
+          </div>
+        </div>
+        
+        <select name="sort" onchange="$('#formSortModeLimit').submit();">
+          {% for sort in collection.sorts %}
+          <option value="{{ sort.id }}"{% if collection.filters.sort == sort.id %} selected="selected"{% endif %}>{{ sort.title }}</option>
+          {% endfor %}
+        </select>        
+        {% if collection.brands %}
+        <select name="brand">
+          {% for brand in collection.brands %}
+          <option value="{{ brand.id }}"{% if brand.id == collection.filters.brand %} selected="selected"{% endif %}>{{ brand.title }}</option>
+          {% endfor %}
+        </select>
+        {% endif %}
+        {% for filter in collection.filters.custom %}
+        <strong>{{ filter.title }}</strong>
+        {% for value in filter.values %}
+        <div class="sidebar-filter-item clearfix">
+          <input id="filter_{{ value.id }}" type="checkbox" name="filter[]" value="{{ value.id }}" {% if value.active %} checked="checked"{% endif %} />
+          <label for="filter_{{ value.id }}">{{ value.title }}{% if not value.active and value.has_count %} <span>({{ value.count }})</span>{% endif %}</label>
+        </div>
+        {% endfor %}
+        {% endfor %}
+      </form>
+    </div>
+    {% if theme.folding_sidebar_menu %}
+
+<ul>
+ {% for category in shop.categories %}
+       <li class="item"><span class="arrow"></span><a href="{{ category.url | url }}" class="itemLink{% if category.url is active %} active{% endif %}" title="{{ category.title }}">{{ category.title }}{% if category.type == 'category' %} {% endif %}</a>
+      {% if category is active and category.subs %}
+        <ul class="subnav">
+          {% for category in category.subs %}
+            <li class="subitem"><span class="arrow "></span><a href="{{ category.url | url }}" class="subitemLink{% if category.url is active %} active{% endif %}" title="{{ category.title }}">{{ category.title }}{% if category.type == 'category' %} {% endif %}</a>
+            {% if category is active and category.subs %}
+  <ul class="subnav">
+                {% for category in category.subs %}
+                <li class="subitem"><span class="arrow "></span><a href="{{ category.url | url }}" class="subitemLink{% if category.url is active %} active{% endif %}" title="{{ category.title }}">{{ category.title }}{% if category.type == 'category' %} {% endif %}</a>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+    {% else %}   
+     <ul>
+      {% for category in shop.categories %}
+      <li class="item{% if category.url is active %} active{% endif %}">
+        <a class="itemLink {% if category.url is active %} active{% endif %}" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+        {% if category.subs %}
+        <ul class="subnav">
+          {% for category in category.subs %}
+          <li class="subitem">
+            <a class="subitemLink{% if category.url is active %} active{% endif %} " href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+            {% if category.subs %}
+            <ul class="subnav">
+              {% for category in category.subs %}
+              <li class="subitem">
+                <a class="subitemLink{% if category.url is active %} active{% endif %}" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  <div class="col-sm-12 col-md-10">
+    {% for product in collection.products %}
+    {% include 'snippets/products.rain' %}
+    {% endfor %} 
+    {% if not collection.products %}
+    <div class="no-products-found">{{ 'No products found' | t }}...</div>
+    {% endif %}  
+  </div>
+</div>
+
+{% if shop.settings.legal.mode == 'strict' %}
+<div class="{% if collection.products %}strict-shipping{% endif %} row">
+  <div class="col-md-12">
+    <small class="shipping-cost collection">
+      * 
+      {% if shop.b2b %}
+      {{ 'Excl. VAT' | t }}
+      {% else %}
+      {{ 'Incl. VAT' | t }}
+      {% endif %} 
+      {{ 'Excl. $1' | t('<a href="' ~ 'service/shipping-returns' | url ~ '" target="_blank">' ~ 'Shipping costs' | t ~ '</a>') | raw }}
+    </small>
+  </div>
+</div>
+{% endif %}
+
+{% set pagination = collection | paginate %}
+{% if collection.pages > 1 %}
+<div class="pager row">
+  <div class="left">{{ 'Page $1 of $2' | t(collection.page, collection.pages) }}</div>
+  <ul class="right">
+    <li class="prev{% if pagination.previous %} enabled{% else %} disabled{% endif %}"><a href="{{ pagination.previous.url | url }}" title="{{ 'Previous page' | t }}"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+    {% for part in pagination.parts %}
+    {% if part.url %} 
+    <li class="number{% if part.active %} active{% endif %}"><a href="{{ part.url | url }}">{{ part.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    <li class="next{% if pagination.next %} enabled{% else %} disabled{% endif %}"><a href="{{ pagination.next.url | url }}" title="{{ 'Next page' | t }}"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+  </ul>
+</div>
+{% endif %}
+
+<script type="text/javascript">
+  $(function(){
+    $('#filter_form input, #filter_form select').change(function(){
+      $(this).closest('form').submit();
+    });
+    
+    $("#collection-filter-price").slider({
+      range: true,
+      min: {{ collection.price_min }},
+      max: {{ collection.price_max }},
+      values: [{{ collection.filters.min }}, {{ collection.filters.max }}],
+      step: 1,
+      slide: function( event, ui){
+    $('.sidebar-filter-range .min span').html(ui.values[0]);
+    $('.sidebar-filter-range .max span').html(ui.values[1]);
+    
+    $('#filter_form_min').val(ui.values[0]);
+    $('#filter_form_max').val(ui.values[1]);
+  },
+    stop: function(event, ui){
+    $('#filter_form').submit();
+  }
+    });
+  });
+</script>

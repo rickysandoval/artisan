@@ -105,6 +105,15 @@
                 {% endfor %}
                 <li class="item {% if 'service' is active %} active{% endif %}">
                   <span class="itemLink">More</span>
+                  <ul class="subnav">
+                    {% for link in shop.links.more %}
+                    <li class="subitem">
+                      <a class="subitemLink" href="{{ link.url | url }}" title="{{ link.title }}">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
                 </li>
               </ul>
               <span class="glyphicon glyphicon-remove"></span> 

@@ -1,6 +1,6 @@
 <?php
 // Use correct path to Twig's autoloader file
-require_once './vendor/autoload.php';
+require_once dirname(__FILE__).'/vendor/autoload.php';
 // Twig's autoloader will take care of loading required classes
 ini_set('display_errors', 1);
 
@@ -20,14 +20,14 @@ class TemplateRenderer
       'strict_variables' => true,
     );
     $templateDirs = array_merge(
-      array('./templates'), // Base directory with all templates
+      array(dirname(__FILE__).'/templates'), // Base directory with all templates
       $templateDirs
     );
     $this->loader = new Twig_Loader_Filesystem($templateDirs);
     $this->environment = new Twig_Environment($this->loader, $envOptions);
 
     $urlAsset = new Twig_Filter('url_asset', function ($string) { 
-      $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png", 'lightbox.js', 'social-icons-2x.png');
+      $non_local_assets = array("custom.css", "settings.css", "logo.png", "hamburger.png", 'lightbox.js');
       $cache_control = '1';
       if (isset($_GET['ckcachecontrol'])) {
           $cache_control = $_GET['ckcachecontrol'];
@@ -52,6 +52,28 @@ class TemplateRenderer
       $string = preg_replace('/\s+/', '-', $string);
       return $builtUrl .= '/'.strtolower($string).'.jpg';
     });
+    $paginate = new Twig_Filter('paginate', function ($collection) { 
+      return array(
+        'previous' => array(
+          'url' => 'category'
+        ),
+        'next' => array(
+          'url' => 'category'
+        ),
+        'parts' => array(
+          0 => array(
+            'url' => 'category',
+            'title' => '1',
+            'active' => true
+          ),
+          1 => array(
+            'url' => 'category',
+            'title' => '2',
+            'active' => false
+          )
+        )
+      );
+    });
 
     $filters = array(
       1 => $urlAsset,
@@ -61,19 +83,29 @@ class TemplateRenderer
       5 => $money,
       6 => $urlImage,
       7 => new Twig_Filter('html_product_configure', function () {}),
-      8 => $percentage
+      8 => $percentage,
+      9 => $paginate
     );
 
     foreach ($filters as $filter) {
       $this->environment->addFilter($filter);
     }
 
-    $active = new Twig_Test('active', function ($string) { 
-      return strpos($_SERVER['REQUEST_URI'], $string);
+    $active = new Twig_Test('active', function ($string) {
+      if (is_array($string)) {
+        return strpos($_SERVER['REQUEST_URI'], $string['url']);
+      } else {
+        return strpos($_SERVER['REQUEST_URI'], $string);
+      }
+    });
+
+    $divisible = new Twig_Test('divisibleby', function($number, $by) {
+      return $number % $by == 0;
     });
 
     $tests = array(
-      1 => $active
+      0 => $active,
+      1 => $divisible
     );
 
     foreach ($tests as $test) {

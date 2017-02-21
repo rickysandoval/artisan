@@ -6,7 +6,7 @@ require_once 'MockData.php';
 
 // // ... some code
 
-$data = getMockData('product');
-$renderer = new TemplateRenderer(array('pathToRoot' => '..'));
+$data = getMockData('category');
+$renderer = new TemplateRenderer();
 // Render template passing some variables and print it
 print $renderer->render('index.twig', $data);

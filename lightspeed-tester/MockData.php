@@ -11,7 +11,7 @@ function getMockData($mockPage) {
 			),
 			'depth' => 1,
 			'type' => 'category',
-			'url' => 'tribal',
+			'url' => 'category',
 			'title' => 'Tribal',
 			'description' => '',
 			'count' => 253,
@@ -25,7 +25,7 @@ function getMockData($mockPage) {
 					),
 					'depth' => 2,
 					'type' => 'category',
-					'url' => 'tribal/scatter-size',
+					'url' => 'category',
 					'title' => 'Scatter Size',
 					'description' => '',
 					'count' => 128,
@@ -43,7 +43,8 @@ function getMockData($mockPage) {
 							'url' => 'tribal/scatter-size/4-x-6',
 							'title' => '4 x 6',
 							'description' => '',
-							'count' => 50
+							'count' => 50,
+							'url' => 'category'
 						)
 					)
 				)
@@ -144,12 +145,36 @@ function getMockData($mockPage) {
 					'url' => 'http://www.lightspeedhq.com',
 					'title' => 'Lightspeed'
 				)
+			),
+			'more' => array(
+				0 => array(
+					'new_window' => false,
+					'url' => 'service/about',
+					'title' => 'About Us'
+				),
+				1 => array(
+					'new_window' => false,
+					'url' => 'service/faqs',
+					'title' => 'FAQs'
+				),
+				2 => array(
+					'new_window' => false,
+					'url' => 'service/store-policies',
+					'title' => 'Store Policies'
+				)
 			)
 		),
 		'tags' => false,
 		'settings' => $shop_settings,
 		'hallmarks' => false,
-		'payments' => false
+		'payments' => false,
+		'currency2' => array(
+			'url' => 'session/currency/usd',
+			'symbol' => '$',
+			'code' => 'USD',
+			'title' => 'United States Dollar',
+			'active' => true
+		)
 	);
 
 	$products = array(
@@ -207,6 +232,56 @@ function getMockData($mockPage) {
 			'bundles' => false,
 			'related' => false
 		)
+	);
+
+	$collection = array(
+		'filters' => array(
+			'page' => 1,
+			'sort' => 'asc',
+			'limit' => 12,
+			'mode' => 'grid',
+			'min' => 0,
+			'max' => 8000,
+			'brand' => 0,
+			'search' => false,
+			'custom' => false
+		),
+		'internal' => array(
+			'url' => 'category',
+			'page' => 1
+		),
+		'search' => false,
+		'page_next' => 2,
+		'limit' => 12,
+		'page' => 1,
+		'pages' => 2,
+		'image' => 0,
+		'content' => '',
+		'description' => '',
+		'products' => $products,
+		'title' => '6 x 9',
+		'sorts' => array(
+			'default' => array(
+				'id' => 'default',
+				'title' => 'Default'
+			),
+			'lowest' => array(
+				'id' => 'lowest',
+				'title' => 'Lowest Price'
+			)
+		),
+		'brands' => array(
+			0 => array(
+				'id' => 0,
+				'title' => 'All brands'
+			),
+			1 => array(
+				'id' => 202934,
+				'title' => 'Tufenkian'
+			)
+		),
+		'price_min' => 0,
+		'price_max' => 8000
 	);
 
 	$cart = array(
@@ -269,24 +344,27 @@ function getMockData($mockPage) {
 		'setting_homepagetags' => 0,
 		'product_image_fit' => 1,
 		'setting_reviews' => 0,
-		'show_amount_of_products_on_productpage' => 0
+		'show_amount_of_products_on_productpage' => 0,
+		'folding_sidebar_menu' => 1
 	);
 
 	function getTemplateUrl($mockPage) {
 		$templates = array(
 			'home' => 'pages/index.rain',
-			'product' => 'pages/product.rain'
+			'product' => 'pages/product.rain',
+			'category' => 'pages/collection.rain',
+			'textpage' => 'pages/textpage.rain'
 		);
 		if (array_key_exists($mockPage, $templates)) {
 			return $templates[$mockPage];
 		} else {
-			return $templates['home'];
+			return $templates['textpage'];
 		}
 	}
 
 	function getContent($mockPage) {
-		if (file_exists('contents/'.$mockPage.'.html')) {
-			return file_get_contents('contents/'.$mockPage.'.html');
+		if (file_exists(dirname(__FILE__).'/contents/'.$mockPage.'.html')) {
+			return file_get_contents(dirname(__FILE__).'/contents/'.$mockPage.'.html');
 		} else {
 			return false;
 		}
@@ -301,6 +379,11 @@ function getMockData($mockPage) {
 		'headlines' => false,
 		'categories' => false,
 		'featured' => false,
-		'product' => $products[0]
+		'product' => $products[0],
+		'collection' => $collection,
+		'textpage' => array(
+			'title' => $mockPage,
+			'content' => getContent($mockPage)
+		)
 	);
 }

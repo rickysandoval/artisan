@@ -1,3 +1,7 @@
+.banner-title {
+    padding-top: 0;
+}
+
 .mod-banner {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -111,29 +115,42 @@
     max-height: 300px;
     min-height: 200px;
     background-position: 50% 50%;
-    h1,h2 {
+    h1,
+    h2 {
         margin-bottom: 20px;
     }
-}  
+}
+
+.banner-internal {
+    .banner-item {
+        text-align: left;
+        h1 {
+            font-size: 45px;
+            text-align: left;
+            margin-left: 15vw;
+            display: inline-block;
+            &:after {
+                background: $color-primary;
+            }
+        }
+    }
+}
 
 @media (max-width: $screen-xs-max) {
-	.mod-banner .banner-item {
-		height: 75vh;
-	    max-height: none;
-	    min-height: 370px;
-	}
-
+    .mod-banner .banner-item {
+        height: 75vh;
+        max-height: none;
+        min-height: 370px;
+    }
     .thin-banner .banner-item {
         height: 33vh;
         max-height: 300px;
         min-height: 200px;
     }
-
     .mod-banner h1 {
         font-size: 36px;
         margin-bottom: 40px;
     }
-
     .mod-banner h2 {
         font-size: 32px;
         margin-bottom: 40px;
@@ -142,61 +159,52 @@
         padding: 0 30px;
         font-size: 16px;
         p {
-        	width: auto;
+            width: auto;
             margin-bottom: 30px;
             &:last-child {
                 margin-bottom: 20px;
             }
         }
     }
-
     .mod-banner .slick-prev,
-	.mod-banner .slick-next {
-	    &:before {
-	        height: 15px;
-	        width: 15px;
-	    }
-	}
-
-	.mod-banner .slick-prev {
-		left: 10px;
-	}
-
-	.mod-banner .slick-next {
-		right: 10px;
-	}
+    .mod-banner .slick-next {
+        &:before {
+            height: 15px;
+            width: 15px;
+        }
+    }
+    .mod-banner .slick-prev {
+        left: 10px;
+    }
+    .mod-banner .slick-next {
+        right: 10px;
+    }
 }
 
 @media (max-width: $screen-mobile-max) {
-
-	.mod-banner .banner-item {
-		height: calc(100vh - 70px);
-	    max-height: none;
-	    min-height: 370px;
-	}
-
+    .mod-banner .banner-item {
+        height: calc(100vh - 70px);
+        max-height: none;
+        min-height: 370px;
+    }
     .thin-banner .banner-item {
         height: 33vh;
         max-height: 300px;
         min-height: 200px;
     }
-
-	.mod-banner h1,
+    .mod-banner h1,
     .mod-banner h2 {
         font-size: 28px;
         margin-bottom: 30px;
     }
-
     .mod-banner h2 {
         font-size: 24px;
     }
-
     .mod-banner .wrap-content {
         padding: 0 30px;
         font-size: 14px;
-        min-height: 
-        p {
-        	margin-bottom: 15px;
+        min-height: p {
+            margin-bottom: 15px;
         }
     }
 }

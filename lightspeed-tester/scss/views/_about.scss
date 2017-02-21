@@ -1,0 +1,17 @@
+.part-of-the-family {
+	@media (min-width: $screen-md-min) {
+		display: flex;
+		align-items: center;
+		.content-block {
+			width: 50%;
+		}
+		.about-image-wrapper {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 	.container {
-	    width: 100%;
-	    max-width: 970px
+	    width: 100% !important;
+	    max-width: 970px !important;
 	}
 }
 
@@ -9,8 +9,52 @@
 	margin-bottom: 60px;
 }
 
+.flex-half {
+	display: flex;
+	> * {
+		flex-grow: 1;
+		width: 50%;
+	}
+}
+.flex-center {
+	align-items: center;
+}
+
 .no-bottom-space {
 	margin-bottom: -60px;
+}
+
+.content-block {
+	padding: 25px 20px;
+	&.block-left {
+		padding-left: 0;
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 3px;
+		color: $color-background-dark;
+		line-height: 40px;
+		margin-bottom: 20px;
+		position: relative;
+		text-transform: uppercase;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 118px;
+			height: 4px;
+			background: $color-primary;
+			bottom: -10px;
+		}
+	}
+
+	p {
+		font-family: $font-family-serif;
+		line-height: 2.4;
+		margin-bottom: 20px;
+	}
 }
 
 .table {
@@ -27,6 +71,11 @@
 .full-width {
 	margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
+}
+
+.half-width {
+	margin-right: calc(50% - 50vw);
+	width: 50vw;
 }
 
 .info-block {

@@ -837,7 +837,8 @@ header .logo {
   border-left: 1px solid #cac3c0;
   background: #f2f0ef;
   padding: 0 8px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  max-height: 80px; }
   .desktop nav .header__sign-in:hover {
     color: white;
     background: #a6968f;

@@ -17,7 +17,7 @@
                     <div class="wrap-content">
                         <h2>Hand Woven. Hand Selected.</h2>
                         <p>We scour continents for breathtaking quality.</p>
-                        <p><a class="button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <div class="wrap-content">
                         <h2>Impeccable Craftsmanship.</h2>
                         <p>Savor the vibrant tapestry of the world beneath your feet.</p>
-                        <p><a class="button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <div class="wrap-content">
                         <h2>A Rug For Generations.</h2>
                         <p>We offer a unique selection of authentic, antique styles.</p>
-                        <p><a class="button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
+                        <p><a class="button button--light button--big" title="SHOP OUR COLLECTION" href="{{'collection/?sort=newest' | url}}">SHOP OUR COLLECTION</a></p>
                     </div>
                 </div>
             </div>

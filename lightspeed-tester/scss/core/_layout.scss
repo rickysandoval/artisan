@@ -1,132 +1,133 @@
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-	.container {
-	    width: 100% !important;
-	    max-width: 970px !important;
-	}
+    .container {
+        width: 100% !important;
+        max-width: 970px !important;
+    }
 }
 
 .content {
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .flex-half {
-	display: flex;
-	> * {
-		flex-grow: 1;
-		width: 50%;
-	}
+    @media (min-width: $screen-md-min) {
+        display: flex;
+        > * {
+            flex-grow: 1;
+            width: 50%;
+        }
+    }
 }
+
 .flex-center {
-	align-items: center;
+    align-items: center;
 }
 
 .no-bottom-space {
-	margin-bottom: -60px;
+    margin-bottom: -60px;
 }
 
 .content-block {
-	padding: 25px 20px;
-	&.block-left {
-		padding-left: 0;
-	}
-
-	h2 {
-		font-size: 24px;
-		font-weight: 700;
-		letter-spacing: 3px;
-		color: $color-background-dark;
-		line-height: 40px;
-		margin-bottom: 20px;
-		position: relative;
-		text-transform: uppercase;
-		&:after {
-			content: '';
-			display: block;
-			position: absolute;
-			width: 118px;
-			height: 4px;
-			background: $color-primary;
-			bottom: -10px;
-		}
-	}
-
-	p {
-		font-family: $font-family-serif;
-		line-height: 2.4;
-		margin-bottom: 20px;
-	}
+    padding: 25px 20px;
+    &.block-left {
+        padding-left: 0;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: $color-background-dark;
+        line-height: 40px;
+        margin-bottom: 20px;
+        position: relative;
+        text-transform: uppercase;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 118px;
+            height: 4px;
+            background: $color-primary;
+            bottom: -10px;
+        }
+    }
+    p {
+        font-family: $font-family-serif;
+        line-height: 2.4;
+        margin-bottom: 20px;
+    }
 }
 
 .table {
-	display: table;
-	height: 100%;
-	width: 100%;
-	max-width: 100%;
+    display: table;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
 }
+
 .table-cell {
-	display: table-cell;
-	vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .full-width {
-	margin-left: calc(50% - 50vw);
+    margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
 }
 
 .half-width {
-	margin-right: calc(50% - 50vw);
-	width: 50vw;
+    margin-right: calc(50% - 50vw);
+    width: 50vw;
 }
 
 .info-block {
-	text-align: center;
-	@extend .full-width;
-	padding: 55px 0 25px;
-
-	.info-block__content {
-		max-width: 970px;
-		margin: 0 auto;
-		padding: 0 15px;
-
-		h1,h2 {
-			font-size: 24px;
-			margin-bottom: 40px;
-			color: $color-background-dark;
-			font-weight: 700;
-			text-transform: uppercase;
-			position: relative;
-			&:after {
-				position: absolute;
-			    width: 118px;
-			    height: 4px;
-			    background: #ef4036;
-			    bottom: -10px;
-			    left: 50%;
-			    margin-left: -59px;
-			    content: "";
-			}
-		}
-
-		p {
-			font-family: $font-family-serif;
-			font-size: 16px;
-			line-height: 2.4;
-			margin-bottom: 50px;
-		}
-	}
+    text-align: center;
+    @extend .full-width;
+    padding: 55px 0 25px;
+    .info-block__content {
+        max-width: 970px;
+        margin: 0 auto;
+        padding: 0 15px;
+        h1,
+        h2 {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: $color-background-dark;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: relative;
+            &:after {
+                position: absolute;
+                width: 118px;
+                height: 4px;
+                background: #ef4036;
+                bottom: -10px;
+                left: 50%;
+                margin-left: -59px;
+                content: "";
+            }
+        }
+        p {
+            font-family: $font-family-serif;
+            font-size: 16px;
+            line-height: 2.4;
+            margin-bottom: 50px;
+        }
+    }
 }
 
 @media (max-width: $screen-mobile-max) {
-  .info-block {
-  	.info-block__content {
-  		h1,h2 {
-  			font-size: 22px;
-  		}
-  		p {
-  			font-size: 14px;
-  			line-height: 2;
-  			margin-bottom: 20px;
-  		}
-  	}
-  }
+    .info-block {
+        .info-block__content {
+            h1,
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 2;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }

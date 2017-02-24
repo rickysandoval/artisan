@@ -576,11 +576,12 @@ input::-moz-focus-inner {
 .content {
   margin-bottom: 60px; }
 
-.flex-half {
-  display: flex; }
-  .flex-half > * {
-    flex-grow: 1;
-    width: 50%; }
+@media (min-width: 992px) {
+  .flex-half {
+    display: flex; }
+    .flex-half > * {
+      flex-grow: 1;
+      width: 50%; } }
 
 .flex-center {
   align-items: center; }
@@ -639,14 +640,16 @@ input::-moz-focus-inner {
     max-width: 970px;
     margin: 0 auto;
     padding: 0 15px; }
-    .info-block .info-block__content h1, .info-block .info-block__content h2 {
+    .info-block .info-block__content h1,
+    .info-block .info-block__content h2 {
       font-size: 24px;
       margin-bottom: 40px;
       color: #a6968f;
       font-weight: 700;
       text-transform: uppercase;
       position: relative; }
-      .info-block .info-block__content h1:after, .info-block .info-block__content h2:after {
+      .info-block .info-block__content h1:after,
+      .info-block .info-block__content h2:after {
         position: absolute;
         width: 118px;
         height: 4px;
@@ -662,7 +665,8 @@ input::-moz-focus-inner {
       margin-bottom: 50px; }
 
 @media (max-width: 479px) {
-  .info-block .info-block__content h1, .info-block .info-block__content h2 {
+  .info-block .info-block__content h1,
+  .info-block .info-block__content h2 {
     font-size: 22px; }
   .info-block .info-block__content p {
     font-size: 14px;
@@ -1933,6 +1937,33 @@ header .logo {
       flex-direction: column; }
       .part-of-the-family .about-image-wrapper img {
         max-width: 100%; } }
+
+.our-history {
+  padding-bottom: 50px;
+  padding-top: 25px; }
+  @media (max-width: 991px) {
+    .our-history {
+      padding-bottom: 0; } }
+  .our-history .about-image-wrapper {
+    overflow: hidden;
+    margin-top: 25px;
+    position: relative; }
+    @media (max-width: 991px) {
+      .our-history .about-image-wrapper {
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        width: auto;
+        direction: rtl; }
+        .our-history .about-image-wrapper img {
+          max-width: 100%;
+          margin-bottom: -10%;
+          margin-top: -10%; } }
+    @media (min-width: 992px) {
+      .our-history .about-image-wrapper img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%); } }
 
 /* whatup */
 .title-featured {

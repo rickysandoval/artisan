@@ -84,36 +84,38 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         // line 24
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_asset')->getCallable(), array("custom.css")), "html", null, true);
         echo "\" />
+    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\">
+
     <script src=\"";
-        // line 25
+        // line 27
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_core')->getCallable(), array("jquery-1-9-1.js")), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 26
+        // line 28
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_core')->getCallable(), array("jquery-ui-1-10-1.js")), "html", null, true);
         echo "\"></script>
    
     <script type=\"text/javascript\" src=\"";
-        // line 28
+        // line 30
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_asset')->getCallable(), array("global.js")), "html", null, true);
         echo "\"></script>
 
     <script type=\"text/javascript\" src=\"";
-        // line 30
+        // line 32
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_asset')->getCallable(), array("jcarousel.js")), "html", null, true);
         echo "\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 31
+        // line 33
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_core')->getCallable(), array("gui.js")), "html", null, true);
         echo "\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 32
+        // line 34
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_core')->getCallable(), array("gui-responsive-2-0.js")), "html", null, true);
         echo "\"></script>
         
     <!--[if lt IE 9]>
     <link rel=\"stylesheet\" href=\"";
-        // line 35
+        // line 37
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_asset')->getCallable(), array("style-ie.css")), "html", null, true);
         echo "\" />
     <![endif]-->
@@ -129,23 +131,23 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
           </ul>
           <div class=\"vertical logo\">
             <a href=\"";
-        // line 48
+        // line 50
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("")), "html", null, true);
         echo "\" title=\"";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 48, $this->getSourceContext()); })()), "title", array()), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 50, $this->getSourceContext()); })()), "title", array()), "html", null, true);
         echo "\">
               <img src=\"";
-        // line 49
+        // line 51
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_asset')->getCallable(), array("logo.png")), "html", null, true);
         echo "\" alt=\"";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 49, $this->getSourceContext()); })()), "title", array()), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 51, $this->getSourceContext()); })()), "title", array()), "html", null, true);
         echo "\" />
             </a>
           </div>
           <nav class=\"nonbounce vertical\">
             <div class=\"nav-contents\">
               <a class=\"header__sign-in\" href=\"";
-        // line 54
+        // line 56
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account")), "html", null, true);
         echo "\" title=\"";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("My account")), "html", null, true);
@@ -155,7 +157,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
               
               <div class=\"header-cart__wrapper\">
                 <a href=\"";
-        // line 59
+        // line 61
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("cart")), "html", null, true);
         echo "\" title=\"";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Cart")), "html", null, true);
@@ -163,61 +165,61 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                   <span class=\"header-cart__label\">Cart</span>
                   <span class=\"glyphicon glyphicon-shopping-cart\"></span>
                   <span class=\"header-cart__count\">";
-        // line 62
-        echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 62, $this->getSourceContext()); })()), "cart", array()), "products", array())), "html", null, true);
+        // line 64
+        echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 64, $this->getSourceContext()); })()), "cart", array()), "products", array())), "html", null, true);
         echo "</span>
                   <span class=\"header-cart__count--mobile\">( ";
-        // line 63
-        echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 63, $this->getSourceContext()); })()), "cart", array()), "products", array())), "html", null, true);
+        // line 65
+        echo twig_escape_filter($this->env, twig_length_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 65, $this->getSourceContext()); })()), "cart", array()), "products", array())), "html", null, true);
         echo " - 
                     ";
-        // line 64
-        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 64, $this->getSourceContext()); })()), "cart", array()), "products", array())) == 1)) {
-            // line 65
+        // line 66
+        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 66, $this->getSourceContext()); })()), "cart", array()), "products", array())) == 1)) {
+            // line 67
             echo "                      item
                     ";
         } else {
-            // line 67
+            // line 69
             echo "                      items
                     ";
         }
-        // line 69
+        // line 71
         echo "                  )</span>
                 </a>   
               </div> 
 
               <form action=\"";
-        // line 73
+        // line 75
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("search")), "html", null, true);
         echo "\" method=\"get\" id=\"formSearch\">
                 <input type=\"text\" name=\"q\" autocomplete=\"off\"  value=\"";
-        // line 74
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 74, $this->getSourceContext()); })()), "search", array()), "html", null, true);
+        // line 76
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 76, $this->getSourceContext()); })()), "search", array()), "html", null, true);
         echo "\"/>
                 <span onclick=\"\$('#formSearch').submit();\" title=\"";
-        // line 75
+        // line 77
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Search")), "html", null, true);
         echo "\" class=\"glyphicon glyphicon-search\"></span>
               </form>   
 
               <ul>
                 <li class=\"item ";
-        // line 79
+        // line 81
         if (call_user_func_array($this->env->getTest('active')->getCallable(), array("featured-rugs"))) {
             echo " active";
         }
         echo "\">
                   <a class=\"itemLink\" href=\"";
-        // line 80
+        // line 82
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("featured-rugs")), "html", null, true);
         echo "\" title=\"Featured Rugs\">Featured</a>
                 </li>
                 ";
-        // line 82
+        // line 84
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 82, $this->getSourceContext()); })()), "categories", array()));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 84, $this->getSourceContext()); })()), "categories", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-            // line 83
+            // line 85
             echo "                <li class=\"item";
             if (twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "subs", array())) {
                 echo " sub";
@@ -227,7 +229,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             }
             echo "\">
                   <a class=\"itemLink\" href=\"";
-            // line 84
+            // line 86
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "url", array()))), "html", null, true);
             echo "\" title=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "title", array()), "html", null, true);
@@ -235,20 +237,20 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "title", array()), "html", null, true);
             echo "</a>
                   ";
-            // line 85
+            // line 87
             if (twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "subs", array())) {
-                // line 86
+                // line 88
                 echo "                  <span class=\"glyphicon glyphicon-play\"></span>
                   <ul class=\"subnav\">
                     ";
-                // line 88
+                // line 90
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "subs", array()));
                 foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-                    // line 89
+                    // line 91
                     echo "                    <li class=\"subitem\">
                       <a class=\"subitemLink\" href=\"";
-                    // line 90
+                    // line 92
                     echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "url", array()))), "html", null, true);
                     echo "\" title=\"";
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "title", array()), "html", null, true);
@@ -256,19 +258,19 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "title", array()), "html", null, true);
                     echo "</a>
                       ";
-                    // line 91
+                    // line 93
                     if (twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "subs", array())) {
-                        // line 92
+                        // line 94
                         echo "                      <ul class=\"subnav\">
                         ";
-                        // line 93
+                        // line 95
                         $context['_parent'] = $context;
                         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "subs", array()));
                         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-                            // line 94
+                            // line 96
                             echo "                        <li class=\"subitem\">
                           <a class=\"subitemLink\" href=\"";
-                            // line 95
+                            // line 97
                             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "url", array()))), "html", null, true);
                             echo "\" title=\"";
                             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["category"], "title", array()), "html", null, true);
@@ -281,29 +283,29 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                         $_parent = $context['_parent'];
                         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
                         $context = array_intersect_key($context, $_parent) + $_parent;
-                        // line 98
+                        // line 100
                         echo "                      </ul>
                       ";
                     }
-                    // line 100
+                    // line 102
                     echo "                    </li>
                     ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 102
+                // line 104
                 echo "                  </ul>
                   ";
             }
-            // line 104
+            // line 106
             echo "                </li>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 106
+        // line 108
         echo "                <li class=\"item ";
         if (call_user_func_array($this->env->getTest('active')->getCallable(), array("service"))) {
             echo " active";
@@ -312,20 +314,20 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                   <span class=\"itemLink\">More</span>
                   <ul class=\"subnav\">
                     ";
-        // line 109
+        // line 111
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 109, $this->getSourceContext()); })()), "links", array()), "more", array()));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 111, $this->getSourceContext()); })()), "links", array()), "more", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
-            // line 110
+            // line 112
             echo "                    <li class=\"subitem\">
                       <a class=\"subitemLink\" href=\"";
-            // line 111
+            // line 113
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "url", array()))), "html", null, true);
             echo "\" title=\"";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "title", array()), "html", null, true);
             echo "\">
                         ";
-            // line 112
+            // line 114
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "title", array()), "html", null, true);
             echo "
                       </a>
@@ -335,7 +337,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 116
+        // line 118
         echo "                  </ul>
                 </li>
               </ul>
@@ -349,12 +351,12 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
     <div class=\"wrapper\">
       <div class=\"container content\">
         ";
-        // line 128
-        $this->loadTemplate("snippets/messages.rain", "index.twig", 128)->display($context);
-        // line 129
-        echo "        ";
-        $this->loadTemplate((isset($context["template"]) || array_key_exists("template", $context) ? $context["template"] : (function () { throw new Twig_Error_Runtime('Variable "template" does not exist.', 129, $this->getSourceContext()); })()), "index.twig", 129)->display($context);
         // line 130
+        $this->loadTemplate("snippets/messages.rain", "index.twig", 130)->display($context);
+        // line 131
+        echo "        ";
+        $this->loadTemplate((isset($context["template"]) || array_key_exists("template", $context) ? $context["template"] : (function () { throw new Twig_Error_Runtime('Variable "template" does not exist.', 131, $this->getSourceContext()); })()), "index.twig", 131)->display($context);
+        // line 132
         echo "      </div>
       
       <footer>
@@ -362,114 +364,64 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         <div class=\"container\">
           <div class=\"social row\">
             ";
-        // line 136
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 136, $this->getSourceContext()); })()), "setting_newsletter", array())) {
-            // line 137
-            echo "            <div class=\"newsletter col-xs-12 col-sm-7 col-md-7\">
-              <span class=\"title\">";
-            // line 138
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Sign up for our newsletter")), "html", null, true);
-            echo ":</span>
-              <form id=\"formNewsletter\" action=\"";
-            // line 139
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account/newsletter")), "html", null, true);
-            echo "\" method=\"post\">
-                <input type=\"hidden\" name=\"key\" value=\"";
-            // line 140
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 140, $this->getSourceContext()); })()), "key", array()), "html", null, true);
-            echo "\" />
-                <input type=\"text\" name=\"email\" id=\"formNewsletterEmail\" value=\"\" placeholder=\"";
-            // line 141
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("E-mail")), "html", null, true);
-            echo "\"/>
-                <a class=\"btn glyphicon glyphicon-send\" href=\"#\" onclick=\"\$('#formNewsletter').submit(); return false;\" title=\"";
-            // line 142
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Subscribe")), "html", null, true);
-            echo "\" ";
-            if ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 142, $this->getSourceContext()); })()), "language", array()) == "de")) {
-                echo "style=\"padding: 0px 10px;\"";
-            }
-            echo "><span>";
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Subscribe")), "html", null, true);
-            echo "</span></a>
-              </form>
-            </div>
-            ";
-        }
-        // line 146
+        // line 148
         echo "    ";
-        if (((((((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 146, $this->getSourceContext()); })()), "social_facebook", array()) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 146, $this->getSourceContext()); })()), "social_twitter", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 146, $this->getSourceContext()); })()), "social_google", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 146, $this->getSourceContext()); })()), "social_instagram", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 146, $this->getSourceContext()); })()), "social_pinterest", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 146, $this->getSourceContext()); })()), "social_youtube", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 146, $this->getSourceContext()); })()), "social_linkedin", array()))) {
-            // line 147
+        if (((((((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_facebook", array()) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_twitter", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_google", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_instagram", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_pinterest", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_youtube", array())) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_linkedin", array()))) {
+            // line 149
             echo "            <div class=\"social-media col-xs-12 col-md-12 ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 147, $this->getSourceContext()); })()), "setting_newsletter", array())) {
+            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 149, $this->getSourceContext()); })()), "setting_newsletter", array())) {
                 echo " col-sm-5 col-md-5 text-right";
             } else {
                 echo " text-center";
             }
             echo "\">
               ";
-            // line 148
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_facebook", array())) {
-                echo "<a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 148, $this->getSourceContext()); })()), "social_facebook", array()), "html", null, true);
-                echo "\" class=\"social-icon facebook\" target=\"_blank\"></a>";
-            }
-            // line 149
-            echo "              ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 149, $this->getSourceContext()); })()), "social_twitter", array())) {
-                echo "<a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 149, $this->getSourceContext()); })()), "social_twitter", array()), "html", null, true);
-                echo "\" class=\"social-icon twitter\" target=\"_blank\"></a>";
-            }
             // line 150
-            echo "              ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 150, $this->getSourceContext()); })()), "social_google", array())) {
+            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 150, $this->getSourceContext()); })()), "social_facebook", array())) {
                 echo "<a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 150, $this->getSourceContext()); })()), "social_google", array()), "html", null, true);
-                echo "\" class=\"social-icon google\" target=\"_blank\"></a>";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 150, $this->getSourceContext()); })()), "social_facebook", array()), "html", null, true);
+                echo "\" class=\"fa fa-facebook\" target=\"_blank\" title=\"Facebook\"></a>";
             }
             // line 151
-            echo "              ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 151, $this->getSourceContext()); })()), "social_pinterest", array())) {
-                echo "<a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 151, $this->getSourceContext()); })()), "social_pinterest", array()), "html", null, true);
-                echo "\" class=\"social-icon pinterest\" target=\"_blank\"></a>";
-            }
-            // line 152
-            echo "              ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 152, $this->getSourceContext()); })()), "social_youtube", array())) {
-                echo "<a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 152, $this->getSourceContext()); })()), "social_youtube", array()), "html", null, true);
-                echo "\" class=\"social-icon youtube\" target=\"_blank\"></a>";
-            }
+            echo "              
+              ";
             // line 153
-            echo "              ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 153, $this->getSourceContext()); })()), "social_tumblr", array())) {
-                echo "<a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 153, $this->getSourceContext()); })()), "social_tumblr", array()), "html", null, true);
-                echo "\" class=\"social-icon tumblr\" target=\"_blank\"></a>";
-            }
+            echo "              <a target=\"_blank\" href=\"https://www.houzz.com/pro/artisanrugs/artisan-rug-gallery\" title=\"Houzz\"><i class=\"fa fa-houzz\"></i></a>
+              ";
             // line 154
-            echo "              ";
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 154, $this->getSourceContext()); })()), "social_instagram", array())) {
+            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 154, $this->getSourceContext()); })()), "social_pinterest", array())) {
                 echo "<a href=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 154, $this->getSourceContext()); })()), "social_instagram", array()), "html", null, true);
-                echo "\" class=\"social-icon instagram\" target=\"_blank\" title=\"Instagram ";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 154, $this->getSourceContext()); })()), "name", array()), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 154, $this->getSourceContext()); })()), "social_pinterest", array()), "html", null, true);
+                echo "\" class=\"fa fa-pinterest\" target=\"_blank\" title=\"Pinterest\"></a>";
+            }
+            // line 155
+            echo "              ";
+            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 155, $this->getSourceContext()); })()), "social_twitter", array())) {
+                echo "<a href=\"";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 155, $this->getSourceContext()); })()), "social_twitter", array()), "html", null, true);
+                echo "\" class=\"fa fa-twitter\" target=\"_blank\" title=\"Twitter\"></a>";
+            }
+            // line 156
+            echo "              ";
+            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 156, $this->getSourceContext()); })()), "social_instagram", array())) {
+                echo "<a href=\"";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 156, $this->getSourceContext()); })()), "social_instagram", array()), "html", null, true);
+                echo "\" class=\"fa fa-instagram\" target=\"_blank\" title=\"Instagram ";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 156, $this->getSourceContext()); })()), "name", array()), "html", null, true);
                 echo "\"></a>";
             }
             echo "              
             </div>
             ";
         }
-        // line 157
+        // line 159
         echo "          </div>
           <hr class=\"full-width\" />
           <div class=\"links row\">
             <div class=\"col-xs-12 col-sm-3 col-md-3\">
                 <label class=\"collapse\" for=\"_1\">
                   <strong>";
-        // line 162
+        // line 164
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Customer service")), "html", null, true);
         echo "</strong>
                   <span class=\"glyphicon glyphicon-chevron-down hidden-sm hidden-md hidden-lg\"></span></label>
@@ -478,11 +430,11 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
   
                   <ul class=\"no-underline no-list-style\">
                         ";
-        // line 168
+        // line 170
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 168, $this->getSourceContext()); })()), "links", array()), "service", array()));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 170, $this->getSourceContext()); })()), "links", array()), "service", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
-            // line 169
+            // line 171
             echo "                        <li><a href=\"";
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "url", array()))), "html", null, true);
             echo "\" title=\"";
@@ -500,7 +452,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 172
+        // line 174
         echo "                    </ul>
                   </div> 
              
@@ -510,7 +462,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             <div class=\"col-xs-12 col-sm-3 col-md-3\">
           <label class=\"collapse\" for=\"_2\">
                   <strong>";
-        // line 180
+        // line 182
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Products")), "html", null, true);
         echo "</strong>
                   <span class=\"glyphicon glyphicon-chevron-down hidden-sm hidden-md hidden-lg\"></span></label>
@@ -518,15 +470,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                     <div class=\"list\">
               <ul>
                 <li><a href=\"";
-        // line 185
-        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("collection")), "html", null, true);
-        echo "\" title=\"";
-        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("All products")), "html", null, true);
-        echo "\">";
-        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("All products")), "html", null, true);
-        echo "</a></li>
-                <li><a href=\"";
-        // line 186
+        // line 187
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("collection/?sort=newest")), "html", null, true);
         echo "\" title=\"";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("New products")), "html", null, true);
@@ -534,7 +478,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("New products")), "html", null, true);
         echo "</a></li>
                 <li><a href=\"";
-        // line 187
+        // line 188
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("collection/offers")), "html", null, true);
         echo "\" title=\"";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Offers")), "html", null, true);
@@ -542,21 +486,9 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Offers")), "html", null, true);
         echo "</a></li>
                 ";
-        // line 188
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 188, $this->getSourceContext()); })()), "setting_brands", array())) {
-            if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 188, $this->getSourceContext()); })()), "brands", array())) {
-                echo "<li><a href=\"";
-                echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("brands")), "html", null, true);
-                echo "\" title=\"";
-                echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Brands")), "html", null, true);
-                echo "\">";
-                echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Brands")), "html", null, true);
-                echo "</a></li>";
-            }
-        }
-        // line 189
+        // line 190
         echo "                ";
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 189, $this->getSourceContext()); })()), "tags", array())) {
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 190, $this->getSourceContext()); })()), "tags", array())) {
             echo "<li><a href=\"";
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("tags")), "html", null, true);
             echo "\" title=\"";
@@ -565,7 +497,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Tags")), "html", null, true);
             echo "</a></li>";
         }
-        // line 190
+        // line 191
         echo "                <li><a href=\"";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("index.rss")), "html", null, true);
         echo "\" title=\"";
@@ -581,21 +513,21 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
               <label class=\"collapse\" for=\"_3\">
                   <strong>
                 ";
-        // line 198
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 198, $this->getSourceContext()); })()), "account", array())) {
-            // line 199
+        // line 199
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 199, $this->getSourceContext()); })()), "account", array())) {
+            // line 200
             echo "                ";
-            echo call_user_func_array($this->env->getFilter('t')->getCallable(), array("Welcome, \$1!", twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 199, $this->getSourceContext()); })()), "account", array()), "firstname", array())));
+            echo call_user_func_array($this->env->getFilter('t')->getCallable(), array("Welcome, \$1!", twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 200, $this->getSourceContext()); })()), "account", array()), "firstname", array())));
             echo "              
                 ";
         } else {
-            // line 201
+            // line 202
             echo "                ";
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("My account")), "html", null, true);
             echo "
                 ";
         }
-        // line 203
+        // line 204
         echo "              </strong>
                   <span class=\"glyphicon glyphicon-chevron-down hidden-sm hidden-md hidden-lg\"></span></label>
                     <input class=\"collapse_input hidden-md hidden-lg hidden-sm\" id=\"_3\" type=\"checkbox\">
@@ -604,9 +536,9 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
            
               <ul>
                 ";
-        // line 210
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 210, $this->getSourceContext()); })()), "account", array())) {
-            // line 211
+        // line 211
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 211, $this->getSourceContext()); })()), "account", array())) {
+            // line 212
             echo "                <li><a href=\"";
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account")), "html", null, true);
             echo "\" title=\"";
@@ -616,7 +548,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             echo "</a></li>
                 ";
         } else {
-            // line 213
+            // line 214
             echo "                <li><a href=\"";
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account")), "html", null, true);
             echo "\" title=\"";
@@ -626,7 +558,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             echo "</a></li>
                 ";
         }
-        // line 215
+        // line 216
         echo "                <li><a href=\"";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account/orders")), "html", null, true);
         echo "\" title=\"";
@@ -635,9 +567,9 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("My orders")), "html", null, true);
         echo "</a></li>
                 ";
-        // line 216
-        if (twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 216, $this->getSourceContext()); })()), "settings", array()), "account", array()), "tickets", array())) {
-            // line 217
+        // line 217
+        if (twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 217, $this->getSourceContext()); })()), "settings", array()), "account", array()), "tickets", array())) {
+            // line 218
             echo "                <li><a href=\"";
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account/tickets")), "html", null, true);
             echo "\" title=\"";
@@ -647,7 +579,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             echo "</a></li>
                 ";
         }
-        // line 219
+        // line 220
         echo "                <li><a href=\"";
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account/wishlist")), "html", null, true);
         echo "\" title=\"";
@@ -656,9 +588,9 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("My wishlist")), "html", null, true);
         echo "</a></li>
                 ";
-        // line 220
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 220, $this->getSourceContext()); })()), "account", array())) {
-            // line 221
+        // line 221
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new Twig_Error_Runtime('Variable "page" does not exist.', 221, $this->getSourceContext()); })()), "account", array())) {
+            // line 222
             echo "                <li><a href=\"";
             echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("account/logout")), "html", null, true);
             echo "\" title=\"";
@@ -668,16 +600,16 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
             echo "</a></li>
                 ";
         }
-        // line 223
+        // line 224
         echo "              </ul>
             </div>
             </div>
             <div class=\"col-xs-12 col-sm-3 col-md-3\">
                  <label class=\"collapse\" for=\"_4\">
                   <strong>";
-        // line 228
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 228, $this->getSourceContext()); })()), "contact_name", array())) {
-            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 228, $this->getSourceContext()); })()), "contact_name", array());
+        // line 229
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 229, $this->getSourceContext()); })()), "contact_name", array())) {
+            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 229, $this->getSourceContext()); })()), "contact_name", array());
             echo " ";
         } else {
             echo " ";
@@ -692,84 +624,84 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
               
               
               ";
-        // line 235
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 235, $this->getSourceContext()); })()), "contact_description", array())) {
+        // line 236
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 236, $this->getSourceContext()); })()), "contact_description", array())) {
             echo "<span class=\"contact-description\">";
-            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 235, $this->getSourceContext()); })()), "contact_description", array());
+            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 236, $this->getSourceContext()); })()), "contact_description", array());
             echo "</span>";
         }
-        // line 236
+        // line 237
         echo "              ";
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 236, $this->getSourceContext()); })()), "contact_phone", array())) {
-            // line 237
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 237, $this->getSourceContext()); })()), "contact_phone", array())) {
+            // line 238
             echo "              <div class=\"contact\">
                 <span class=\"glyphicon glyphicon-earphone\"></span>
                 ";
-            // line 239
-            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 239, $this->getSourceContext()); })()), "contact_phone", array());
+            // line 240
+            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 240, $this->getSourceContext()); })()), "contact_phone", array());
             echo "
               </div>
               ";
         }
-        // line 242
+        // line 243
         echo "              ";
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 242, $this->getSourceContext()); })()), "contact_email", array())) {
-            // line 243
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 243, $this->getSourceContext()); })()), "contact_email", array())) {
+            // line 244
             echo "              <div class=\"contact\">
                 <span class=\"glyphicon glyphicon-envelope\"></span>
                 <a href=\"mailto:";
-            // line 245
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 245, $this->getSourceContext()); })()), "contact_email", array()), "html", null, true);
+            // line 246
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 246, $this->getSourceContext()); })()), "contact_email", array()), "html", null, true);
             echo "\" title=\"Email\">";
-            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 245, $this->getSourceContext()); })()), "contact_email", array());
+            echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 246, $this->getSourceContext()); })()), "contact_email", array());
             echo "</a>
               </div>
               ";
         }
-        // line 248
+        // line 249
         echo "              </div>
               
               ";
-        // line 250
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 250, $this->getSourceContext()); })()), "setting_kiyoh", array())) {
+        // line 251
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 251, $this->getSourceContext()); })()), "setting_kiyoh", array())) {
             echo "<iframe scrolling=\"no\" src=\"https://www.kiyoh.nl/widget.php?company=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 250, $this->getSourceContext()); })()), "setting_kiyoh", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 251, $this->getSourceContext()); })()), "setting_kiyoh", array()), "html", null, true);
             echo "\" width=\"210\" height=\"128\" border=\"1\" frameborder=\"0\" style=\"margin-top:20px;\"></iframe>";
         }
-        // line 251
+        // line 252
         echo "              ";
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 251, $this->getSourceContext()); })()), "setting_feedbackcompany", array())) {
-            // line 252
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 252, $this->getSourceContext()); })()), "setting_feedbackcompany", array())) {
+            // line 253
             echo "              <iframe scrolling=\"no\" frameborder=\"0\" height=\"150\" width=\"200\" style=\"display:none;margin-top:20px\" id=\"tfcwidget\" src=\"https://beoordelingen.feedbackcompany.nl/widget/";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 252, $this->getSourceContext()); })()), "setting_feedbackcompany", array()), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["theme"]) || array_key_exists("theme", $context) ? $context["theme"] : (function () { throw new Twig_Error_Runtime('Variable "theme" does not exist.', 253, $this->getSourceContext()); })()), "setting_feedbackcompany", array()), "html", null, true);
             echo ".html\"></iframe>
 <img src=\"https://beoordelingen.feedbackcompany.nl/samenvoordeel/img/spacer.gif\" style=\"display:none;\" onload=\"document.getElementById('tfcwidget').style.display='block';\">
               ";
         }
-        // line 255
+        // line 256
         echo "              ";
-        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 255, $this->getSourceContext()); })()), "hallmarks", array())) {
-            // line 256
+        if (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 256, $this->getSourceContext()); })()), "hallmarks", array())) {
+            // line 257
             echo "              <div class=\"hallmarks\">
                 ";
-            // line 257
+            // line 258
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 257, $this->getSourceContext()); })()), "hallmarks", array()));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 258, $this->getSourceContext()); })()), "hallmarks", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["hallmark"]) {
-                // line 258
+                // line 259
                 echo "                <a href=\"";
                 echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["hallmark"], "url", array()))), "html", null, true);
                 echo "\" title=\"";
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["hallmark"], "title", array()), "html", null, true);
                 echo "\" ";
-                if ( !(isset($context["new_window"]) || array_key_exists("new_window", $context) ? $context["new_window"] : (function () { throw new Twig_Error_Runtime('Variable "new_window" does not exist.', 258, $this->getSourceContext()); })())) {
+                if ( !(isset($context["new_window"]) || array_key_exists("new_window", $context) ? $context["new_window"] : (function () { throw new Twig_Error_Runtime('Variable "new_window" does not exist.', 259, $this->getSourceContext()); })())) {
                     echo "target=\"_blank\"";
                 }
                 echo ">
                   ";
-                // line 259
+                // line 260
                 if (twig_get_attribute($this->env, $this->getSourceContext(), $context["hallmark"], "image", array())) {
-                    // line 260
+                    // line 261
                     echo "                  <img src=\"";
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["hallmark"], "image", array()), "html", null, true);
                     echo "\" alt=\"";
@@ -779,133 +711,49 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                     echo "\" />
                   ";
                 } else {
-                    // line 262
+                    // line 263
                     echo "                  ";
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["hallmark"], "title", array()), "html", null, true);
                     echo "
                   ";
                 }
-                // line 264
+                // line 265
                 echo "                </a>
                 ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['hallmark'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 265
+            // line 266
             echo " 
               </div>
               ";
         }
-        // line 268
+        // line 269
         echo "            </div>
           </div>
           <hr class=\"full-width\" />
         </div>
-        <div class=\"copyright-payment\">
+        <div class=\"footer-bottom\">
           <div class=\"container\">
             <div class=\"row\">
-              <div class=\"copyright col-md-6\">
-                © ";
-        // line 276
+              <div class=\"copyright\">
+                ©";
+        // line 277
         echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Copyright")), "html", null, true);
         echo " ";
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 276, $this->getSourceContext()); })()), "name", array()), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 277, $this->getSourceContext()); })()), "name", array()), "html", null, true);
         echo " 
-                ";
-        // line 277
-        if (twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 277, $this->getSourceContext()); })()), "links", array()), "powered_by", array())) {
-            // line 278
-            echo "                - Powered by
-                ";
-            // line 279
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 279, $this->getSourceContext()); })()), "links", array()), "powered_by", array()));
-            $context['loop'] = array(
-              'parent' => $context['_parent'],
-              'index0' => 0,
-              'index'  => 1,
-              'first'  => true,
-            );
-            if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof Countable)) {
-                $length = count($context['_seq']);
-                $context['loop']['revindex0'] = $length - 1;
-                $context['loop']['revindex'] = $length;
-                $context['loop']['length'] = $length;
-                $context['loop']['last'] = 1 === $length;
-            }
-            foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
-                // line 280
-                echo "                <a href=\"";
-                echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "url", array()))), "html", null, true);
-                echo "\" title=\"";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "title", array()), "html", null, true);
-                echo "\"";
-                if (twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "new_window", array())) {
-                    echo " target=\"_blank\"";
-                }
-                echo ">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["link"], "title", array()), "html", null, true);
-                echo "</a>
-                ";
-                // line 281
-                if ( !twig_get_attribute($this->env, $this->getSourceContext(), $context["loop"], "last", array())) {
-                    echo " - ";
-                }
-                // line 282
-                echo "                ";
-                ++$context['loop']['index0'];
-                ++$context['loop']['index'];
-                $context['loop']['first'] = false;
-                if (isset($context['loop']['length'])) {
-                    --$context['loop']['revindex0'];
-                    --$context['loop']['revindex'];
-                    $context['loop']['last'] = 0 === $context['loop']['revindex0'];
-                }
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 283
-            echo "                ";
-        }
-        // line 284
-        echo "              </div>
-              <div class=\"payments col-md-6 text-right\">
-                ";
-        // line 286
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["shop"]) || array_key_exists("shop", $context) ? $context["shop"] : (function () { throw new Twig_Error_Runtime('Variable "shop" does not exist.', 286, $this->getSourceContext()); })()), "payments", array()));
-        foreach ($context['_seq'] as $context["_key"] => $context["payment"]) {
-            // line 287
-            echo "                <a href=\"";
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url')->getCallable(), array("service/payment-methods")), "html", null, true);
-            echo "\" title=\"";
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('t')->getCallable(), array("Payment methods")), "html", null, true);
-            echo "\">
-                  <img src=\"";
-            // line 288
-            echo twig_escape_filter($this->env, call_user_func_array($this->env->getFilter('url_core')->getCallable(), array(twig_get_attribute($this->env, $this->getSourceContext(), $context["payment"], "icon", array()))), "html", null, true);
-            echo "\" alt=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["payment"], "title", array()), "html", null, true);
-            echo "\" />
-                </a>
-                ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['payment'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 291
-        echo "              </div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
     ";
-        // line 298
+        // line 285
         echo "  </body>
 
 </html>";
@@ -923,7 +771,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
 
     public function getDebugInfo()
     {
-        return array (  909 => 298,  901 => 291,  890 => 288,  883 => 287,  879 => 286,  875 => 284,  872 => 283,  858 => 282,  854 => 281,  841 => 280,  824 => 279,  821 => 278,  819 => 277,  811 => 276,  801 => 268,  796 => 265,  789 => 264,  783 => 262,  773 => 260,  771 => 259,  760 => 258,  756 => 257,  753 => 256,  750 => 255,  743 => 252,  740 => 251,  734 => 250,  730 => 248,  722 => 245,  718 => 243,  715 => 242,  709 => 239,  705 => 237,  702 => 236,  696 => 235,  679 => 228,  672 => 223,  662 => 221,  660 => 220,  651 => 219,  641 => 217,  639 => 216,  630 => 215,  620 => 213,  610 => 211,  608 => 210,  599 => 203,  593 => 201,  587 => 199,  585 => 198,  569 => 190,  558 => 189,  546 => 188,  538 => 187,  530 => 186,  522 => 185,  514 => 180,  504 => 172,  486 => 169,  482 => 168,  473 => 162,  466 => 157,  453 => 154,  446 => 153,  439 => 152,  432 => 151,  425 => 150,  418 => 149,  412 => 148,  403 => 147,  400 => 146,  387 => 142,  383 => 141,  379 => 140,  375 => 139,  371 => 138,  368 => 137,  366 => 136,  358 => 130,  355 => 129,  353 => 128,  339 => 116,  329 => 112,  323 => 111,  320 => 110,  316 => 109,  307 => 106,  300 => 104,  296 => 102,  289 => 100,  285 => 98,  272 => 95,  269 => 94,  265 => 93,  262 => 92,  260 => 91,  252 => 90,  249 => 89,  245 => 88,  241 => 86,  239 => 85,  231 => 84,  221 => 83,  217 => 82,  212 => 80,  206 => 79,  199 => 75,  195 => 74,  191 => 73,  185 => 69,  181 => 67,  177 => 65,  175 => 64,  171 => 63,  167 => 62,  159 => 59,  149 => 54,  139 => 49,  133 => 48,  117 => 35,  111 => 32,  107 => 31,  103 => 30,  98 => 28,  93 => 26,  89 => 25,  85 => 24,  81 => 23,  77 => 22,  73 => 21,  69 => 20,  65 => 19,  61 => 18,  57 => 17,  53 => 16,  49 => 15,  38 => 7,  34 => 6,  27 => 5,  22 => 2,  19 => 1,);
+        return array (  757 => 285,  743 => 277,  733 => 269,  728 => 266,  721 => 265,  715 => 263,  705 => 261,  703 => 260,  692 => 259,  688 => 258,  685 => 257,  682 => 256,  675 => 253,  672 => 252,  666 => 251,  662 => 249,  654 => 246,  650 => 244,  647 => 243,  641 => 240,  637 => 238,  634 => 237,  628 => 236,  611 => 229,  604 => 224,  594 => 222,  592 => 221,  583 => 220,  573 => 218,  571 => 217,  562 => 216,  552 => 214,  542 => 212,  540 => 211,  531 => 204,  525 => 202,  519 => 200,  517 => 199,  501 => 191,  490 => 190,  482 => 188,  474 => 187,  466 => 182,  456 => 174,  438 => 171,  434 => 170,  425 => 164,  418 => 159,  405 => 156,  398 => 155,  392 => 154,  389 => 153,  386 => 151,  380 => 150,  371 => 149,  368 => 148,  360 => 132,  357 => 131,  355 => 130,  341 => 118,  331 => 114,  325 => 113,  322 => 112,  318 => 111,  309 => 108,  302 => 106,  298 => 104,  291 => 102,  287 => 100,  274 => 97,  271 => 96,  267 => 95,  264 => 94,  262 => 93,  254 => 92,  251 => 91,  247 => 90,  243 => 88,  241 => 87,  233 => 86,  223 => 85,  219 => 84,  214 => 82,  208 => 81,  201 => 77,  197 => 76,  193 => 75,  187 => 71,  183 => 69,  179 => 67,  177 => 66,  173 => 65,  169 => 64,  161 => 61,  151 => 56,  141 => 51,  135 => 50,  119 => 37,  113 => 34,  109 => 33,  105 => 32,  100 => 30,  95 => 28,  91 => 27,  85 => 24,  81 => 23,  77 => 22,  73 => 21,  69 => 20,  65 => 19,  61 => 18,  57 => 17,  53 => 16,  49 => 15,  38 => 7,  34 => 6,  27 => 5,  22 => 2,  19 => 1,);
     }
 
     public function getSourceContext()
@@ -952,6 +800,8 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
     <link rel=\"stylesheet\" href=\"{{ 'gui-2-0.css' | url_core }}\" />
     <link rel=\"stylesheet\" href=\"{{ 'gui-responsive-2-0.css' | url_core }}\" />   
     <link rel=\"stylesheet\" href=\"{{ 'custom.css' | url_asset }}\" />
+    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css\">
+
     <script src=\"{{ 'jquery-1-9-1.js' | url_core }}\"></script>
     <script src=\"{{ 'jquery-ui-1-10-1.js' | url_core }}\"></script>
    
@@ -1063,7 +913,7 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
         <hr class=\"full-width\" />
         <div class=\"container\">
           <div class=\"social row\">
-            {% if theme.setting_newsletter %}
+            {# {% if theme.setting_newsletter %}
             <div class=\"newsletter col-xs-12 col-sm-7 col-md-7\">
               <span class=\"title\">{{ 'Sign up for our newsletter' | t }}:</span>
               <form id=\"formNewsletter\" action=\"{{ 'account/newsletter' | url }}\" method=\"post\">
@@ -1072,16 +922,16 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                 <a class=\"btn glyphicon glyphicon-send\" href=\"#\" onclick=\"\$('#formNewsletter').submit(); return false;\" title=\"{{ 'Subscribe' | t }}\" {% if shop.language == 'de' %}style=\"padding: 0px 10px;\"{% endif %}><span>{{ 'Subscribe' | t }}</span></a>
               </form>
             </div>
-            {% endif %}
+            {% endif %} #}
     {% if theme.social_facebook or theme.social_twitter or theme.social_google or theme.social_instagram or theme.social_pinterest or theme.social_youtube or theme.social_linkedin %}
             <div class=\"social-media col-xs-12 col-md-12 {% if theme.setting_newsletter %} col-sm-5 col-md-5 text-right{% else %} text-center{% endif %}\">
-              {% if theme.social_facebook %}<a href=\"{{ theme.social_facebook }}\" class=\"social-icon facebook\" target=\"_blank\"></a>{% endif %}
-              {% if theme.social_twitter %}<a href=\"{{ theme.social_twitter }}\" class=\"social-icon twitter\" target=\"_blank\"></a>{% endif %}
-              {% if theme.social_google %}<a href=\"{{ theme.social_google }}\" class=\"social-icon google\" target=\"_blank\"></a>{% endif %}
-              {% if theme.social_pinterest %}<a href=\"{{ theme.social_pinterest }}\" class=\"social-icon pinterest\" target=\"_blank\"></a>{% endif %}
-              {% if theme.social_youtube %}<a href=\"{{ theme.social_youtube }}\" class=\"social-icon youtube\" target=\"_blank\"></a>{% endif %}
-              {% if theme.social_tumblr %}<a href=\"{{ theme.social_tumblr }}\" class=\"social-icon tumblr\" target=\"_blank\"></a>{% endif %}
-              {% if theme.social_instagram %}<a href=\"{{ theme.social_instagram }}\" class=\"social-icon instagram\" target=\"_blank\" title=\"Instagram {{ shop.name }}\"></a>{% endif %}              
+              {% if theme.social_facebook %}<a href=\"{{ theme.social_facebook }}\" class=\"fa fa-facebook\" target=\"_blank\" title=\"Facebook\"></a>{% endif %}
+              
+              {# {% if theme.social_google %}<a href=\"{{ theme.social_google }}\" class=\"social-icon google\" target=\"_blank\"></a>{% endif %} #}
+              <a target=\"_blank\" href=\"https://www.houzz.com/pro/artisanrugs/artisan-rug-gallery\" title=\"Houzz\"><i class=\"fa fa-houzz\"></i></a>
+              {% if theme.social_pinterest %}<a href=\"{{ theme.social_pinterest }}\" class=\"fa fa-pinterest\" target=\"_blank\" title=\"Pinterest\"></a>{% endif %}
+              {% if theme.social_twitter %}<a href=\"{{ theme.social_twitter }}\" class=\"fa fa-twitter\" target=\"_blank\" title=\"Twitter\"></a>{% endif %}
+              {% if theme.social_instagram %}<a href=\"{{ theme.social_instagram }}\" class=\"fa fa-instagram\" target=\"_blank\" title=\"Instagram {{ shop.name }}\"></a>{% endif %}              
             </div>
             {% endif %}
           </div>
@@ -1112,10 +962,9 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
                     <input class=\"collapse_input hidden-md hidden-lg hidden-sm\" id=\"_2\" type=\"checkbox\">
                     <div class=\"list\">
               <ul>
-                <li><a href=\"{{ 'collection' | url }}\" title=\"{{ 'All products' | t }}\">{{ 'All products' | t }}</a></li>
                 <li><a href=\"{{ 'collection/?sort=newest' | url }}\" title=\"{{ 'New products' | t }}\">{{ 'New products' | t }}</a></li>
                 <li><a href=\"{{ 'collection/offers' | url }}\" title=\"{{ 'Offers' | t }}\">{{ 'Offers' | t }}</a></li>
-                {% if theme.setting_brands %}{% if shop.brands %}<li><a href=\"{{ 'brands' | url }}\" title=\"{{ 'Brands' | t }}\">{{ 'Brands' | t }}</a></li>{% endif %}{% endif %}
+                {# {% if theme.setting_brands %}{% if shop.brands %}<li><a href=\"{{ 'brands' | url }}\" title=\"{{ 'Brands' | t }}\">{{ 'Brands' | t }}</a></li>{% endif %}{% endif %} #}
                 {% if shop.tags %}<li><a href=\"{{ 'tags' | url }}\" title=\"{{ 'Tags' | t }}\">{{ 'Tags' | t }}</a></li>{% endif %}
                 <li><a href=\"{{ 'index.rss' | url }}\" title=\"{{ 'RSS feed' | t }}\">{{ 'RSS feed' | t }}</a></li>
               </ul>
@@ -1199,25 +1048,11 @@ class __TwigTemplate_5ffcba7ece0f4fa460e1967e1a41445506d476614dd0f9dab2bcb92171f
           </div>
           <hr class=\"full-width\" />
         </div>
-        <div class=\"copyright-payment\">
+        <div class=\"footer-bottom\">
           <div class=\"container\">
             <div class=\"row\">
-              <div class=\"copyright col-md-6\">
-                © {{ 'Copyright' | t }} {{ 'now' | date('Y') }} {{ shop.name }} 
-                {% if shop.links.powered_by %}
-                - Powered by
-                {% for link in shop.links.powered_by %}
-                <a href=\"{{ link.url | url }}\" title=\"{{ link.title }}\"{% if link.new_window %} target=\"_blank\"{% endif %}>{{ link.title }}</a>
-                {% if not loop.last %} - {% endif %}
-                {% endfor %}
-                {% endif %}
-              </div>
-              <div class=\"payments col-md-6 text-right\">
-                {% for payment in shop.payments %}
-                <a href=\"{{ 'service/payment-methods' | url }}\" title=\"{{ 'Payment methods' | t }}\">
-                  <img src=\"{{ payment.icon | url_core }}\" alt=\"{{ payment.title }}\" />
-                </a>
-                {% endfor %}
+              <div class=\"copyright\">
+                ©{{ 'Copyright' | t }} {{ 'now' | date('Y') }} {{ shop.name }} 
               </div>
             </div>
           </div>

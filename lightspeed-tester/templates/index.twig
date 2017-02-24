@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="{{ 'gui-2-0.css' | url_core }}" />
     <link rel="stylesheet" href="{{ 'gui-responsive-2-0.css' | url_core }}" />   
     <link rel="stylesheet" href="{{ 'custom.css' | url_asset }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <script src="{{ 'jquery-1-9-1.js' | url_core }}"></script>
     <script src="{{ 'jquery-ui-1-10-1.js' | url_core }}"></script>
    
@@ -133,7 +135,7 @@
         <hr class="full-width" />
         <div class="container">
           <div class="social row">
-            {% if theme.setting_newsletter %}
+            {# {% if theme.setting_newsletter %}
             <div class="newsletter col-xs-12 col-sm-7 col-md-7">
               <span class="title">{{ 'Sign up for our newsletter' | t }}:</span>
               <form id="formNewsletter" action="{{ 'account/newsletter' | url }}" method="post">
@@ -142,16 +144,16 @@
                 <a class="btn glyphicon glyphicon-send" href="#" onclick="$('#formNewsletter').submit(); return false;" title="{{ 'Subscribe' | t }}" {% if shop.language == 'de' %}style="padding: 0px 10px;"{% endif %}><span>{{ 'Subscribe' | t }}</span></a>
               </form>
             </div>
-            {% endif %}
+            {% endif %} #}
     {% if theme.social_facebook or theme.social_twitter or theme.social_google or theme.social_instagram or theme.social_pinterest or theme.social_youtube or theme.social_linkedin %}
             <div class="social-media col-xs-12 col-md-12 {% if theme.setting_newsletter %} col-sm-5 col-md-5 text-right{% else %} text-center{% endif %}">
-              {% if theme.social_facebook %}<a href="{{ theme.social_facebook }}" class="social-icon facebook" target="_blank"></a>{% endif %}
-              {% if theme.social_twitter %}<a href="{{ theme.social_twitter }}" class="social-icon twitter" target="_blank"></a>{% endif %}
-              {% if theme.social_google %}<a href="{{ theme.social_google }}" class="social-icon google" target="_blank"></a>{% endif %}
-              {% if theme.social_pinterest %}<a href="{{ theme.social_pinterest }}" class="social-icon pinterest" target="_blank"></a>{% endif %}
-              {% if theme.social_youtube %}<a href="{{ theme.social_youtube }}" class="social-icon youtube" target="_blank"></a>{% endif %}
-              {% if theme.social_tumblr %}<a href="{{ theme.social_tumblr }}" class="social-icon tumblr" target="_blank"></a>{% endif %}
-              {% if theme.social_instagram %}<a href="{{ theme.social_instagram }}" class="social-icon instagram" target="_blank" title="Instagram {{ shop.name }}"></a>{% endif %}              
+              {% if theme.social_facebook %}<a href="{{ theme.social_facebook }}" class="fa fa-facebook" target="_blank" title="Facebook"></a>{% endif %}
+              
+              {# {% if theme.social_google %}<a href="{{ theme.social_google }}" class="social-icon google" target="_blank"></a>{% endif %} #}
+              <a target="_blank" href="https://www.houzz.com/pro/artisanrugs/artisan-rug-gallery" title="Houzz"><i class="fa fa-houzz"></i></a>
+              {% if theme.social_pinterest %}<a href="{{ theme.social_pinterest }}" class="fa fa-pinterest" target="_blank" title="Pinterest"></a>{% endif %}
+              {% if theme.social_twitter %}<a href="{{ theme.social_twitter }}" class="fa fa-twitter" target="_blank" title="Twitter"></a>{% endif %}
+              {% if theme.social_instagram %}<a href="{{ theme.social_instagram }}" class="fa fa-instagram" target="_blank" title="Instagram {{ shop.name }}"></a>{% endif %}              
             </div>
             {% endif %}
           </div>
@@ -182,10 +184,9 @@
                     <input class="collapse_input hidden-md hidden-lg hidden-sm" id="_2" type="checkbox">
                     <div class="list">
               <ul>
-                <li><a href="{{ 'collection' | url }}" title="{{ 'All products' | t }}">{{ 'All products' | t }}</a></li>
                 <li><a href="{{ 'collection/?sort=newest' | url }}" title="{{ 'New products' | t }}">{{ 'New products' | t }}</a></li>
                 <li><a href="{{ 'collection/offers' | url }}" title="{{ 'Offers' | t }}">{{ 'Offers' | t }}</a></li>
-                {% if theme.setting_brands %}{% if shop.brands %}<li><a href="{{ 'brands' | url }}" title="{{ 'Brands' | t }}">{{ 'Brands' | t }}</a></li>{% endif %}{% endif %}
+                {# {% if theme.setting_brands %}{% if shop.brands %}<li><a href="{{ 'brands' | url }}" title="{{ 'Brands' | t }}">{{ 'Brands' | t }}</a></li>{% endif %}{% endif %} #}
                 {% if shop.tags %}<li><a href="{{ 'tags' | url }}" title="{{ 'Tags' | t }}">{{ 'Tags' | t }}</a></li>{% endif %}
                 <li><a href="{{ 'index.rss' | url }}" title="{{ 'RSS feed' | t }}">{{ 'RSS feed' | t }}</a></li>
               </ul>
@@ -269,25 +270,11 @@
           </div>
           <hr class="full-width" />
         </div>
-        <div class="copyright-payment">
+        <div class="footer-bottom">
           <div class="container">
             <div class="row">
-              <div class="copyright col-md-6">
-                © {{ 'Copyright' | t }} {{ 'now' | date('Y') }} {{ shop.name }} 
-                {% if shop.links.powered_by %}
-                - Powered by
-                {% for link in shop.links.powered_by %}
-                <a href="{{ link.url | url }}" title="{{ link.title }}"{% if link.new_window %} target="_blank"{% endif %}>{{ link.title }}</a>
-                {% if not loop.last %} - {% endif %}
-                {% endfor %}
-                {% endif %}
-              </div>
-              <div class="payments col-md-6 text-right">
-                {% for payment in shop.payments %}
-                <a href="{{ 'service/payment-methods' | url }}" title="{{ 'Payment methods' | t }}">
-                  <img src="{{ payment.icon | url_core }}" alt="{{ payment.title }}" />
-                </a>
-                {% endfor %}
+              <div class="copyright">
+                ©{{ 'Copyright' | t }} {{ 'now' | date('Y') }} {{ shop.name }} 
               </div>
             </div>
           </div>

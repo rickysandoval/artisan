@@ -1,0 +1,35 @@
+footer {
+	background: $color-text-brown;
+	color: $color-text-light-brown;
+	a, a:visited {
+		color: $color-text-light-brown;
+	}
+	a:hover {
+		color: white;
+		text-decoration: none;
+	}
+
+	.social {
+		padding: 15px 0;
+		font-size: 25px;
+		a {
+			margin: 0 10px;
+		}
+	}
+	.social-media {
+		margin-top: 0;
+	}
+}
+
+.footer-bottom {
+	background: $color-background-darkest;
+	text-transform: uppercase;
+	font-size: $font-size-sm;
+	letter-spacing: 1px;
+	color: #857975;
+	.row {
+		padding: 15px 0;
+		text-align: center;
+	}
+
+}

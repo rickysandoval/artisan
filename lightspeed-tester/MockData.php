@@ -332,7 +332,7 @@ function getMockData($mockPage) {
 		'social_instagram' => 'https://www.instagram.com/artisanruggallery/',
 		'social_pinterest' => 'https://www.pinterest.com/artisanruggalle/',
 		'social_tumblr' => '',
-		'social_twitter' => '',
+		'social_twitter' => 'https://twitter.com/artisanrug',
 		'social_youtube' => '',
 		'contact_description' => 'The Artisan Rug Gallery offers bespoke solutions to your home designs – ranging from exceptional contemporary pieces, to traditional weavings.',
 		'contact_email' => 'jeff@artisanruggallery.com',

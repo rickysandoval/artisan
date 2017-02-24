@@ -1,3 +1,5 @@
+@import 'old';
+
 /* Base stuff, no sass */
 @import 'base/reset';
 @import 'base/basics';
@@ -13,11 +15,10 @@
 /* Components */
 @import 'components/header';
 @import 'components/banners';
+@import 'components/footer';
 
 /* Views */
 @import 'views/home';
 @import 'views/product';
 @import 'views/collection';
 @import 'views/about';
-
-@import 'old';

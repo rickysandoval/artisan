@@ -16,7 +16,7 @@ class TemplateRenderer
     $envOptions += array(
       'debug' => true,
       'charset' => 'utf-8',
-      'cache' => './cache', // Store cached files under cache directory
+      'cache' => dirname(__FILE__).'/cache', // Store cached files under cache directory
       'strict_variables' => true,
     );
     $templateDirs = array_merge(

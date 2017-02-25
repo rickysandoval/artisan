@@ -115,6 +115,9 @@
     max-height: 300px;
     min-height: 200px;
     background-position: 50% 50%;
+    &.image-bottom {
+        background-position: 50% 100%;
+    }
     h1,
     h2 {
         margin-bottom: 20px;
@@ -129,6 +132,15 @@
             text-align: left;
             margin-left: 15vw;
             display: inline-block;
+            @media (max-width: $screen-xs-max) {
+                margin-left: 0;
+                font-size: 35px;
+            }
+            @media (max-width: $screen-mobile-max) {
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+            }
             &:after {
                 background: $color-primary;
             }
@@ -188,9 +200,9 @@
         min-height: 370px;
     }
     .thin-banner .banner-item {
-        height: 33vh;
+        height: 25vh;
         max-height: 300px;
-        min-height: 200px;
+        min-height: 175px;
     }
     .mod-banner h1,
     .mod-banner h2 {

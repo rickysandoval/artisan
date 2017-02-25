@@ -1,4 +1,4 @@
-  {% if 'service/about' is active %}
+  {% if 'service/about' is active or 'service/store-policies' is active %}
 <div class="row textpage banner-title">
 
   {% else %}
@@ -21,3 +21,35 @@
   </div>
   {% endif %}
 </div>
+<script>
+  $(document).ready(function() {
+    if ($('.tab-menu').length) {
+      var tabs = $('.tab-menu').find('[data-tab]').toArray();
+      var panes = $('.tab-menu').find('[data-pane]').toArray().reduce(function(panesObj, nextPane) {
+        panesObj[$(nextPane).data('pane')] = $(nextPane);
+        return panesObj;
+      }, {});
+      tabs.forEach(function(el) {
+        $(el).on('click', function(event) {
+          if (!$(el).hasClass('tab-active')) {
+            $('.tab-active').removeClass('tab-active');
+            $('.pane-active').removeClass('pane-active');
+            $(el).addClass('tab-active');
+            panes[$(el).data('tab')].addClass('pane-active');
+          }
+        });
+      });
+      if (window.location.hash) {
+        var hash = window.location.hash.split('?')[0];
+        var linkedTab = $('.tab-menu').find('[data-tab]' + hash);
+        if (linkedTab) {
+          linkedTab.click();
+        } else {
+          tabs[0].click();
+        }
+      } else {
+        tabs[0].click();
+      }
+    }
+  });
+</script>

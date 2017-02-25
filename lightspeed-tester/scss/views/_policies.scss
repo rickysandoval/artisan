@@ -1,0 +1,136 @@
+.policies__container {
+    @media (min-width: $screen-md-min) {
+        display: flex;
+    }
+}
+
+.policies__menu-container,
+.policies__content-container {
+    padding: 20px 10px;
+}
+
+.policies__menu-container {
+    background: #fafafa;
+    border-bottom: 1px solid $color-border-light;
+    @media (min-width: $screen-md-min) {
+		min-width: 33%;
+		border-bottom: 0;
+    }
+
+    @media (min-width: $screen-lg-min) {
+		min-width: 50%;
+		padding-top: 50px;
+    }
+}
+
+.policies__menu-inner {
+    @media (min-width: $screen-md-min) {
+		padding-left: 25px;
+    }
+    @media (min-width: $screen-xl-min) {
+    	padding-left: 15%;
+    }
+}
+
+.policies__menu {
+	@extend .clearfix;
+}
+
+.policies__menu-item {
+    text-transform: uppercase;
+    color: $color-text-brown;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 17px;
+    position: relative;
+    cursor: pointer;
+    float: left;
+    clear: both;
+    border-bottom: 1px solid transparent;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -17px;
+        top: 50%;
+        height: 3px;
+        margin-top: -2px;
+        width: 10px;
+        background: $color-primary;
+        transition: .3s;
+    }
+    &:after {
+    	transform: rotate(90deg);
+    }
+
+    &.tab-active {
+    	color: $color-primary;
+    	border-bottom: 1px solid $color-primary;
+    	&:before, &:after {
+    		background: $color-text-brown;
+    	}
+    	&:after {
+    		transform: rotate(0deg);
+    	}
+    }
+
+    @media (min-width: $screen-lg-min) {
+    	font-size: 22px;
+    	margin-left: 20px;
+    	margin-bottom: 20px;
+    	&:after, &:before {
+    		width: 12px;
+    		left: -20px;
+    	}
+    	&:hover {
+    		color: $color-primary;
+    	}
+    }
+}
+
+.policies__content-container {
+    @media (min-width: $screen-md-min) {
+		padding: 50px 30px 30px;
+    }
+     @media (min-width: $screen-lg-min) {
+     	padding-top: 60px;
+     }
+}
+.policies__content-item {
+	display: none;
+	&.pane-active {
+		display: block;
+	}
+}
+.policy__title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+.policy__content{
+	p {
+		font-family: $font-family-serif;
+		line-height: 2;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		p {
+			line-height: 2.5;
+		}
+	}
+}
+.policy__modified {
+	font-size: 10px;
+	margin-bottom: 20px;
+}

@@ -3242,8 +3242,10 @@ header .logo {
     border: 1px solid transparent;
     position: relative;
     z-index: 2;
-    line-height: 80px;
+    line-height: 70px;
     white-space: nowrap; }
+  .desktop nav .header__sign-in {
+    line-height: 80px; }
   .desktop nav .header-cart__label {
     display: none; }
   .desktop nav a, .desktop nav a:visited {

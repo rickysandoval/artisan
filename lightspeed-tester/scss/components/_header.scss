@@ -100,8 +100,11 @@ header .logo {
         border: 1px solid transparent;
         position: relative;
         z-index: 2;
-        line-height: 80px;
+        line-height: 70px;
         white-space: nowrap;
+    }
+    .header__sign-in {
+        line-height: 80px;
     }
     .header-cart__label {
         display: none;

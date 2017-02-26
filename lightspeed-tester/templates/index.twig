@@ -106,8 +106,9 @@
                   {% endif %}
                 </li>
                 {% endfor %}
-                <li class="item {% if 'service' is active %} active{% endif %}">
+                <li class="item sub{% if 'service/faqs' is active or 'service/about' is active or 'service/store-policies' is active %} active{% endif %}">
                   <span class="itemLink">More</span>
+                   <span class="glyphicon glyphicon-play"></span>
                   <ul class="subnav">
                     {% for link in shop.links.more %}
                     <li class="subitem">

@@ -27,7 +27,7 @@ class TemplateRenderer
     $this->environment = new Twig_Environment($this->loader, $envOptions);
 
     $urlAsset = new Twig_Filter('url_asset', function ($string) { 
-      $non_local_assets = array("custom.css", "settings.css", "hamburger.png", 'lightbox.js');
+      $non_local_assets = array("custom.css", "settings.css", "hamburger.png");
       $cache_control = '1';
       if (isset($_GET['ckcachecontrol'])) {
           $cache_control = $_GET['ckcachecontrol'];

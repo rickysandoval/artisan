@@ -39,15 +39,17 @@
         
         <select name="sort" onchange="$('#formSortModeLimit').submit();">
           {% for sort in collection.sorts %}
+          {% if sort.id != 'popular' %}
           <option value="{{ sort.id }}"{% if collection.filters.sort == sort.id %} selected="selected"{% endif %}>{{ sort.title }}</option>
+          {% endif %}
           {% endfor %}
         </select>        
         {% if collection.brands %}
-        <select name="brand">
+       {#  <select name="brand">
           {% for brand in collection.brands %}
           <option value="{{ brand.id }}"{% if brand.id == collection.filters.brand %} selected="selected"{% endif %}>{{ brand.title }}</option>
           {% endfor %}
-        </select>
+        </select> #}
         {% endif %}
         {% for filter in collection.filters.custom %}
         <strong>{{ filter.title }}</strong>

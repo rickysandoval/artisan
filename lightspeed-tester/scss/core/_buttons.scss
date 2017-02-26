@@ -30,6 +30,7 @@ input[type="button"] {
     &.button--primary {
         &:hover {
             background: $color-primary;
+            border-color: $color-primary;
         }
     }
     &.button--solid {

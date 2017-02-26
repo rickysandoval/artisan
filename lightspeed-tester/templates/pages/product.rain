@@ -108,7 +108,7 @@
             {#  <a href="javascript:;" onclick="updateQuantity('up');" class="up">+</a>#}
             {#  <a href="javascript:;" onclick="updateQuantity('down');" class="down">-</a>#}
             {#</div>#}
-            <a href="javascript:;" onclick="$('#product_configure_form').submit();" class="btn" title="{{ 'Add to cart' | t }}" {% if shop.language == 'de' %}style="padding: 0px 10px;"{% endif %}>
+            <a href="javascript:;" onclick="$('#product_configure_form').submit();" class="btn button--primary" title="{{ 'Add to cart' | t }}" {% if shop.language == 'de' %}style="padding: 0px 10px;"{% endif %}>
               <span>{{ 'Add to cart' | t }}</span>
             </a>
             {% endif %}

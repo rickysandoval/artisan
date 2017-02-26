@@ -132,10 +132,10 @@
     text-indent: -9999px;
     margin: 0px 6px;
     padding: 0px;
-    border: 1px solid #54afe9;
+    border: 1px solid $color-primary;
 }
 .slider-pagination a.active {
-    background: #54afe9;
+    background: $color-primary;
 }
 
 /* .brands */
@@ -736,7 +736,6 @@ span.glyphicon.glyphicon-chevron-down {
 		max-height: calc(100% - 20px);
 
 		/* styling */
-		background: #fff;
 		cursor: auto;
 
 		/* reset white-space wrapping */
@@ -891,7 +890,7 @@ span.glyphicon.glyphicon-chevron-down {
 	}
 
 	/* Hide navigation while loading */
-	.featherlight-loading .featherlight-previous, .featherlight-loading .featherlight-next {
+	.featherlight-loading .featherlight-previous, .featherlight-loading .featherlight-next, .featherlight-loading .featherlight-close {
 		display:none;
 	}
 }

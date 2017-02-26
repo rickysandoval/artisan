@@ -118,6 +118,8 @@ textarea {
 }
 select {
   padding: 0; 
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 @media (max-width: 992px) {
   select {

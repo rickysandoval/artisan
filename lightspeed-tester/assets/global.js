@@ -7,6 +7,11 @@ $(document).ready(function(){
     $(this).removeClass('hover');
     $(this).find('.subnav').hide();
   });
+
+
+  $('#gui-form-cart .gui-number input').attr('disabled', true);
+  $('.cart_variant').toArray().forEach(function(el){ el.innerText = el.innerText.replace(/<br>/g, ''); });
+
 // gg fix 05/01/2017
 $('nav .item.sub').click(function() {
   if ($(window).width() < 767) {

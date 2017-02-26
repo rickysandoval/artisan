@@ -13,43 +13,42 @@
     background: #fafafa;
     border-bottom: 1px solid $color-border-light;
     @media (min-width: $screen-md-min) {
-		min-width: 33%;
-		border-bottom: 0;
-		position: relative;
-		&:after {
-			content: '';
-			diplay: block;
-			position: absolute;
-			right: 0;
-			transform: translateX(100%);
-			top: 200px;
-			border: 20px solid transparent;
-			width: 0;
-			height: 0;
-			border-top-width: 30px;
-			border-bottom-width: 30px;
-			border-left-color: #fafafa;
-		}
+        min-width: 33%;
+        border-bottom: 0;
+        position: relative;
+        &:after {
+            content: '';
+            diplay: block;
+            position: absolute;
+            right: 0;
+            transform: translateX(100%);
+            top: 200px;
+            border: 20px solid transparent;
+            width: 0;
+            height: 0;
+            border-top-width: 30px;
+            border-bottom-width: 30px;
+            border-left-color: #fafafa;
+        }
     }
-
     @media (min-width: $screen-lg-min) {
-		min-width: 50%;
-		padding-top: 50px;
-		padding-bottom: 50px;
+        min-width: 50%;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
 .policies__menu-inner {
     @media (min-width: $screen-md-min) {
-		padding-left: 25px;
+        padding-left: 25px;
     }
     @media (min-width: $screen-xl-min) {
-    	padding-left: 15%;
+        padding-left: 15%;
     }
 }
 
 .policies__menu {
-	@extend .clearfix;
+    @extend .clearfix;
 }
 
 .policies__menu-item {
@@ -81,77 +80,85 @@
         transition: .3s;
     }
     &:after {
-    	transform: rotate(90deg);
+        transform: rotate(90deg);
     }
-
     &.tab-active {
-    	color: $color-primary;
-    	border-bottom: 1px solid $color-primary;
-    	&:before, &:after {
-    		background: $color-text-brown;
-    	}
-    	&:after {
-    		transform: rotate(0deg);
-    	}
+        color: $color-primary;
+        border-bottom: 1px solid $color-primary;
+        &:before,
+        &:after {
+            background: $color-text-brown;
+        }
+        &:after {
+            transform: rotate(0deg);
+        }
     }
-
+    @media (min-width: $screen-xs-min) {
+    	margin-bottom: 15px;
+    }
+    @media (min-width: $screen-md-min) {
+        margin-bottom: 20px;
+    }
     @media (min-width: $screen-lg-min) {
-    	font-size: 22px;
-    	margin-left: 20px;
-    	margin-bottom: 25px;
-    	&:after, &:before {
-    		width: 12px;
-    		left: -20px;
-    	}
-    	&:hover {
-    		color: $color-primary;
-    	}
+        font-size: 22px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        &:after,
+        &:before {
+            width: 12px;
+            left: -20px;
+        }
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
 
 .policies__content-container {
     @media (min-width: $screen-md-min) {
-		padding: 50px 30px 30px;
+        padding: 50px 30px 30px;
     }
-     @media (min-width: $screen-lg-min) {
-     	padding-top: 60px;
-     }
+    @media (min-width: $screen-lg-min) {
+        padding-top: 60px;
+    }
 }
+
 .policies__content-item {
-	display: none;
-	&.pane-active {
-		display: block;
-	}
+    display: none;
+    &.pane-active {
+        display: block;
+    }
 }
+
 .policy__title {
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
 
-.policy__content{
-	p {
-		font-family: $font-family-serif;
-		line-height: 2;
-		margin-bottom: 30px;
-		margin-top: 10px;
-	}
-	h3 {
-		font-size: 18px;
-	}
-
-	@media (min-width: $screen-lg-min) {
-		p {
-			line-height: 2.5;
-		}
-	}
-	@media (min-width: $screen-xl-min) {
-		p {
-			font-size: 16px;
-		}
-	}
+.policy__content {
+    p {
+        font-family: $font-family-serif;
+        line-height: 2;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    @media (min-width: $screen-lg-min) {
+        p {
+            line-height: 2.5;
+        }
+    }
+    @media (min-width: $screen-xl-min) {
+        p {
+            font-size: 16px;
+        }
+    }
 }
+
 .policy__modified {
-	font-size: 10px;
-	margin-bottom: 20px;
+    font-size: 10px;
+    margin-bottom: 20px;
 }

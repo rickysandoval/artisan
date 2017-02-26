@@ -1,12 +1,13 @@
 @import 'old';
 
-/* Base stuff, no sass */
+/* Variables */
+@import 'settings/settings';
+
+
+/* Base stuff */
 @import 'base/reset';
 @import 'base/basics';
 @import 'base/vendor';
-
-/* Variables */
-@import 'settings/settings';
 
 /* Core basics */
 @import 'core/buttons';

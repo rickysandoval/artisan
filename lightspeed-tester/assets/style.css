@@ -851,7 +851,11 @@ span.glyphicon.glyphicon-chevron-down {
 /* footer */
 /* copyright */
 /* element color */
-/* Base stuff, no sass */
+/* Variables */
+/* Breakpoints */
+/* Colors */
+/* Typography */
+/* Base stuff */
 /* Reset 
 ================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -999,12 +1003,12 @@ a {
   outline: 0; }
 
 a, a:visited {
-  color: #54afe9;
+  color: #ef4036;
   outline: 0;
   text-decoration: none; }
 
 a:hover, a:focus {
-  color: #54afe9;
+  color: #ef4036;
   outline: 0;
   text-decoration: underline; }
 
@@ -2925,10 +2929,6 @@ hr {
 .page-title .col-md-12 a {
   text-decoration: underline; }
 
-/* Variables */
-/* Breakpoints */
-/* Colors */
-/* Typography */
 /* Core basics */
 /* Buttons */
 a.btn,
@@ -3336,8 +3336,7 @@ header .logo {
   max-height: 80px; }
   .desktop nav .header__sign-in:hover {
     color: white;
-    background: #a6968f;
-    font-weight: bold; }
+    background: #a6968f; }
 
 /* #formSearch */
 #formSearch {
@@ -3487,20 +3486,29 @@ header .logo {
 
   .nav-contents {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px; }
     .nav-contents > * {
       order: 1; }
     .nav-contents .header-cart__wrapper,
     .nav-contents .header__sign-in {
       order: 2;
       color: white;
-      padding: 5px 15px;
-      font-size: 12px; }
+      padding: 10px 15px; }
       .nav-contents .header-cart__wrapper .glyphicon,
       .nav-contents .header__sign-in .glyphicon {
         margin: 0 5px; }
     .nav-contents .header__sign-in {
-      margin-top: 20px; }
+      margin-top: 10px; }
+    .nav-contents .header__sign-out {
+      order: 3;
+      color: white;
+      padding: 5px 15px;
+      position: absolute;
+      bottom: 10px;
+      left: 0; }
     .nav-contents .header-cart {
       color: white; }
     .nav-contents .header-cart__count--mobile {
@@ -3524,7 +3532,8 @@ header .logo {
     float: none; }
 
   #formSearch input {
-    max-width: 100%; }
+    max-width: 100%;
+    font-size: 16px; }
 
   #formSearch .glyphicon-search {
     margin-top: 14px;
@@ -3661,7 +3670,8 @@ header .logo {
 .mod-banner {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  text-align: center; }
+  text-align: center;
+  margin-top: -1px; }
 
 .mod-banner .banner-item {
   background-size: cover;
@@ -3862,7 +3872,7 @@ footer {
   footer .links {
     padding: 15px 0 20px;
     letter-spacing: 1px; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       footer .links {
         font-size: 12px; } }
   footer .collapse {
@@ -3870,7 +3880,7 @@ footer {
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 12px; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       footer .collapse {
         display: block;
         margin-bottom: 10px; }

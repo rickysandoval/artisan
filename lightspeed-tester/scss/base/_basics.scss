@@ -76,8 +76,8 @@ hr.full-width {
 a {
   outline: 0;
 }
-a, a:visited { color: #54afe9; outline: 0; text-decoration: none; }
-a:hover, a:focus { color: #54afe9; outline: 0; text-decoration: underline; }
+a, a:visited { color: $color-primary; outline: 0; text-decoration: none; }
+a:hover, a:focus { color: $color-primary; outline: 0; text-decoration: underline; }
 
 /* List */
 ul { list-style: none outside; }

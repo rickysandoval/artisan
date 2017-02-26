@@ -24,7 +24,7 @@ footer {
     .links {
         padding: 15px 0 20px;
         letter-spacing: 1px;
-        @media (min-width: $screen-md-min) {
+        @media (min-width: $screen-sm-min) {
         	font-size: 12px;
         }
     }
@@ -34,7 +34,7 @@ footer {
     	font-weight: 700;
 	    letter-spacing: 1px;
 	    font-size: 12px;
-		@media (min-width: $screen-md-min) {
+		@media (min-width: $screen-sm-min) {
 			display: block;
 			margin-bottom: 10px;
 			strong {

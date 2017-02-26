@@ -53,9 +53,12 @@
           <nav class="nonbounce vertical">
             <div class="nav-contents">
               <a class="header__sign-in" href="{{ 'account' | url }}" title="{{ 'My account' | t }}">
-               Sign in
+                {% if page.account %}
+                {{ 'Account' | t}}              
+                {% else %}
+                {{ 'Sign in' | t }}
+                {% endif %}
               </a>
-              
               <div class="header-cart__wrapper">
                 <a href="{{ 'cart' | url }}" title="{{ 'Cart' | t }}" class="header-cart">
                   <span class="header-cart__label">Cart</span>
@@ -69,7 +72,10 @@
                     {% endif %}
                   )</span>
                 </a>   
-              </div> 
+              </div>
+              {% if page.account %}
+              <a href="{{ 'account/logout' | url }}" title="{{ 'Logout' | t }}" class="header__sign-out">{{ 'Logout' | t }}</a></li>
+              {% endif %}
 
               <form action="{{ 'search' | url }}" method="get" id="formSearch">
                 <input type="text" name="q" autocomplete="off"  value="{{ page.search }}"/>
@@ -193,11 +199,7 @@
             <div class="col-xs-12 col-sm-2">
               <label class="collapse" for="_3">
                   <strong>
-                {% if page.account %}
-                {{ 'Welcome, $1!' | t(page.account.firstname) | raw }}              
-                {% else %}
-                {{ 'My account' | t }}
-                {% endif %}
+                {{ 'Account' | t }}
               </strong>
                   <span class="glyphicon glyphicon-chevron-down hidden-sm hidden-md hidden-lg"></span></label>
                     <input class="collapse_input hidden-md hidden-lg hidden-sm" id="_3" type="checkbox">

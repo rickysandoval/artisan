@@ -223,7 +223,6 @@ header .logo {
     &:hover {
         color: white;
         background: $color-background-dark;
-        font-weight: bold;
     }
 }
 
@@ -398,6 +397,9 @@ header .logo {
     .nav-contents {
         display: flex;
         flex-direction: column;
+        min-height: 100%;
+        position: relative;
+        padding-bottom: 60px;
         > * {
             order: 1;
         }
@@ -405,14 +407,21 @@ header .logo {
         .header__sign-in {
             order: 2;
             color: white;
-            padding: 5px 15px;
-            font-size: $font-size-sm;
+            padding: 10px 15px;
             .glyphicon {
                 margin: 0 5px;
             }
         }
         .header__sign-in {
-            margin-top: 20px;
+            margin-top: 10px;
+        }
+        .header__sign-out {
+            order: 3;
+            color: white;
+            padding: 5px 15px;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
         }
         .header-cart {
             color: white;
@@ -441,6 +450,7 @@ header .logo {
     }
     #formSearch input {
         max-width: 100%;
+        font-size: 16px;
     }
     #formSearch .glyphicon-search {
         margin-top: 14px;

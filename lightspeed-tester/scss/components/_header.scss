@@ -93,6 +93,7 @@ header .logo {
     .itemLink,
     .header-cart,
     .header__sign-in {
+        color: $color-text-brown;
         padding: 5px;
         text-transform: uppercase;
         padding-bottom: 3px;
@@ -102,6 +103,9 @@ header .logo {
         z-index: 2;
         line-height: 80px;
         white-space: nowrap;
+        &:not(a) {
+            cursor: default;
+        }
     }
     .header__sign-in {
         line-height: 80px;

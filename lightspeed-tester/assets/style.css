@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* whatup */
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 .title-featured {
   margin-bottom: 20px; }
 
@@ -3242,10 +3243,12 @@ header .logo {
     border: 1px solid transparent;
     position: relative;
     z-index: 2;
-    line-height: 70px;
+    line-height: 80px;
     white-space: nowrap; }
   .desktop nav .header__sign-in {
     line-height: 80px; }
+  .desktop nav .header__sign-out {
+    display: none; }
   .desktop nav .header-cart__label {
     display: none; }
   .desktop nav a, .desktop nav a:visited {
@@ -3915,7 +3918,7 @@ footer {
   font-size: 11px; }
   .footer-contact__info a {
     display: block;
-    line-height: 1.5;
+    line-height: 1.75;
     white-space: nowrap; }
   .footer-contact__info .glyphicon {
     margin-right: 5px; }

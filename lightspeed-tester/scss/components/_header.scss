@@ -100,11 +100,14 @@ header .logo {
         border: 1px solid transparent;
         position: relative;
         z-index: 2;
-        line-height: 70px;
+        line-height: 80px;
         white-space: nowrap;
     }
     .header__sign-in {
         line-height: 80px;
+    }
+    .header__sign-out {
+        display: none;
     }
     .header-cart__label {
         display: none;
@@ -594,7 +597,6 @@ header .logo {
     .navigation .logo {
         text-align: right;
     }
-
     .navigation .burger {
         transform: scale(.72);
     }

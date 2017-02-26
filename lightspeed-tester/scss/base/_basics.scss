@@ -2,18 +2,23 @@
 /* Basics
 ================================================== */
 body {
-  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.8;
   color: #444;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; 
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  background: #ffffff;
 }
 html {
     overflow: -moz-scrollbars-vertical;
      overflow-y: scroll;
-}     
+}    
+h1, h2, h3, h4, h5, h6, .gui-page-title {
+  font-family: "Montserrat", Helvetica, sans-serif;
+} 
 .left { float: left !important; }
 
 .right { float: right !important; }

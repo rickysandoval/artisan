@@ -97,6 +97,7 @@ border-color: #e8e7e6; }
 .gui a.gui-button-large:hover,
 .gui a.gui-button-small:hover {
   background-color: #ef4036;
+  border-color: #ef4036;
   color: white;
 }
 
@@ -142,4 +143,32 @@ border-color: #e8e7e6; }
 
 .gui-div-cart-related {
   display: none
+}
+
+.gui-checkout .gui-progressbar ul li.gui-done a {
+  color: #ABB3B3 !important;
+}
+
+.gui-checkout .gui-progressbar ul li.gui-done {
+  background-color: white !important;
+}
+
+.gui-table thead tr th {
+  background-color: #f2f0ef !important;
+}
+
+.gui-checkout .gui-progressbar ul li.gui-active, .gui-checkout .gui-progressbar ul li.gui-invalid {
+  background-color: white !important;
+}
+
+.gui-col2-right-col1.gui-div-faq-questions {
+  display: none;
+}
+
+.gui-col2-right-col2.gui-div-faq-right {
+  float:none;
+  width: 100%;max-width: 450px;
+  .gui-buttons {
+    border: none !important;
+  }
 }

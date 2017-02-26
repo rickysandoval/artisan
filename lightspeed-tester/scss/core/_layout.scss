@@ -29,6 +29,9 @@
 
 .content-block {
     padding: 25px 20px;
+    .button {
+        border-width: 4px;
+    }
     &.block-left {
         padding-left: 0;
     }
@@ -85,6 +88,9 @@
     background: #fafafa;
     @extend .full-width;
     padding: 55px 0 25px;
+    .button {
+        border-width: 4px;
+    }
     .info-block__content {
         max-width: 970px;
         margin: 0 auto;

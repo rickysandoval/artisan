@@ -1053,9 +1053,7 @@ textarea {
   border-radius: 0px; }
 
 select {
-  padding: 0;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px; }
+  padding: 0; }
 
 @media (max-width: 992px) {
   select {
@@ -4456,6 +4454,7 @@ _____________________________*/
 .gui a.gui-button-large:hover,
 .gui a.gui-button-small:hover {
   background-color: #ef4036;
+  border-color: #ef4036;
   color: white; }
 
 .gui a.gui-button-large.gui-button-action:active,
@@ -4491,6 +4490,28 @@ _____________________________*/
 
 .gui-div-cart-related {
   display: none; }
+
+.gui-checkout .gui-progressbar ul li.gui-done a {
+  color: #ABB3B3 !important; }
+
+.gui-checkout .gui-progressbar ul li.gui-done {
+  background-color: white !important; }
+
+.gui-table thead tr th {
+  background-color: #f2f0ef !important; }
+
+.gui-checkout .gui-progressbar ul li.gui-active, .gui-checkout .gui-progressbar ul li.gui-invalid {
+  background-color: white !important; }
+
+.gui-col2-right-col1.gui-div-faq-questions {
+  display: none; }
+
+.gui-col2-right-col2.gui-div-faq-right {
+  float: none;
+  width: 100%;
+  max-width: 450px; }
+  .gui-col2-right-col2.gui-div-faq-right .gui-buttons {
+    border: none !important; }
 
 /* Slider */
 .slick-slider {
@@ -4753,7 +4774,7 @@ input[type="reset"],
 input[type="button"] {
   font-family: "Montseratt", Helvetica, serif;
   background: transparent;
-  border: 4px solid #a6968f;
+  border: 2px solid #a6968f;
   color: #a6968f;
   display: inline-block;
   text-decoration: none;
@@ -4911,6 +4932,8 @@ input::-moz-focus-inner {
 
 .content-block {
   padding: 25px 20px; }
+  .content-block .button {
+    border-width: 4px; }
   .content-block.block-left {
     padding-left: 0; }
   .content-block h2 {
@@ -4957,6 +4980,8 @@ input::-moz-focus-inner {
   text-align: center;
   background: #fafafa;
   padding: 55px 0 25px; }
+  .info-block .button {
+    border-width: 4px; }
   .info-block .info-block__content {
     max-width: 970px;
     margin: 0 auto;
@@ -5511,6 +5536,8 @@ header .logo {
   margin-right: calc(50% - 50vw);
   text-align: center;
   margin-top: -1px; }
+  .mod-banner .button {
+    border-width: 4px; }
 
 .mod-banner .banner-item {
   background-size: cover;
@@ -6083,6 +6110,11 @@ footer {
 
   .product-info .product-price .cart {
     margin-top: 15px; } }
+.product .description .text {
+  line-height: 2; }
+  .product .description .text p {
+    margin: 0; }
+
 /* .products
 ================================================== */
 .products .col-md-10 {

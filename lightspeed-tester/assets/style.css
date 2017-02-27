@@ -5586,6 +5586,9 @@ header .logo {
 .mobile .mobile-bounce-overlay {
   display: block; }
 
+.open nav {
+  z-index: 1; }
+
 .banner-title {
   padding-top: 0; }
 

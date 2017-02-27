@@ -624,3 +624,7 @@ header .logo {
 .mobile .mobile-bounce-overlay {
     display: block;
 }
+
+.open nav {
+    z-index: 1;
+}

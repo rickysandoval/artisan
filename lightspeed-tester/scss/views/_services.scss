@@ -170,7 +170,7 @@
 
 .service__title--small {
     color: $color-background-dark !important;
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: 520px) {
         font-size: 24px !important;
         font-weight: 700 !important;
     }

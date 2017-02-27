@@ -6859,7 +6859,7 @@ footer {
 
 .service__title--small {
   color: #a6968f !important; }
-  @media (min-width: 768px) {
+  @media (min-width: 520px) {
     .service__title--small {
       font-size: 24px !important;
       font-weight: 700 !important; } }

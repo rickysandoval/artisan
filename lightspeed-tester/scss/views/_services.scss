@@ -1,23 +1,24 @@
 .services__group {
-	@media (min-width: $screen-md-min) {
-		> * {
-			display: flex;
-		}
-	}
+    @media (min-width: $screen-md-min) {
+        > * {
+            display: flex;
+        }
+    }
 }
 
-.services--vertical, .service--consulting {
-	width: 100%;
+.services--vertical,
+.service--consulting {
+    width: 100%;
 }
 
 .services--vertical {
-	@media (min-width: $screen-lg-min) {
-		display: flex;
-		flex-direction: column;
-		.service {
-			height: 50%;
-		}
-	}
+    @media (min-width: $screen-lg-min) {
+        display: flex;
+        flex-direction: column;
+        .service {
+            height: 50%;
+        }
+    }
 }
 
 .service {
@@ -47,14 +48,16 @@
             margin-bottom: 30px;
         }
         .service__title {
-            text-align: left;
-            padding: 0 15px;
-            &:after {
-                left: 15px;
-                width: 33%;
-                height: 2px;
-                max-width: 100px;
-                margin-left: 0;
+            @media (min-width: 520px) {
+                text-align: left;
+                padding: 0 15px;
+                &:after {
+                    left: 15px;
+                    width: 33%;
+                    height: 2px;
+                    max-width: 100px;
+                    margin-left: 0;
+                }
             }
         }
         @media (max-width: $screen-sm-max) and (min-width: 520px) {
@@ -183,10 +186,9 @@
             padding-right: 25px;
         }
     }
-
     @media (min-width: $screen-sm-min) {
         .service__image-wrap {
-        	height: 50%;
+            height: 50%;
         }
     }
 }
@@ -211,9 +213,9 @@
         }
     }
     &:last-child {
-    	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    		order: 0;
-    	}
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            order: 0;
+        }
         h2 {
             color: white;
             background: $color-background-dark;

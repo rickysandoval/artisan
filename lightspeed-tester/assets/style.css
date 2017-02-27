@@ -6700,7 +6700,8 @@ footer {
     display: -ms-flexbox;
     display: flex; } }
 
-.services--vertical, .service--consulting {
+.services--vertical,
+.service--consulting {
   width: 100%; }
 
 @media (min-width: 1200px) {
@@ -6737,15 +6738,16 @@ footer {
         width: 100%; } }
 .service.flex-half h2 {
   margin-bottom: 30px; }
-.service.flex-half .service__title {
-  text-align: left;
-  padding: 0 15px; }
-  .service.flex-half .service__title:after {
-    left: 15px;
-    width: 33%;
-    height: 2px;
-    max-width: 100px;
-    margin-left: 0; }
+@media (min-width: 520px) {
+  .service.flex-half .service__title {
+    text-align: left;
+    padding: 0 15px; }
+    .service.flex-half .service__title:after {
+      left: 15px;
+      width: 33%;
+      height: 2px;
+      max-width: 100px;
+      margin-left: 0; } }
 @media (max-width: 991px) and (min-width: 520px) {
   .service.flex-half {
     display: -webkit-box;

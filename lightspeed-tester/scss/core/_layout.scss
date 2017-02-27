@@ -19,6 +19,17 @@
     }
 }
 
+
+.flex-half--small {
+    @media (min-width: $screen-sm-min) {
+        display: flex;
+        > * {
+            flex-grow: 1;
+            width: 50%;
+        }
+    }
+}
+
 .flex-center {
     align-items: center;
 }

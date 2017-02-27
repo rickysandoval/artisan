@@ -46,6 +46,7 @@
               <img src="{{ 'logo.png' | url_asset }}" alt="{{ shop.title }}" />
             </a>
           </div>
+          <div class="mobile-bounce-overlay wrapper"></div>
           <nav class="nonbounce vertical">
             <div class="nav-contents">
               <a class="header__sign-in" href="{{ 'account' | url }}" title="{{ 'My account' | t }}">
@@ -79,9 +80,9 @@
               </form>   
 
               <ul>
-                <li class="item {% if 'featured-rugs' is active %} active{% endif %}">
+               {#  <li class="item {% if 'featured-rugs' is active %} active{% endif %}">
                   <a class="itemLink" href="{{'featured-rugs' | url }}" title="Featured Rugs">Featured</a>
-                </li>
+                </li> #}
                 {% for category in shop.categories %}
                 <li class="item{% if category.subs %} sub{% endif %}{% if category.url is active %} active{% endif %}">
                   <a class="itemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
@@ -108,7 +109,7 @@
                 {% endfor %}
                 <li class="item sub{% if 'service/faqs' is active or 'service/about' is active or 'service/store-policies' is active %} active{% endif %}">
                   <span class="itemLink">More</span>
-                   <span class="glyphicon glyphicon-play"></span>
+                  <span class="glyphicon glyphicon-play"></span>
                   <ul class="subnav">
                     {% for link in shop.links.more %}
                     <li class="subitem">
@@ -233,7 +234,7 @@
                   <div class="footer-contact__info">
                     <div>Shops at 9th | 899 N. Broadway</div>
                     <div>Denver, CO 80203</div>
-                    <div><span class="glyphicon glyphicon-earphone"></span>(303) 825 - 0064</div>
+                    <div class="footer-phone"><span class="glyphicon glyphicon-earphone"></span><span>(303) 825 - 0064</span></div>
                     <a href="mailto:jeff@artisanruggallery.com" title="Email Jeff"><span class="glyphicon glyphicon-envelope"></span>jeff@artisanruggallery.com</a>
                   </div>
                 </div>
@@ -242,7 +243,7 @@
                   <div class="footer-contact__info">
                     <div>311 Elk Ave</div>
                     <div>Crested Butte, CO 81224</div>
-                    <div><span class="glyphicon glyphicon-earphone"></span>(970) 349 - 0016</div>
+                    <div class="footer-phone"><span class="glyphicon glyphicon-earphone"></span><span>(970) 349 - 0016</span></div>
                     <a href="mailto:nikki@artisanruggallery.com" title="Email Nikki"><span class="glyphicon glyphicon-envelope"></span>nikki@artisanruggallery.com</a>
                   </div>
                 </div>

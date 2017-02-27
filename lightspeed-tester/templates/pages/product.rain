@@ -190,8 +190,12 @@
           
           {% if product.description %}
           {{ product.description | raw }}
-          {% else %}
-          {{ product.content | raw }}
+          {% endif %}
+          
+          {% if product.content %}
+          <div class="product__content">
+            {{ product.content | raw }}
+          </div>
           {% endif %}
           
           {% if not product.code and not product.stock.track and not product.stock.on_stock and not product.stock.delivery and not product.unit and not product.content %}          <em>{{ 'No information found' | t }}</em>

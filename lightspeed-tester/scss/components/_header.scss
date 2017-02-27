@@ -68,6 +68,7 @@ header .logo {
 
 .desktop nav {
     font-size: $font-size-sm;
+    display: block !important;
     .nav-contents {
         display: flex;
         flex-direction: row-reverse;
@@ -259,6 +260,9 @@ header .logo {
 .mobile nav.vertical {
     display: block;
     transform: translate3d(0, 0, 0);
+}
+.mobile .open nav.vertical {
+    display: block;
 }
 
 
@@ -604,4 +608,19 @@ header .logo {
     .navigation .burger {
         transform: scale(.72);
     }
+}
+
+.mobile-bounce-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1;
+}
+
+.mobile .mobile-bounce-overlay {
+    display: block;
 }

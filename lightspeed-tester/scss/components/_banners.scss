@@ -129,6 +129,20 @@
     }
 }
 
+.medium-banner.medium-banner .banner-item {
+    height: 33vh;
+    max-height: 500px;
+    min-height: 200px;
+    background-position: 50% 50%;
+    h1,
+    h2 {
+        margin-bottom: 20px;
+    }
+    @media (min-width: $screen-md-min) {
+        height: 45vh;
+    }
+}
+
 .banner-internal {
     .banner-item {
         text-align: left;

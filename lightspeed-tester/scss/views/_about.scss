@@ -47,3 +47,25 @@
         }
     }
 }
+
+.the-process {
+    @media (max-width: $screen-sm-max) {
+        display: flex;
+        flex-direction: column;
+        .image-half {
+            order: -1;
+            background-position: 50% 50%;
+        }
+    }
+}
+
+.the-loom {
+    @media (max-width: $screen-sm-max) {
+        display: flex;
+        flex-direction: column;
+        .image-half {
+            order: 2;
+            background-position: 50% 50%;
+        }
+    }
+}

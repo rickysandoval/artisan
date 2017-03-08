@@ -4931,13 +4931,17 @@ input::-moz-focus-inner {
 .no-bottom-space {
   margin-bottom: -60px; }
 
-.content-block {
+.content-block.content-block {
   padding: 25px 20px; }
-  .content-block .button {
+  @media (max-width: 767px) {
+    .content-block.content-block {
+      padding-left: 10px;
+      padding-right: 10px; } }
+  .content-block.content-block .button {
     border-width: 4px; }
-  .content-block.block-left {
+  .content-block.content-block.block-left {
     padding-left: 0; }
-  .content-block h2 {
+  .content-block.content-block h2 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -4946,7 +4950,7 @@ input::-moz-focus-inner {
     margin-bottom: 20px;
     position: relative;
     text-transform: uppercase; }
-    .content-block h2:after {
+    .content-block.content-block h2:after {
       content: '';
       display: block;
       position: absolute;
@@ -4954,10 +4958,40 @@ input::-moz-focus-inner {
       height: 4px;
       background: #ef4036;
       bottom: -10px; }
-  .content-block p {
+  .content-block.content-block p {
     font-family: "Merriweather", serif;
     line-height: 2.4;
     margin-bottom: 20px; }
+
+@media (max-width: 767px) {
+  .container .content-block {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (max-width: 767px) {
+  .full-width .content-block, .info-block .content-block {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media (max-width: 767px) {
+  .full-width .container .content-block, .info-block .container .content-block {
+    padding-left: 0px;
+    padding-right: 0px; } }
+
+@media (min-width: 992px) {
+  .flex-half > * .content-block {
+    max-width: 650px;
+    margin: 0 auto; } }
+
+.content-block-center {
+  text-align: center; }
+  .content-block-center h2:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .content-block-center p {
+    margin: 40px 0; }
 
 .table {
   display: table;
@@ -5010,6 +5044,13 @@ input::-moz-focus-inner {
       font-size: 16px;
       line-height: 2.4;
       margin-bottom: 50px; }
+
+.image-half {
+  height: 33vh;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .image-half {
+      height: auto; } }
 
 @media (max-width: 479px) {
   .info-block .info-block__content h1,
@@ -5701,6 +5742,18 @@ header .logo {
   .thin-banner .banner-item h1,
   .thin-banner .banner-item h2 {
     margin-bottom: 20px; }
+
+.medium-banner.medium-banner .banner-item {
+  height: 33vh;
+  max-height: 500px;
+  min-height: 200px;
+  background-position: 50% 50%; }
+  .medium-banner.medium-banner .banner-item h1,
+  .medium-banner.medium-banner .banner-item h2 {
+    margin-bottom: 20px; }
+  @media (min-width: 992px) {
+    .medium-banner.medium-banner .banner-item {
+      height: 45vh; } }
 
 .banner-internal .banner-item {
   text-align: left; }
@@ -6558,6 +6611,42 @@ footer {
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); } }
+
+@media (max-width: 991px) {
+  .the-process {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .the-process .image-half {
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+          -ms-flex-order: -1;
+              order: -1;
+      background-position: 50% 50%; } }
+
+@media (max-width: 991px) {
+  .the-loom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .the-loom .image-half {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+      background-position: 50% 50%; } }
 
 @media (min-width: 992px) {
   .policies__container {

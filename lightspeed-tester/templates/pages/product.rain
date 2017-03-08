@@ -247,7 +247,7 @@
     {% if shop.settings.social.pinterest %}
     <div class="social-block social-block-pinterest">
       <a href="http://pinterest.com/pin/create/button/?url={{ product.url | url | url_encode }}&media={{ product.image | url_image('', product.fulltitle) | url_encode }}&description={{ product.fulltitle | url_encode }}" class="pin-it-button" count-layout="horizontal" target="_blank"><img border="0" src="{{ 'pinext.png' | url_asset }}" title="Pin It" /></a>
-      <script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+      <script type="text/javascript" src="https://assets.pinterest.com/js/pinit.js"></script>
     </div>
     {% endif %}
     {% if shop.settings.social.twitter %}

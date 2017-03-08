@@ -200,6 +200,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/bg-line-rug.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62898,
+		"inputAbbreviatedPath": "\/assets\/bg-line-rug.jpg",
+		"outputAbbreviatedPath": "\/assets\/bg-line-rug.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/bg-nopeat.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42036,
+		"inputAbbreviatedPath": "\/assets\/bg-nopeat.jpg",
+		"outputAbbreviatedPath": "\/assets\/bg-nopeat.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/bg-repeat.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -341,6 +363,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/loom.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 261165,
+		"inputAbbreviatedPath": "\/assets\/loom.jpg",
+		"outputAbbreviatedPath": "\/assets\/loom.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/map-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -374,6 +407,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/pinext.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 936,
+		"inputAbbreviatedPath": "\/assets\/pinext.png",
+		"outputAbbreviatedPath": "\/assets\/pinext.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/repeat-feature.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -381,6 +425,17 @@
 		"initialSize": 119898,
 		"inputAbbreviatedPath": "\/assets\/repeat-feature.jpg",
 		"outputAbbreviatedPath": "\/assets\/repeat-feature.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/sheep.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 156594,
+		"inputAbbreviatedPath": "\/assets\/sheep.jpg",
+		"outputAbbreviatedPath": "\/assets\/sheep.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -499,6 +554,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/contents\/store-policies.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/contents\/what-is-a-rug.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contents\/what-is-a-rug.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -902,6 +966,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/service\/store-policies.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/service\/what-is-a-rug.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/service\/what-is-a-rug.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

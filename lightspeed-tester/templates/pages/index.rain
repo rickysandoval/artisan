@@ -191,7 +191,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkXUWLPP5cojDHN6zLaWQ9Nf
   </div>
 </div>
 {% endif %} #}
-
+{# 
 {% if featured %}
 <div class="products row">
   {% if theme.product_title %}
@@ -204,8 +204,8 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkXUWLPP5cojDHN6zLaWQ9Nf
   {% endfor %} 
 </div>
 {% endif %}
-
-{% if theme.setting_homepagetags and shop.tags %}
+ #}
+{# {% if theme.setting_homepagetags and shop.tags %}
 <div class="tags-actions row">
   <div class="tags col-md-12">
     {% for tag in shop.tags %}
@@ -213,7 +213,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkXUWLPP5cojDHN6zLaWQ9Nf
     {% endfor %}
   </div>
 </div>
-{% endif %}
+{% endif %} #}
 <script type="text/javascript" src="{{ 'slick.min.js' | url_asset }}"></script>
 <script>
   (function(){

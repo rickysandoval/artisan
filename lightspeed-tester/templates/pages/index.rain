@@ -87,18 +87,6 @@
         <p><a class="button button--big" title="SHOP NEW ARRIVALS " href="{{'service/about/' | url}}">learn more about us</a></p>
     </div>
 </div>
-<div class="full-width mod-subscribe">
-    <div class="container newsletter">
-      <h2>{{ 'Subscribe for any updates' | t }}</h2>
-      <div class="subtitle">Subscribe to our newsltter to be notified about promotions and sales</div>
-      <form id="formNewsletter" action="{{ 'account/newsletter' | url }}" method="post">
-        <input type="hidden" name="key" value="{{ page.key }}" />
-        <input type="text" name="email" id="formNewsletterEmail" value="" class="form-control" placeholder="{{ 'Your Email Address' | t }}"/>
-        <a class="btn submit-btn button--solid" href="#" onclick="$('#formNewsletter').submit(); return false;" title="{{ 'Submit' | t }}"><span>{{ 'Submit' | t }}</span></a>
-      </form>
-    </div>
-</div>
-
 <div class="mod-banner thin-banner see-us">
     <div class="banner-item" style="background-image:url('{{'banner.jpg' | url_asset}}')">
       <div class="table">

@@ -84,7 +84,7 @@
 <div class="info-block" style="background: url('{{'bg-repeat.jpg' | url_asset}}')">
     <div class="info-block__content">
         <p>With an eye for detail and an intimate knowledge of the modern rug market, our team of experts help you to select a rug that adds warmth, depth, pattern and color to your home, one that will inherently speak of the history, culture and art of its origin. We offer the most personalized attention to your furnishing needs as standard, ensuring that you’re able to determine the distinctive rug that’s the precise fit for you. </p>
-        <p><a class="button button--solid button--big" title="SHOP NEW ARRIVALS " href="{{'services/about/' | url}}">learn more about us</a></p>
+        <p><a class="button button--solid button--big" title="SHOP NEW ARRIVALS " href="{{'service/about/' | url}}">learn more about us</a></p>
     </div>
 </div>
 
@@ -134,7 +134,7 @@
                     <br /> 311 Elk Ave.
                     <br /> Crested Butte, CO 81224</p>
                 <hr>
-                <p>Jeff Deutsch <br/>970. 349. 0016 <br/><a href="mailto:jeff@artisanruggallery.com">jeff@artisanruggallery.com</a></p>
+                <p>Jeff Deutsch <br/>970. 349. 0116 <br/><a href="mailto:jeff@artisanruggallery.com">jeff@artisanruggallery.com</a></p>
             </div>
         </div>
     </div>

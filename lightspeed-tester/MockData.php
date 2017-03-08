@@ -235,7 +235,8 @@ function getMockData($mockPage) {
 			'reviews' => false,
 			'tags' => false,
 			'bundles' => false,
-			'related' => false
+			'related' => false,
+			'content' => false
 		)
 	);
 

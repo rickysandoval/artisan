@@ -81,10 +81,21 @@
     </div>
 </div>
 
-<div class="info-block" style="background: url('{{'bg-repeat.jpg' | url_asset}}')">
+<div class="info-block" style="background: url('{{'repeat-feature.jpg' | url_asset}}')">
     <div class="info-block__content">
         <p>With an eye for detail and an intimate knowledge of the modern rug market, our team of experts help you to select a rug that adds warmth, depth, pattern and color to your home, one that will inherently speak of the history, culture and art of its origin. We offer the most personalized attention to your furnishing needs as standard, ensuring that you’re able to determine the distinctive rug that’s the precise fit for you. </p>
-        <p><a class="button button--solid button--big" title="SHOP NEW ARRIVALS " href="{{'service/about/' | url}}">learn more about us</a></p>
+        <p><a class="button button--big" title="SHOP NEW ARRIVALS " href="{{'service/about/' | url}}">learn more about us</a></p>
+    </div>
+</div>
+<div class="full-width mod-subscribe">
+    <div class="container newsletter">
+      <h2>{{ 'Subscribe for any updates' | t }}</h2>
+      <div class="subtitle">Subscribe to our newsltter to be notified about promotions and sales</div>
+      <form id="formNewsletter" action="{{ 'account/newsletter' | url }}" method="post">
+        <input type="hidden" name="key" value="{{ page.key }}" />
+        <input type="text" name="email" id="formNewsletterEmail" value="" class="form-control" placeholder="{{ 'Your Email Address' | t }}"/>
+        <a class="btn submit-btn button--solid" href="#" onclick="$('#formNewsletter').submit(); return false;" title="{{ 'Submit' | t }}"><span>{{ 'Submit' | t }}</span></a>
+      </form>
     </div>
 </div>
 
@@ -98,7 +109,7 @@
     </div>
 </div>
 
-<div class="full-width mod-contact no-bottom-space">
+<div class="full-width mod-contact">
   <a name="locations"></a>
     <!-- version desktop -->
     <div class="item">
@@ -137,6 +148,17 @@
                 <p>Jeff Deutsch <br/>970. 349. 0116 <br/><a href="mailto:jeff@artisanruggallery.com">jeff@artisanruggallery.com</a></p>
             </div>
         </div>
+    </div>
+</div>
+<div class="full-width mod-subscribe no-bottom-space">
+    <div class="container newsletter">
+      <h2>{{ 'Subscribe for any updates' | t }}</h2>
+      <div class="subtitle">Subscribe to our newsltter to be notified about promotions and sales</div>
+      <form id="formNewsletter" action="{{ 'account/newsletter' | url }}" method="post">
+        <input type="hidden" name="key" value="{{ page.key }}" />
+        <input type="text" name="email" id="formNewsletterEmail" value="" class="form-control" placeholder="{{ 'Your Email Address' | t }}"/>
+        <a class="btn submit-btn button--solid" href="#" onclick="$('#formNewsletter').submit(); return false;" title="{{ 'Submit' | t }}"><span>{{ 'Submit' | t }}</span></a>
+      </form>
     </div>
 </div>
 <script>

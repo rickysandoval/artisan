@@ -4841,14 +4841,14 @@ input[type="button"] {
     input[type="reset"].button--light.button--primary:hover,
     input[type="button"].button--light.button--primary:hover {
       border-color: #ef4036; }
-  a.btn.button-big,
-  .button.button-big,
-  .button:visited.button-big,
-  .btn:visited.button-big,
-  button.button-big,
-  input[type="submit"].button-big,
-  input[type="reset"].button-big,
-  input[type="button"].button-big {
+  a.btn.button--big,
+  .button.button--big,
+  .button:visited.button--big,
+  .btn:visited.button--big,
+  button.button--big,
+  input[type="submit"].button--big,
+  input[type="reset"].button--big,
+  input[type="button"].button--big {
     padding-top: 5px;
     padding-bottom: 5px; }
 
@@ -4949,7 +4949,8 @@ input::-moz-focus-inner {
     line-height: 40px;
     margin-bottom: 20px;
     position: relative;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 2px; }
     .content-block.content-block h2:after {
       content: '';
       display: block;
@@ -5028,7 +5029,8 @@ input::-moz-focus-inner {
       color: #a6968f;
       font-weight: 700;
       text-transform: uppercase;
-      position: relative; }
+      position: relative;
+      letter-spacing: 2px; }
       .info-block .info-block__content h1:after,
       .info-block .info-block__content h2:after {
         position: absolute;
@@ -5699,7 +5701,7 @@ header .logo {
   font-weight: 600;
   font-style: normal;
   margin-bottom: 50px;
-  letter-spacing: 4; }
+  letter-spacing: 2px; }
   .mod-banner h1:after,
   .mod-banner h2:after {
     content: "";
@@ -6136,6 +6138,77 @@ footer {
   .mod-contact .address {
     display: block;
     padding-bottom: 25px; } }
+.mod-subscribe {
+  padding: 40px 10px;
+  background: #f8f8f8; }
+  .mod-subscribe h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #a6968f;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 35px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    letter-spacing: 2px; }
+    .mod-subscribe h2:after {
+      position: absolute;
+      width: 120px;
+      height: 5px;
+      background: #685f5c;
+      bottom: -20px;
+      left: 0;
+      content: ""; }
+  .mod-subscribe .subtitle {
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    color: #868686;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 25px; }
+  .mod-subscribe form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .mod-subscribe form input[type="text"] {
+      width: 100%;
+      max-width: 100%;
+      border: 1px solid #efefef;
+      color: #868686;
+      font-family: "Montserrat", sans-serif; }
+      .mod-subscribe form input[type="text"]::-webkit-input-placeholder {
+        color: #868686;
+        padding-left: 5px; }
+      .mod-subscribe form input[type="text"]::-moz-placeholder {
+        color: #868686;
+        padding-left: 5px; }
+      .mod-subscribe form input[type="text"]:-ms-input-placeholder {
+        color: #868686;
+        padding-left: 5px; }
+      .mod-subscribe form input[type="text"]::placeholder {
+        color: #868686;
+        padding-left: 5px; }
+  @media (min-width: 768px) {
+    .mod-subscribe {
+      text-align: center;
+      padding: 70px 20px 70px; }
+      .mod-subscribe h2:after {
+        left: 50%;
+        margin-left: -60px; }
+      .mod-subscribe form {
+        max-width: 700px;
+        margin: 0 auto; }
+        .mod-subscribe form input[type="text"], .mod-subscribe form .btn {
+          line-height: 40px; }
+        .mod-subscribe form input[type="text"] {
+          padding-left: 20px;
+          font-size: 15px; }
+        .mod-subscribe form .btn {
+          padding-top: 5px; } }
+
 /* Product page
 ================================================== */
 .product-wrap {

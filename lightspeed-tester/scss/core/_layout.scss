@@ -58,6 +58,7 @@
         margin-bottom: 20px;
         position: relative;
         text-transform: uppercase;
+        letter-spacing: 2px;
         &:after {
             content: '';
             display: block;
@@ -156,6 +157,7 @@
             font-weight: 700;
             text-transform: uppercase;
             position: relative;
+            letter-spacing: 2px;
             &:after {
                 position: absolute;
                 width: 118px;

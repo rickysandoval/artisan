@@ -325,7 +325,8 @@ function getMockData($mockPage) {
 		'recent' => false,
 		'compare' => false,
 		'messages' => false,
-		'search' => ''
+		'search' => '',
+		'key' => 'sldf84'
 	);
 
 	$theme = array(

@@ -69,3 +69,32 @@
         }
     }
 }
+
+.team-member {
+    margin-bottom: 40px;
+}
+
+.team-member__photo {
+    img {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+.team-member__info {
+    text-transform: uppercase;
+    font-family: $font-family-sans;
+    letter-spacing: 2px;
+    padding-top: 30px;
+}
+
+.team-member__name {
+    font-size: $font-size-lg;
+    font-weight: 700;
+}
+
+.team-member__job {
+    font-style: italic;
+    color: $color-background-dark;
+    font-size: $font-size-reg;
+}

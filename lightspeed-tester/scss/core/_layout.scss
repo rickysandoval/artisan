@@ -5,6 +5,13 @@
     }
 }
 
+@media (min-width: $screen-xl-min) {
+    .container--large {
+        width: 100% !important;
+        max-width: 1440px !important;
+    }
+}
+
 .content {
     margin-bottom: 60px;
 }

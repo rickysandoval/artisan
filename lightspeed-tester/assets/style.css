@@ -4893,6 +4893,10 @@ input::-moz-focus-inner {
   .container {
     width: 100% !important;
     max-width: 970px !important; } }
+@media (min-width: 1480px) {
+  .container--large {
+    width: 100% !important;
+    max-width: 1440px !important; } }
 .content {
   margin-bottom: 60px; }
 
@@ -5110,10 +5114,21 @@ header .logo {
       overflow: hidden;
       margin-left: -20px; } }
 
-.align .vertical .logo img {
+.align .vertical.logo img {
   max-width: 100%;
   height: auto;
-  width: auto\9; }
+  width: auto\9;
+  max-height: 40px;
+  margin: 0 10px;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */ }
 
 .desktop nav {
   font-size: 12px;
@@ -6720,6 +6735,28 @@ footer {
           -ms-flex-order: 2;
               order: 2;
       background-position: 50% 50%; } }
+
+.team-member {
+  margin-bottom: 40px; }
+
+.team-member__photo img {
+  max-width: 100%;
+  margin: auto; }
+
+.team-member__info {
+  text-transform: uppercase;
+  font-family: "Montseratt", Helvetica, serif;
+  letter-spacing: 2px;
+  padding-top: 30px; }
+
+.team-member__name {
+  font-size: 16px;
+  font-weight: 700; }
+
+.team-member__job {
+  font-style: italic;
+  color: #a6968f;
+  font-size: 14px; }
 
 @media (min-width: 992px) {
   .policies__container {

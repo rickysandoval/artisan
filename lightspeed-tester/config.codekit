@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/artisan-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12457,
+		"inputAbbreviatedPath": "\/assets\/artisan-logo.png",
+		"outputAbbreviatedPath": "\/assets\/artisan-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/banner-2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -341,6 +352,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/jeff-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 126456,
+		"inputAbbreviatedPath": "\/assets\/jeff-small.jpg",
+		"outputAbbreviatedPath": "\/assets\/jeff-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/kathy.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.05922e+06,
+		"inputAbbreviatedPath": "\/assets\/kathy.jpg",
+		"outputAbbreviatedPath": "\/assets\/kathy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/lightbox.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -370,6 +403,17 @@
 		"initialSize": 261165,
 		"inputAbbreviatedPath": "\/assets\/loom.jpg",
 		"outputAbbreviatedPath": "\/assets\/loom.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/luna.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5.10997e+06,
+		"inputAbbreviatedPath": "\/assets\/luna.jpg",
+		"outputAbbreviatedPath": "\/assets\/luna.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -492,6 +536,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/tiffany.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5.60508e+06,
+		"inputAbbreviatedPath": "\/assets\/tiffany.jpg",
+		"outputAbbreviatedPath": "\/assets\/tiffany.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/category.php": {
 		"fileType": 8192,

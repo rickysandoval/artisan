@@ -5108,16 +5108,14 @@ header .logo {
     header .logo {
       width: 75px;
       position: absolute;
-      left: 0;
+      left: 10px;
       top: 0;
       bottom: 0;
       overflow: hidden;
       margin-left: -20px; } }
 
 .align .vertical.logo img {
-  max-width: 100%;
   height: auto;
-  width: auto\9;
   max-height: 40px;
   margin: 0 10px;
   image-rendering: -moz-crisp-edges;

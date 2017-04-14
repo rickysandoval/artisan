@@ -12,21 +12,21 @@ $(document).ready(function(){
   $('#gui-form-cart .gui-number input').attr('disabled', true);
   $('.cart_variant').toArray().forEach(function(el){ el.innerText = el.innerText.replace(/<br>/g, ''); });
 
-// gg fix 05/01/2017
-$('nav .item.sub').click(function() {
-  if ($(window).width() < 767) {
-    var element = $(this).find('.itemLink');
-      var href = element.attr('href');      
-      element.attr('href', '#');
-      $('nav .itemLink').hide();
-      element.show();
-      $(this).addClass('view-subnav');
-      
-      $('nav .glyphicon-remove').show( 'fade', function(){
-        element.attr('href', href);
-      });
-  }
-});  
+  // gg fix 05/01/2017
+  $('nav .item.sub').click(function() {
+    if ($(window).width() < 767) {
+      var element = $(this).find('.itemLink');
+        var href = element.attr('href');      
+        element.attr('href', '#');
+        $('nav .itemLink').hide();
+        element.show();
+        $(this).addClass('view-subnav');
+        
+        $('nav .glyphicon-remove').show( 'fade', function(){
+          element.attr('href', href);
+        });
+    }
+  });  
   
   
   // responsive navigation
@@ -74,6 +74,29 @@ $('nav .item.sub').click(function() {
     $('body').append('<div class="wsa-demobar">Your browser is out of date. We recommend <a class="link" href="www.google.com/chrome/â€Ž">Google Chrome</a> to download.</div>');
     $('body').css('marginTop', '42px');
   }
+
+  var isSignedIn = $('.header__sign-in').text().trim() == 'Account';
+  var hasHiddenAd = localStorage.getItem('hideRegisterBanner');
+  if (!isSignedIn && !hasHiddenAd) {
+     $('#marketingBanner').addClass('is-visible');
+  }
+
+  $('#marketingBanner').on('click', openMarketingModal);
+  $('.marketing-modal__close').on('click', closeMarketingModal);
+  $('.marketing-modal__overlay').on('click', closeMarketingModal);
+
+  function openMarketingModal() {
+    $('body').addClass('show-marketing-modal');
+  }
+
+  function closeMarketingModal() {
+    $('body').removeClass('show-marketing-modal');
+  }
+
+  function sendGaEvent() {
+    
+  }
+
 });
 
 $(window).load(function(){

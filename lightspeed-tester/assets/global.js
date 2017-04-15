@@ -84,9 +84,19 @@ $(document).ready(function(){
   $('#marketingBanner').on('click', openMarketingModal);
   $('.marketing-modal__close').on('click', closeMarketingModal);
   $('.marketing-modal__overlay').on('click', closeMarketingModal);
+  $('#registerPromo').on('click', function() {
+    console.log('Click Register');
+    if (typeof ga == 'function') {
+      ga('send', 'event', 'Promos', 'clickRegister', 'Welcome Campaign');
+    }
+  });
 
   function openMarketingModal() {
     $('body').addClass('show-marketing-modal');
+    console.log('Click Banner');
+    if (typeof ga == 'function') {
+      ga('send', 'event', 'Promos', 'openBanner', 'Welcome Campaign');
+    }
   }
 
   function closeMarketingModal() {
@@ -94,7 +104,7 @@ $(document).ready(function(){
   }
 
   function sendGaEvent() {
-    
+
   }
 
 });

@@ -84,6 +84,7 @@ $(document).ready(function(){
   $('#marketingBanner').on('click', openMarketingModal);
   $('.marketing-modal__close').on('click', closeMarketingModal);
   $('.marketing-modal__overlay').on('click', closeMarketingModal);
+  $('#registerPromo').on('click', closeMarketingModal);
 
 
   function openMarketingModal() {

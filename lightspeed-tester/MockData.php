@@ -321,7 +321,7 @@ function getMockData($mockPage) {
 		),
 		'cart' => $cart,
 		'back' => false,
-		'account' => true,
+		'account' => false,
 		'recent' => false,
 		'compare' => false,
 		'messages' => false,

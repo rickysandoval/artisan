@@ -104,7 +104,7 @@
         <!-- left -->
         <div class="menu-location">
             <ul>
-                <li class="active maps-change" data-toggle="tab" data-lat="39.7302451" data-lng="-104.9877931" data-zoom="16">
+                <li class="active maps-change" data-toggle="tab" data-lat="39.761277" data-lng="-104.983031" data-zoom="16">
                     <a data-map="map-1" href="javascript:void(0); " title="DENVER LOCATION">DENVER</a>
                 </li>
                 <li class="maps-change" data-toggle="tab" data-lat="38.8697999" data-lng="-106.9852758" data-zoom="16">
@@ -121,9 +121,9 @@
         <div class="address">
             <div class="item-location">
                 <h3>Denver, CO</h3>
-                <p>Shops at 9th Ave
-                    <br /> 899 N. Broadway
-                    <br /> Denver, CO 80203</p>
+                <p>Artisan Rug Gallery
+                    <br /> 2800 Walnut St
+                    <br /> Denver, CO 80205</p>
                 <hr>
                 <p>Tiffany Deutsch <br/>303. 825. 0064 <br/><a href="mailto:tiffany@artisanruggallery.com">tiffany@artisanruggallery.com</a></p>
             </div>

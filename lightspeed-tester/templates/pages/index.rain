@@ -104,7 +104,7 @@
         <!-- left -->
         <div class="menu-location">
             <ul>
-                <li class="active maps-change" data-toggle="tab" data-lat="39.761277" data-lng="-104.983031" data-zoom="16">
+                <li class="active maps-change" data-toggle="tab" data-lat="39.761491" data-lng="-104.983067" data-zoom="16">
                     <a data-map="map-1" href="javascript:void(0); " title="DENVER LOCATION">DENVER</a>
                 </li>
                 <li class="maps-change" data-toggle="tab" data-lat="38.8697999" data-lng="-106.9852758" data-zoom="16">
@@ -151,7 +151,8 @@
 </div>
 <script>
   function initMap(coords) {
-    var uluru = coords || {lat: 39.7302451, lng: -104.9877931};
+
+    var uluru = coords || {lat: 39.761491, lng: -104.983067};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
       zoom: 16,
       scrollwheel: false,

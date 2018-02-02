@@ -4,3 +4,4 @@
 /bower_components
 /lightspeed-tester/cache/*
 /lightspeed-tester/cache/**/*
+npm-debug.log

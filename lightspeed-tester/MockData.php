@@ -166,6 +166,11 @@ function getMockData($mockPage) {
 					'new_window' => false,
 					'url' => 'service/services',
 					'title' => 'Services'
+				),
+				4 => array(
+					'new_window' => false,
+					'url' => 'service/cleaning-and-repair',
+					'title' => 'Cleaning and Repair'
 				)
 			)
 		),

@@ -1,6 +1,6 @@
 <div class="mod-banner">
     <div class="slide-banner">
-        <div class="banner-item" style="background-image:url('{{'home-slider1.jpg' | url_asset}}')">
+        <div class="banner-item" style="background-image:url('{{'home-slider5.jpg' | url_asset}}')">
             <div class="table">
                 <div class="table-cell">
                     <div class="wrap-content">
@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-item" style="background-image:url('{{'home-slider2.jpg' | url_asset}}')">
+        <div class="banner-item" style="background-image:url('{{'home-slider6.jpg' | url_asset}}')">
             <div class="table">
                 <div class="table-cell">
                     <div class="wrap-content">
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-item" style="background-image:url('{{'home-slider3.jpg' | url_asset}}')">
+        <div class="banner-item" style="background-image:url('{{'home-slider7.jpg' | url_asset}}')">
             <div class="table">
                 <div class="table-cell">
                     <div class="wrap-content">
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-item" style="background-image:url('{{'home-slider4.jpg' | url_asset}}')">
+        <div class="banner-item" style="background-image:url('{{'home-slider8.jpg' | url_asset}}')">
             <div class="table">
                 <div class="table-cell">
                     <div class="wrap-content">
@@ -138,7 +138,7 @@
         </div>
     </div>
 </div>
-<div class="full-width mod-subscribe no-bottom-space">
+<div class="full-width mod-subscribe">
     <div class="container newsletter">
       <h2>{{ 'Subscribe for any updates' | t }}</h2>
       <div class="subtitle">Subscribe to our newsltter to be notified about promotions and sales</div>
@@ -148,6 +148,13 @@
         <a class="btn submit-btn button--solid" href="#" onclick="$('#formNewsletter').submit(); return false;" title="{{ 'Submit' | t }}"><span>{{ 'Submit' | t }}</span></a>
       </form>
     </div>
+</div>
+<div class="full-width no-bottom-space home__instagram">
+    <!-- LightWidget WIDGET -->
+    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe src="//lightwidget.com/widgets/bfe4455c00865fabb7088b65cac7a8ee.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"
+        style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
 </div>
 <script>
   function initMap(coords) {

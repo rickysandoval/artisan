@@ -6222,6 +6222,12 @@ footer {
         .mod-subscribe form .btn {
           padding-top: 5px; } }
 
+.home__instagram {
+  display: none; }
+  @media (min-width: 768px) {
+    .home__instagram {
+      display: block; } }
+
 /* Product page
 ================================================== */
 .product-wrap {

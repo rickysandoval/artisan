@@ -150,11 +150,10 @@
     </div>
 </div>
 <div class="full-width no-bottom-space home__instagram">
-    <!-- LightWidget WIDGET -->
-    <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-    <iframe src="//lightwidget.com/widgets/bfe4455c00865fabb7088b65cac7a8ee.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"
-        style="width: 100%; border: 0; overflow: hidden;"></iframe>
-
+<!-- LightWidget WIDGET -->
+<script src="//lightwidget.com/widgets/lightwidget.js"></script>
+<iframe src="//lightwidget.com/widgets/bfe4455c00865fabb7088b65cac7a8ee.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"
+    style="width: 100%; border: 0; overflow: hidden;"></iframe>
 </div>
 <script>
   function initMap(coords) {

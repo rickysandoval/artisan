@@ -72,7 +72,7 @@
 </div>
 
 <div class="mod-banner thin-banner see-us">
-    <div class="banner-item" style="background-image:url('{{'story-different.jpg' | url_asset}}')">
+    <div class="banner-item" style="background-image:url('{{'store-different2.jpg' | url_asset}}')">
       <div class="table">
           <div class="table-cell">
               <h2>Your Rug is our love story</h2>
@@ -88,7 +88,7 @@
     </div>
 </div>
 <div class="mod-banner thin-banner see-us">
-    <div class="banner-item" style="background-image:url('{{'banner.jpg' | url_asset}}')">
+    <div class="banner-item" style="background-image:url('{{'come-see-us.jpg' | url_asset}}')">
       <div class="table">
           <div class="table-cell">
               <h2>Come See Us</h2>

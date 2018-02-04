@@ -396,6 +396,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/come-see-us.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7.61074e+06,
+		"inputAbbreviatedPath": "\/assets\/come-see-us.jpg",
+		"outputAbbreviatedPath": "\/assets\/come-see-us.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/consulting.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -524,6 +535,17 @@
 		"initialSize": 332,
 		"inputAbbreviatedPath": "\/assets\/icon_bag.png",
 		"outputAbbreviatedPath": "\/assets\/icon_bag.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/IMG_6024.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5.86655e+06,
+		"inputAbbreviatedPath": "\/assets\/IMG_6024.jpg",
+		"outputAbbreviatedPath": "\/assets\/IMG_6024.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -700,6 +722,17 @@
 		"initialSize": 7165,
 		"inputAbbreviatedPath": "\/assets\/social-icons.png",
 		"outputAbbreviatedPath": "\/assets\/social-icons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/store-different2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 481024,
+		"inputAbbreviatedPath": "\/assets\/store-different2.jpg",
+		"outputAbbreviatedPath": "\/assets\/store-different2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

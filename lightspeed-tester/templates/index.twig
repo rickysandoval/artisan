@@ -80,13 +80,11 @@
               </form>   
 
               <ul>
-               {#  <li class="item {% if 'featured-rugs' is active %} active{% endif %}">
-                  <a class="itemLink" href="{{'featured-rugs' | url }}" title="Featured Rugs">Featured</a>
-                </li> #}
-                <li class="item sub {% if collection or product %} active {% endif %}">
-                  <span class="itemLink">Our Rugs</span>
+               
+                <li class="item sub {% if collection or product %} active {% endif %} catalog__menu">
+                  <span class="itemLink">Browse Rugs</span>
                   <span class="glyphicon glyphicon-play"></span>
-                  <ul class="subnav catalog__menu">
+                  <ul class="subnav">
                     {% for category in shop.categories %}
                     <li class="subitem{% if category.subs %}{% endif %}{% if category.url is active %} active{% endif %} catalog__menu-item">
                       <a class="itemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
@@ -109,6 +107,26 @@
                         {% endfor %}
                       </ul>
                       {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                {% for link in shop.links.main_menu %}
+                <li class="item sub {% if 'browse-rugs' in link.url %} desktop-browse-link {% endif %}">
+                  <a class="itemLink" href="{{ link.url | url }}" title="{{ link.title }}">
+                    {{ link.title }}
+                  </a>
+                </li>
+                {% endfor %}
+                <li class="item sub{% if 'service/what-is-a-rug' is active or 'service/chosing-a-rug' is active or 'service/care-and-maintenance' is active %} active{% endif %}">
+                  <span class="itemLink">All About Rugs</span>
+                  <span class="glyphicon glyphicon-play"></span>
+                  <ul class="subnav">
+                    {% for link in shop.links.all_about_rugs %}
+                    <li class="subitem">
+                      <a class="subitemLink" href="{{ link.url | url }}" title="{{ link.title }}">
+                        {{ link.title }}
+                      </a>
                     </li>
                     {% endfor %}
                   </ul>

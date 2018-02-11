@@ -5156,7 +5156,7 @@ header .logo {
     padding: 5px;
     text-transform: uppercase;
     padding-bottom: 3px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     border: 1px solid transparent;
     position: relative;
     z-index: 2;
@@ -5180,6 +5180,12 @@ header .logo {
 .desktop nav .glyphicon-play,
 .desktop nav .glyphicon-remove {
   display: none; }
+
+.desktop-browse-link {
+  display: none; }
+
+.desktop .desktop-browse-link {
+  display: block; }
 
 .desktop nav .subnav {
   display: none;

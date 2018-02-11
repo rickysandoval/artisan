@@ -146,11 +146,50 @@ function getMockData($mockPage) {
 					'title' => 'Lightspeed'
 				)
 			),
+			'main_menu' => array(
+				0 => array(
+					'new_window' => false,
+					'url' => 'service/browse-rugs/',
+					'title' => 'Browse Rugs'
+				),
+				1 => array(
+					'new_window' => false,
+					'url' => 'service/about-us/',
+					'title' => 'About Us'
+				),
+				2 => array(
+					'new_window' => false,
+					'url' => 'service/our-stores/',
+					'title' => 'Our Stores'
+				),
+				3 => array(
+					'new_window' => false,
+					'url' => 'service/cleaning-and-repair/',
+					'title' => 'Cleaning/Repair'
+				)
+			),
+			'all_about_rugs' => array(
+				0 => array(
+					'new_window' => false,
+					'url' => 'service/what-is-a-rug/',
+					'title' => 'What is a Rug'
+				),
+				1 => array(
+					'new_window' => false,
+					'url' => 'service/choosing-a-rug/',
+					'title' => 'Choosing a Rug'
+				),
+				2 => array(
+					'new_window' => false,
+					'url' => 'service/care-and-maintenance/',
+					'title' => 'Care and Maintenance'
+				),
+			),
 			'more' => array(
 				0 => array(
 					'new_window' => false,
-					'url' => 'service/about',
-					'title' => 'About Us'
+					'url' => 'service/services',
+					'title' => 'Services'
 				),
 				1 => array(
 					'new_window' => false,
@@ -161,16 +200,6 @@ function getMockData($mockPage) {
 					'new_window' => false,
 					'url' => 'service/store-policies',
 					'title' => 'Store Policies'
-				),
-				3 => array(
-					'new_window' => false,
-					'url' => 'service/services',
-					'title' => 'Services'
-				),
-				4 => array(
-					'new_window' => false,
-					'url' => 'service/cleaning-and-repair',
-					'title' => 'Cleaning and Repair'
 				)
 			)
 		),

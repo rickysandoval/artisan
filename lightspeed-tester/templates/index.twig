@@ -75,7 +75,69 @@
               {% endif %}
 
               <form action="{{ 'search' | url }}" method="get" id="formSearch">
-                <input type="text" name="q" autocomplete="off"  value="{{ page.search }}"/>
+                <input type="text" name="q" autocomplete="off"  value="{{ page.search }}" placeholder="Search Rugs"/>
+                <span onclick="$('#formSearch').submit();" title="{{ 'Search' | t }}" class="glyphicon glyphicon-search"></span>
+              </form>   
+
+              <ul>
+               {#  <li class="item {% if 'featured-rugs' is active %} active{% endif %}">
+                  <a class="itemLink" href="{{'featured-rugs' | url }}" title="Featured Rugs">Featured</a>
+                </li> #}
+                <li class="item sub {% if collection or product %} active {% endif %}">
+                  <span class="itemLink">Our Rugs</span>
+                  <span class="glyphicon glyphicon-play"></span>
+                  <ul class="subnav catalog__menu">
+                    {% for category in shop.categories %}
+                    <li class="subitem{% if category.subs %}{% endif %}{% if category.url is active %} active{% endif %} catalog__menu-item">
+                      <a class="itemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+                      {% if category.subs %}
+                      <span class="glyphicon glyphicon-play"></span>
+                      <ul class="subnav">
+                        {% for category in category.subs %}
+                        <li class="subitem">
+                          <a class="subitemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+                          {% if category.subs %}
+                          <ul class="subnav">
+                            {% for category in category.subs %}
+                            <li class="subitem">
+                              <a class="subitemLink" href="{{ category.url | url }}" title="{{ category.title }}">{{ category.title }}</a>
+                            </li>
+                            {% endfor %}
+                          </ul>
+                          {% endif %}
+                        </li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                <li class="item sub{% if 'service/faqs' is active or 'service/about' is active or 'service/store-policies' is active %} active{% endif %}">
+                  <span class="itemLink">More</span>
+                  <span class="glyphicon glyphicon-play"></span>
+                  <ul class="subnav">
+                    {% for link in shop.links.more %}
+                    <li class="subitem">
+                      <a class="subitemLink" href="{{ link.url | url }}" title="{{ link.title }}">
+                        {{ link.title }}
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              </ul>
+              <span class="glyphicon glyphicon-remove"></span> 
+              </div> 
+          </nav>
+        </div>
+      </div>
+      {% if collection is not null or product is not null %}
+      <div class="subnavigation clearfix">
+        <nav class="nonbounce vertical">
+          <div class="nav-contents">
+              <form action="{{ 'search' | url }}" method="get" id="formSearch">
+                <input type="text" name="q" autocomplete="off"  value="{{ page.search }}" placeholder="Search Rugs"/>
                 <span onclick="$('#formSearch').submit();" title="{{ 'Search' | t }}" class="glyphicon glyphicon-search"></span>
               </form>   
 
@@ -107,25 +169,11 @@
                   {% endif %}
                 </li>
                 {% endfor %}
-                <li class="item sub{% if 'service/faqs' is active or 'service/about' is active or 'service/store-policies' is active %} active{% endif %}">
-                  <span class="itemLink">More</span>
-                  <span class="glyphicon glyphicon-play"></span>
-                  <ul class="subnav">
-                    {% for link in shop.links.more %}
-                    <li class="subitem">
-                      <a class="subitemLink" href="{{ link.url | url }}" title="{{ link.title }}">
-                        {{ link.title }}
-                      </a>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </li>
               </ul>
-              <span class="glyphicon glyphicon-remove"></span> 
-              </div> 
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
+      {% endif %}
       <div class="banner-marketing" id="marketingBanner">
         <div class="banner-marketing__title">Now at a new location in Denver!!</div>
         <div class="banner-marketing__sub-title">Click for Details</div>
@@ -150,7 +198,7 @@
               </form>
             </div>
             {% endif %} #}
-    {% if theme.social_facebook or theme.social_twitter or theme.social_google or theme.social_instagram or theme.social_pinterest or theme.social_youtube or theme.social_linkedin %}
+          {% if theme.social_facebook or theme.social_twitter or theme.social_google or theme.social_instagram or theme.social_pinterest or theme.social_youtube or theme.social_linkedin %}
             <div class="social-media col-xs-12 col-md-12 {% if theme.setting_newsletter %} col-sm-5 col-md-5 text-right{% else %} text-center{% endif %}">
               {% if theme.social_facebook %}<a href="{{ theme.social_facebook }}" class="fa fa-facebook" target="_blank" title="Facebook"></a>{% endif %}
               

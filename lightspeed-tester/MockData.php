@@ -382,6 +382,22 @@ function getMockData($mockPage) {
 		}
 	}
 
+	function getCollection($mockPage) {
+		if ($mockPage == 'category') {
+			return $collection;
+		} else {
+			return null;
+		}
+	}
+
+	function getProduct($mockPage) {
+		if ($mockPage == 'product') {
+			$products[0];
+		} else {
+			return null;
+		}
+	}
+
 	return array(
 		'shop' => $shop,
 		'page' => $page,
@@ -391,8 +407,8 @@ function getMockData($mockPage) {
 		'headlines' => false,
 		'categories' => false,
 		'featured' => false,
-		'product' => $products[0],
-		'collection' => $collection,
+		'product' => getProduct($mockPage),
+		'collection' => getCollection($mockPage),
 		'textpage' => array(
 			'title' => $mockPage,
 			'content' => getContent($mockPage)

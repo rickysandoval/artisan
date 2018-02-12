@@ -2,134 +2,145 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19076",
 "files": {
-	"\/assets\/2:1:18\/IMG-0719.JPG": {
+	"\/assets\/2-1-18\/IMG-0719.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.95562e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0719.JPG",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0719.JPG",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0719.JPG",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0719.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG-0760.JPG": {
+	"\/assets\/2-1-18\/IMG-0760.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 5.04069e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0760.JPG",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0760.JPG",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0760.JPG",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0760.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG-0947.JPG": {
+	"\/assets\/2-1-18\/IMG-0947.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.57222e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0947.JPG",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0947.JPG",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0947.JPG",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0947.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG-0970.JPG": {
+	"\/assets\/2-1-18\/IMG-0970.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.59647e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0970.JPG",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG-0970.JPG",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0970.JPG",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG-0970.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_5919-HDR.jpg": {
+	"\/assets\/2-1-18\/IMG_5919-HDR.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 5.8536e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_5919-HDR.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_5919-HDR.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_5919-HDR.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_5919-HDR.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_5934-HDR.jpg": {
+	"\/assets\/2-1-18\/IMG_5934-HDR.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3.81619e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_5934-HDR.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_5934-HDR.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_5934-HDR.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_5934-HDR.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_6089-HDR.jpg": {
+	"\/assets\/2-1-18\/IMG_6089-HDR.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7.20379e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6089-HDR.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6089-HDR.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6089-HDR.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6089-HDR.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_6098-HDR.jpg": {
+	"\/assets\/2-1-18\/IMG_6098-HDR.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6.79411e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6098-HDR.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6098-HDR.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6098-HDR.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6098-HDR.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_6113-HDR.jpg": {
+	"\/assets\/2-1-18\/IMG_6113-HDR.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 5.00382e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6113-HDR.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6113-HDR.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6113-HDR.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6113-HDR.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_6158-HDR.jpg": {
+	"\/assets\/2-1-18\/IMG_6158-HDR.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6.39871e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6158-HDR.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6158-HDR.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6158-HDR.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6158-HDR.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_6174-HDR.jpg": {
+	"\/assets\/2-1-18\/IMG_6174-HDR.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6.7092e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6174-HDR.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6174-HDR.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6174-HDR.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6174-HDR.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2:1:18\/IMG_6218.jpg": {
+	"\/assets\/2-1-18\/IMG_6218.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 8.35369e+06,
-		"inputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6218.jpg",
-		"outputAbbreviatedPath": "\/assets\/2:1:18\/IMG_6218.jpg",
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6218.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6218.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/2-1-18\/IMG_6222.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6.08491e+06,
+		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6222.jpg",
+		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6222.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -414,6 +425,17 @@
 		"initialSize": 134775,
 		"inputAbbreviatedPath": "\/assets\/consulting.jpg",
 		"outputAbbreviatedPath": "\/assets\/consulting.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/contemporary.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 221492,
+		"inputAbbreviatedPath": "\/assets\/contemporary.jpg",
+		"outputAbbreviatedPath": "\/assets\/contemporary.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -768,6 +790,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/traditional.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 210357,
+		"inputAbbreviatedPath": "\/assets\/traditional.jpg",
+		"outputAbbreviatedPath": "\/assets\/traditional.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/transitional.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 137665,
+		"inputAbbreviatedPath": "\/assets\/transitional.jpg",
+		"outputAbbreviatedPath": "\/assets\/transitional.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/tribal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 193829,
+		"inputAbbreviatedPath": "\/assets\/tribal.jpg",
+		"outputAbbreviatedPath": "\/assets\/tribal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/category.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -793,6 +848,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/contents\/about.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/contents\/browse-rugs.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contents\/browse-rugs.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1156,6 +1220,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/scss\/views\/_browse.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/views\/_browse.scss",
+		"outputAbbreviatedPath": "\/scss\/assets\/_browse.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/scss\/views\/_cleaning.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1273,6 +1353,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/service\/about.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/service\/browse-rugs.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/service\/browse-rugs.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

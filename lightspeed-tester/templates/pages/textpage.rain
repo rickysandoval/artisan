@@ -1,4 +1,4 @@
-  {% if 'service/about' is active or 'service/store-policies' is active or 'service/faqs' is active or 'service/services' is active or 'service/what-is-a-rug' is active or 'service/cleaning-and-repair' is active%}
+  {% if 'service/about' is active or 'service/store-policies' is active or 'service/faqs' is active or 'service/services' is active or 'service/what-is-a-rug' is active or 'service/cleaning-and-repair' is active or 'service/browse-rugs' is active%}
   <script>
   $(document).ready(function() {
     if ($('.tab-menu').length) {

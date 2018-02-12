@@ -154,7 +154,7 @@ function getMockData($mockPage) {
 				),
 				1 => array(
 					'new_window' => false,
-					'url' => 'service/about-us',
+					'url' => 'service/about',
 					'title' => 'About Us'
 				),
 				2 => array(

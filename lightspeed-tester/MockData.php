@@ -149,22 +149,22 @@ function getMockData($mockPage) {
 			'main_menu' => array(
 				0 => array(
 					'new_window' => false,
-					'url' => 'service/browse-rugs/',
+					'url' => 'service/browse-rugs',
 					'title' => 'Browse Rugs'
 				),
 				1 => array(
 					'new_window' => false,
-					'url' => 'service/about-us/',
+					'url' => 'service/about-us',
 					'title' => 'About Us'
 				),
 				2 => array(
 					'new_window' => false,
-					'url' => 'service/our-stores/',
+					'url' => 'service/our-stores',
 					'title' => 'Our Stores'
 				),
 				3 => array(
 					'new_window' => false,
-					'url' => 'service/cleaning-and-repair/',
+					'url' => 'service/cleaning-and-repair',
 					'title' => 'Cleaning/Repair'
 				)
 			),

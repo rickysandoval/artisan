@@ -76,6 +76,11 @@
             bottom: -10px;
         }
     }
+
+    h3 {
+        color: $color-background-darker;
+        position: relative;
+    }
     p {
         font-family: $font-family-serif;
         line-height: 2.4;
@@ -88,6 +93,10 @@
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+.content-block div {
+    overflow: auto;
 }
 
 .full-width .content-block {

@@ -1,0 +1,19 @@
+.cleaning--content {
+    margin-top: 25px;
+    overflow: auto;
+
+    &.flex-half {
+        text-align: left;
+        > :first-child {
+            margin-bottom: 25px;
+        }
+    }
+    p, h3, h2 {
+        @media (min-width: $screen-md-min) {
+            padding: 0 15px;
+        }
+    }
+    @media (min-width: $screen-md-min) {
+        text-align: center;
+    }
+}

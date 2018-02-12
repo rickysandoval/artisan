@@ -4963,6 +4963,9 @@ input::-moz-focus-inner {
       height: 4px;
       background: #ef4036;
       bottom: -10px; }
+  .content-block.content-block h3 {
+    color: #6e5c53;
+    position: relative; }
   .content-block.content-block p {
     font-family: "Merriweather", serif;
     line-height: 2.4;
@@ -4972,6 +4975,9 @@ input::-moz-focus-inner {
   .container .content-block {
     padding-left: 0;
     padding-right: 0; } }
+
+.content-block div {
+  overflow: auto; }
 
 @media (max-width: 767px) {
   .full-width .content-block, .info-block .content-block {
@@ -7219,3 +7225,16 @@ footer {
 
   .marketing-modal__title {
     font-size: 24px; } }
+.cleaning--content {
+  margin-top: 25px;
+  overflow: auto; }
+  .cleaning--content.flex-half {
+    text-align: left; }
+    .cleaning--content.flex-half > :first-child {
+      margin-bottom: 25px; }
+  @media (min-width: 992px) {
+    .cleaning--content p, .cleaning--content h3, .cleaning--content h2 {
+      padding: 0 15px; } }
+  @media (min-width: 992px) {
+    .cleaning--content {
+      text-align: center; } }

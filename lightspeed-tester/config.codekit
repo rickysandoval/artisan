@@ -134,17 +134,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/2-1-18\/IMG_6222.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6.08491e+06,
-		"inputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6222.jpg",
-		"outputAbbreviatedPath": "\/assets\/2-1-18\/IMG_6222.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/approval.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -218,6 +207,17 @@
 		"initialSize": 448509,
 		"inputAbbreviatedPath": "\/assets\/banner-about.jpg",
 		"outputAbbreviatedPath": "\/assets\/banner-about.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/banner-browse.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 612453,
+		"inputAbbreviatedPath": "\/assets\/banner-browse.jpg",
+		"outputAbbreviatedPath": "\/assets\/banner-browse.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -888,6 +888,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/contents\/our-stores.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contents\/our-stores.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/contents\/services.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1300,6 +1309,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/scss\/views\/_our-stores.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/views\/_our-stores.scss",
+		"outputAbbreviatedPath": "\/scss\/assets\/_our-stores.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/scss\/views\/_policies.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1380,6 +1405,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/service\/faqs.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/service\/our-stores.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/service\/our-stores.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

@@ -77,7 +77,7 @@
     }
     .menu-location {
         ul {
-            paddign: 0;
+            padding: 0;
             margin: 0;
         }
         li {
@@ -161,7 +161,6 @@
 @media (max-width: $screen-sm-max) {
     .mod-contact {
         .item {
-            width: auto;
             &:first-child {
                 flex-grow: 1;
             }
@@ -190,7 +189,16 @@
     }
 }
 
-@media (max-width: $screen-xs-max) {
+@media (max-width: 500px) {
+    .mod-contact {
+        flex-direction: column;
+        .item {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-min) {
     .mod-contact {
         display: block;
         .address {

@@ -171,17 +171,17 @@ function getMockData($mockPage) {
 			'all_about_rugs' => array(
 				0 => array(
 					'new_window' => false,
-					'url' => 'service/what-is-a-rug/',
+					'url' => 'service/what-is-a-rug',
 					'title' => 'What is a Rug'
 				),
 				1 => array(
 					'new_window' => false,
-					'url' => 'service/choosing-a-rug/',
+					'url' => 'service/choosing-a-rug',
 					'title' => 'Choosing a Rug'
 				),
 				2 => array(
 					'new_window' => false,
-					'url' => 'service/care-and-maintenance/',
+					'url' => 'service/care-and-maintenance',
 					'title' => 'Care and Maintenance'
 				),
 			),
@@ -411,7 +411,7 @@ function getMockData($mockPage) {
 		}
 	}
 
-	function getCollection($mockPage) {
+	function getCollection($mockPage, $collection) {
 		if ($mockPage == 'category') {
 			return $collection;
 		} else {
@@ -419,7 +419,7 @@ function getMockData($mockPage) {
 		}
 	}
 
-	function getProduct($mockPage) {
+	function getProduct($mockPage, $products) {
 		if ($mockPage == 'product') {
 			$products[0];
 		} else {
@@ -436,8 +436,8 @@ function getMockData($mockPage) {
 		'headlines' => false,
 		'categories' => false,
 		'featured' => false,
-		'product' => getProduct($mockPage),
-		'collection' => getCollection($mockPage),
+		'product' => getProduct($mockPage, $products),
+		'collection' => getCollection($mockPage, $collection),
 		'textpage' => array(
 			'title' => $mockPage,
 			'content' => getContent($mockPage)

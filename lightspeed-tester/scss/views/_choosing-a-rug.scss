@@ -1,0 +1,33 @@
+.choosing-a-rug {
+    h3 {
+        font-size: 1.75em;
+        position: relative;
+        margin-bottom: 15px;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 3px;
+            width: 50%;
+            max-width: 350px;
+            background-color: $color-primary
+        }
+
+        .num {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    &.choosing-a-rug p {
+        margin-bottom: 35px;
+    }
+}
+
+@media(min-width: $screen-md-min) {
+    .choosing-a-rug {
+        h3:before {
+        }
+    }
+}

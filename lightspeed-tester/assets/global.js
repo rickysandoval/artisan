@@ -1,4 +1,30 @@
-$(document).ready(function(){  
+$(document).ready(function(){
+
+  window.createPhotoGallery = function(galleryId, rootElement, callback) {
+    console.log(galleryId);
+    var photosApi = 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=8acbc7bc8e1be264e5e48402bf8414f0&photoset_id=' + galleryId +'&user_id=140573967@N04&format=json&nojsoncallback=1&extras=url_m,url_o';
+    $.get(photosApi, photoSuccess);
+
+    function photoSuccess(data) {
+      console.log(data);
+      if (data.photoset) {
+        
+        data.photoset.photo.forEach(function(photo) {
+          var img = $('<img>'); //Equivalent: $(document.createElement('img'))
+          img.attr('src', photo.url_o);
+          img.attr('alt', 'test');
+          img.attr('data-img', photo.url_o);
+          img.appendTo(rootElement);
+        });
+
+        if (typeof callback == 'function') {
+          callback();
+        }
+      }
+    }
+  };
+
+  // window.createPhotoGallery(null, $('.container.content'));
   // navbar
   $('.desktop .item, .desktop .subitem').hover(function(){
     $(this).addClass('hover');

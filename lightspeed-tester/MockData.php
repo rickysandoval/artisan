@@ -419,9 +419,9 @@ function getMockData($mockPage) {
 		}
 	}
 
-	function getProduct($mockPage, $products) {
+	function getProduct($mockPage, $p) {
 		if ($mockPage == 'product') {
-			$products[0];
+			return $p;
 		} else {
 			return null;
 		}
@@ -436,7 +436,7 @@ function getMockData($mockPage) {
 		'headlines' => false,
 		'categories' => false,
 		'featured' => false,
-		'product' => getProduct($mockPage, $products),
+		'product' => getProduct($mockPage, $products[0]),
 		'collection' => getCollection($mockPage, $collection),
 		'textpage' => array(
 			'title' => $mockPage,

@@ -107,23 +107,7 @@ $(document).ready(function(){
      $('#marketingBanner').addClass('is-visible');
   }
 
-  $('#marketingBanner').on('click', openMarketingModal);
-  $('.marketing-modal__close').on('click', closeMarketingModal);
-  $('.marketing-modal__overlay').on('click', closeMarketingModal);
-  $('.marketing-modal__action a').on('click', closeMarketingModal);
 
-
-  function openMarketingModal() {
-    $('body').addClass('show-marketing-modal');
-    console.log('Click Banner');
-    if (typeof ga == 'function') {
-      ga('send', 'event', 'Promos', 'openBanner', 'New Location');
-    }
-  }
-
-  function closeMarketingModal() {
-    $('body').removeClass('show-marketing-modal');
-  }
 
   function sendGaEvent() {
 

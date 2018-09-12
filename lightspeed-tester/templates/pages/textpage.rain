@@ -1,14 +1,31 @@
-  {% if 'service/about' is active or 'service/store-policies' is active or 'service/faqs' is active or 'service/services' is active or 'service/what-is-a-rug' is active or 'service/cleaning-and-repair' is active or 'service/browse-rugs' is active or 'service/our-stores' is active or 'service/choosing-a-rug' is active or 'service/care-and-maintenance' is active%}
-  <script>
-  $(document).ready(function() {
+ {% if 'service/about' is active or 'service/store-policies' is active or 'service/faqs' is active or 'service/services'
+is active or 'service/what-is-a-rug' is active or 'service/cleaning-and-repair' is active or 'service/browse-rugs' is active
+or 'service/our-stores' is active or 'service/choosing-a-rug' is active or 'service/care-and-maintenance' is active%}
+<script>
+  function initMap(coords) {
+    var uluru = coords || { lat: 39.761491, lng: -104.983067 };
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+      zoom: 16,
+      scrollwheel: false,
+      center: uluru
+    });
+    var image = "{{'map-icon.png' | url_asset}}";
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: image
+    });
+  }
+
+  $(document).ready(function () {
     if ($('.tab-menu').length) {
       var tabs = $('.tab-menu').find('[data-tab]').toArray();
-      var panes = $('.tab-menu').find('[data-pane]').toArray().reduce(function(panesObj, nextPane) {
+      var panes = $('.tab-menu').find('[data-pane]').toArray().reduce(function (panesObj, nextPane) {
         panesObj[$(nextPane).data('pane')] = $(nextPane);
         return panesObj;
       }, {});
-      tabs.forEach(function(el) {
-        $(el).on('click', function(event) {
+      tabs.forEach(function (el) {
+        $(el).on('click', function (event) {
           if (!$(el).hasClass('tab-active')) {
             $('.tab-active').removeClass('tab-active');
             $('.pane-active').removeClass('pane-active');
@@ -29,27 +46,41 @@
         tabs[0].click();
       }
     }
+
+    $('.maps-change').on('click', function (ev) {
+      if (!$(this).hasClass('active')) {
+        var uluru = {
+          lat: $(this).data('lat'),
+          lng: $(this).data('lng')
+        }
+        initMap(uluru);
+        $('.maps-change.active').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
   });
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkXUWLPP5cojDHN6zLaWQ9NfkZMlm-aw&callback=initMap">
 </script>
 <div class="row textpage banner-title">
 
   {% else %}
-<div class="row textpage"> 
-  <div class="page-title  col-sm-6 col-md-6">
-    <h1>{{ textpage.title }}</h1>
+  <div class="row textpage">
+    <div class="page-title  col-sm-6 col-md-6">
+      <h1>{{ textpage.title }}</h1>
+    </div>
+    <div class="col-sm-6 col-md-6 breadcrumbs text-right">
+      <a href="{{ '' | url }}" title="{{ 'Home' | t }}">{{ 'Home' | t }}</a>
+
+      {% for breadcrumb in page.breadcrumbs %} /
+      <a href="{{ breadcrumb.url | url }}">{{ breadcrumb.title }}</a>
+      {% endfor %}
+    </div>
+    {% endif %} {% if textpage.content %}
+    <div class="clearfix"></div>
+    <div class="col-md-12">
+      {{ textpage.content | raw }}
+    </div>
+    {% endif %}
   </div>
-  <div class="col-sm-6 col-md-6 breadcrumbs text-right">
-    <a href="{{ '' | url }}" title="{{ 'Home' | t }}">{{ 'Home' | t }}</a>
-    
-    {% for breadcrumb in page.breadcrumbs %}
-    / <a href="{{ breadcrumb.url | url }}">{{ breadcrumb.title }}</a>
-    {% endfor %}
-  </div>
-  {% endif %}   
-  {% if textpage.content %}
-  <div class="clearfix"></div>
-  <div class="col-md-12">
-    {{ textpage.content | raw }} 
-  </div>
-  {% endif %}
-</div>

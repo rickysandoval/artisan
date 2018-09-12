@@ -38,11 +38,12 @@
             }
         }
         img {
+            max-height: 100%;
             @media (min-width: $screen-md-min) {
                 position: absolute;
                 top: 50%;
-                right: 0;
-                transform: translateY(-50%);
+                right: 50%;
+                transform: translate(50%, -50%);
             }
         }
     }

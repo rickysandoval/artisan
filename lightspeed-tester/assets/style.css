@@ -7782,14 +7782,16 @@ footer {
           max-width: 100%;
           margin-bottom: -10%;
           margin-top: -10%; } }
-    @media (min-width: 992px) {
-      .our-history .about-image-wrapper img {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%); } }
+    .our-history .about-image-wrapper img {
+      max-height: 100%; }
+      @media (min-width: 992px) {
+        .our-history .about-image-wrapper img {
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          -webkit-transform: translate(50%, -50%);
+              -ms-transform: translate(50%, -50%);
+                  transform: translate(50%, -50%); } }
 
 @media (max-width: 991px) {
   .the-process {
@@ -8378,6 +8380,13 @@ footer {
     padding: 5px;
     color: white;
     position: relative;
+    z-index: 1; }
+  .browse__category a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1; }
   .browse__category .background {
     position: absolute;
